@@ -1,0 +1,1095 @@
+<html>
+<head>
+<title> Bug Analysis</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css" />
+
+<style>
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.9);
+  z-index: 99;
+  cursor: pointer;
+}
+.panel{
+	margin-bottom: 5px;
+}
+</style>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js">></script>
+	<script src="js/bootstrap-select.min.js">></script>
+
+<script>
+	json_data = '';
+	json_data_original =[{"subject": "faveo", "link": "/ladybirdweb/faveo-helpdesk/issues/4165", "title": "Symfony\\Component\\Debug\\Exception\\FatalThrowableError in GET /api/v1/get_pmmp_month_commun", "status": "open", "labels": ["bugsnag", "local"], "priority": null, "description": ["<h2>Error in Faveo Community</h2>\n<p><strong>Symfony\\Component\\Debug\\Exception\\FatalThrowableError</strong> in <strong>GET /api/v1/get_pmmp_month_commun</strong>\nCall to a member function get() on string</p>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5fa0de72aefc2a0018d71792?event_id=5fa0de72006233ee612a0000&amp;i=gh&amp;m=ci\">View on Bugsnag</a></p>\n<h2>Stacktrace</h2>\n<pre><code>\\routes\\api.php:285 - App\\Providers\\RouteServiceProvider::{closure}\n</code></pre>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5fa0de72aefc2a0018d71792?event_id=5fa0de72006233ee612a0000&amp;i=gh&amp;m=ci\">View full stacktrace</a></p>\n<p><em>Created automatically via Bugsnag</em></p>", []], "response": -1, "tags": "", "comments": ""}, {"subject": "faveo", "link": "/ladybirdweb/faveo-helpdesk/pull/378", "title": "translation to spanish", "status": "closed", "labels": [], "priority": null, "description": ["<p>translation to  spanish</p>", []], "response": -1, "tags": "", "comments": ""}, {"subject": "faveo", "link": "/ladybirdweb/faveo-helpdesk/issues/3998", "title": "ErrorException in GET /appsupport.io-repo/public/password/reset_link/Qeq5PoBnuRwZUTg8FFl2P7v2XOE43HEZa4qfcGpk6wNgl6484wpHN8ThJtg0", "status": "open", "labels": ["bugsnag", "production"], "priority": null, "description": ["<h2>Error in Faveo Community</h2>\n<p><strong>ErrorException</strong> in <strong>GET /appsupport.io-repo/public/password/reset_link/Qeq5PoBnuRwZUTg8FFl2P7v2XOE43HEZa4qfcGpk6wNgl6484wpHN8ThJtg0</strong>\nUndefined variable: email</p>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5f85817c5288250018579443?event_id=5f85817c00615f6d4ef80000&amp;i=gh&amp;m=ci\">View on Bugsnag</a></p>\n<h2>Stacktrace</h2>\n<pre><code>\\app\\Http\\Controllers\\Auth\\PasswordController.php:47 - Illuminate\\Foundation\\Bootstrap\\HandleExceptions::handleError\n\\app\\Http\\Controllers\\Auth\\PasswordController.php:47 - App\\Http\\Controllers\\Auth\\PasswordController::resetLink\n\\app\\Http\\Middleware\\RedirectIfAuthenticated.php:43 - App\\Http\\Middleware\\RedirectIfAuthenticated::handle\n\\app\\Http\\Middleware\\LanguageMiddleware.php:33 - App\\Http\\Middleware\\LanguageMiddleware::handle\n\\app\\Http\\Middleware\\VerifyCsrfToken.php:33 - App\\Http\\Middleware\\VerifyCsrfToken::handle\n</code></pre>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5f85817c5288250018579443?event_id=5f85817c00615f6d4ef80000&amp;i=gh&amp;m=ci\">View full stacktrace</a></p>\n<p><em>Created automatically via Bugsnag</em></p>", []], "response": -1, "tags": "", "comments": ""}, {"subject": "faveo", "link": "/ladybirdweb/faveo-helpdesk/issues/1726", "title": "ErrorException in vendor/composer/ClassLoader.php:444", "status": "closed", "labels": ["bugsnag"], "priority": null, "description": ["<h2>Error in Faveo Community</h2>\n<p><strong>ErrorException</strong> in <strong>vendor/composer/ClassLoader.php:444</strong>\ninclude(/home/hesk/public_html/vendor/composer/../../database/migrations/2019_04_23_173307_kb_perfis_articles.php): failed to open stream: No such file or directory</p>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5cbf4fcfca9c2e0018824d40?event_id=5cbf4fcf0037e9c8dea90000&amp;i=gh&amp;m=ci\">View on Bugsnag</a></p>\n<h2>Stacktrace</h2>\n<pre><code>vendor/composer/ClassLoader.php:444 - Illuminate\\Foundation\\Bootstrap\\HandleExceptions::handleError\n</code></pre>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5cbf4fcfca9c2e0018824d40?event_id=5cbf4fcf0037e9c8dea90000&amp;i=gh&amp;m=ci\">View full stacktrace</a></p>\n<p><em>Created automatically via Bugsnag</em></p>", ["<p>[27-Nov-2019 13:09:41 UTC] PHP Warning:  include(/home/urtimate/laravel_leasing/vendor/composer/../vlucas/phpdotenv/src/Environment/Adapter/EnvConstAdapter.php): failed to open stream: No such file or directory in /home/urtimate/laravel_leasing/vendor/composer/ClassLoader.php on line 444\n[27-Nov-2019 13:09:41 UTC] PHP Warning:  include(/home/urtimate/laravel_leasing/vendor/composer/../vlucas/phpdotenv/src/Environment/Adapter/EnvConstAdapter.php): failed to open stream: No such file or directory in /home/urtimate/laravel_leasing/vendor/composer/ClassLoader.php on line 444\n[27-Nov-2019 13:09:41 UTC] PHP Warning:  include(): Failed opening '/home/urtimate/laravel_leasing/vendor/composer/../vlucas/phpdotenv/src/Environment/Adapter/EnvConstAdapter.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/urtimate/laravel_leasing/vendor/composer/ClassLoader.php on line 444\n[27-Nov-2019 13:09:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Dotenv\\Environment\\Adapter\\EnvConstAdapter' not found in /home/urtimate/laravel_leasing/vendor/laravel/framework/src/Illuminate/Support/Env.php:67</p>"]], "response": -1, "tags": "", "comments": ""}, {"subject": "pgweb", "link": "/sosedoff/pgweb/issues/253", "title": "Allow searching for a database via autocomplete textbox", "status": "closed", "labels": ["hacktoberfest", "new-feature"], "priority": null, "description": ["<p>Currently there's no way to find a specific database when you click on the database switcher in the sidebar. If you have a lot of local databases the list becomes pretty long and unusable. </p>\n<p>New feature: when i click on the database name it should open up a modal with the text input. Then i can type a partial name and see autocomplete results. This is similar to OSX finder feature / alfred app.</p>", ["<p>This is a very nice feature to have :)</p>", "<p>I am interested in working on this. :)</p>", "<p>For autocomplete, is there a preference on whether to utilize a third party library or not?</p>", "<p>Third-party lib is fine as long as it does not pull the whole jQuery-UI stuff in. </p>", "<p>Closing this since the feature has been implemented.</p>"]], "response": -1, "tags": "", "comments": ""}, {"subject": "claroline", "link": "https://sourceforge.net/p/claroline/bugs/181/", "title": "#181 Fatal Error in ExtAuth", "status": "closed", "labels": "authentication (4)", "priority": "8", "description": ["<div id=\"ticket_content\">\n  <div><div class=\"markdown_content\"><p><a href=\"http://forum.claroline.net/viewtopic.php?f=82&amp;t=21765&amp;p=50312#p50312\" rel=\"nofollow\">http://forum.claroline.net/viewtopic.php?f=82&amp;t=21765&amp;p=50312#p50312</a></p></div></div>\n  \n</div>\n\n                    "], "response": -1, "tags": "", "comments": ""}, {"subject": "koel", "link": "/koel/koel/issues/683", "title": "Safari webapp", "status": "closed", "labels": [], "priority": null, "description": ["<p>Hey</p>\n<p>First of all, great app! I tried searching but github on mobile is messy sometimes... anyhow, it would be cool if you could add the meta tags for safari web capable apps :) \n<a href=\"https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html#//apple_ref/doc/uid/TP40002051-CH3-SW2\">Link</a></p>\n<p>I might take a shot at it when I\u2019ve finished moving to a new place and have some more time :P</p>", ["<p>Hm that would require some sort of navigation or at least a back button on the page though </p>", "<p>Tried that, didn't really make it. Because of how iOS's \"threading\" system works (IFAIK), Safari web \"apps\" will reload themselves whenever you switch out and back in, rendering the apps virtually unusable. </p>", "<p>Right, of course \ud83d\ude3f </p>"]], "response": -1, "tags": "", "comments": ""}, {"subject": "faveo", "link": "/ladybirdweb/faveo-helpdesk/issues/2608", "title": "Illuminate\\Contracts\\Container\\BindingResolutionException in POST /create-new-user-ad", "status": "closed", "labels": ["bugsnag"], "priority": null, "description": ["<h2>Error in Faveo Community</h2>\n<p><strong>Illuminate\\Contracts\\Container\\BindingResolutionException</strong> in <strong>POST /create-new-user-ad</strong>\nTarget [App\\Http\\Requests\\Request] is not instantiable.</p>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5d75cb5a4a6c92001a26e87b?event_id=5d75cb5a004f27377ac00000&amp;i=gh&amp;m=ci\">View on Bugsnag</a></p>\n<h2>Stacktrace</h2>\n<pre><code>\\app\\Http\\Middleware\\CheckUpdate.php:35 - App\\Http\\Middleware\\CheckUpdate::handle\n\\app\\Http\\Middleware\\LanguageMiddleware.php:33 - App\\Http\\Middleware\\LanguageMiddleware::handle\n\\app\\Http\\Middleware\\VerifyCsrfToken.php:33 - App\\Http\\Middleware\\VerifyCsrfToken::handle\n</code></pre>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5d75cb5a4a6c92001a26e87b?event_id=5d75cb5a004f27377ac00000&amp;i=gh&amp;m=ci\">View full stacktrace</a></p>\n<p><em>Created automatically via Bugsnag</em></p>", []], "response": -1, "tags": "", "comments": ""}, {"subject": "faveo", "link": "/ladybirdweb/faveo-helpdesk/issues/781", "title": "ErrorException in GET /faveo-helpdesk-master/public/download-excel-file/xls", "status": "closed", "labels": ["bugsnag"], "priority": null, "description": ["<h2>Error in Faveo Community</h2>\n<p><strong>ErrorException</strong> in <strong>GET /faveo-helpdesk-master/public/download-excel-file/xls</strong>\nCreating default object from empty value</p>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5c5811e0d9bbdf001b529779?event_id=5c5811e00035666cfe650000&amp;i=gh&amp;m=ci\">View on Bugsnag</a></p>\n<h2>Stacktrace</h2>\n<pre><code>\\app\\Http\\Controllers\\Admin\\helpdesk\\SecurityController.php:78 - Illuminate\\Foundation\\Bootstrap\\HandleExceptions::handleError\n\\app\\Http\\Controllers\\Admin\\helpdesk\\SecurityController.php:78 - App\\Http\\Controllers\\Admin\\helpdesk\\SecurityController::downloadExcelFile\n\\app\\Http\\Middleware\\CheckUpdate.php:35 - App\\Http\\Middleware\\CheckUpdate::handle\n\\app\\Http\\Middleware\\LanguageMiddleware.php:33 - App\\Http\\Middleware\\LanguageMiddleware::handle\n\\app\\Http\\Middleware\\VerifyCsrfToken.php:33 - App\\Http\\Middleware\\VerifyCsrfToken::handle\n</code></pre>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5c5811e0d9bbdf001b529779?event_id=5c5811e00035666cfe650000&amp;i=gh&amp;m=ci\">View full stacktrace</a></p>\n<p><em>Created automatically via Bugsnag</em></p>", []], "response": -1, "tags": "", "comments": ""}, {"subject": "faveo", "link": "/ladybirdweb/faveo-helpdesk/issues/1402", "title": "Symfony\\Component\\Debug\\Exception\\FatalThrowableError in POST /safecity_helpdesk/public/index.php/user_project_mapping/8", "status": "closed", "labels": ["bugsnag"], "priority": null, "description": ["<h2>Error in Faveo Community</h2>\n<p><strong>Symfony\\Component\\Debug\\Exception\\FatalThrowableError</strong> in <strong>POST /safecity_helpdesk/public/index.php/user_project_mapping/8</strong>\nCall to undefined function App\\Http\\Controllers\\Admin\\helpdesk\\input()</p>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5c93183bcc2aa4001bbc0321?event_id=5c93183b003796b45ecf0000&amp;i=gh&amp;m=ci\">View on Bugsnag</a></p>\n<h2>Stacktrace</h2>\n<pre><code>app/Http/Controllers/Admin/helpdesk/UserProjectMappingController.php:143 - App\\Http\\Controllers\\Admin\\helpdesk\\UserProjectMappingController::update\napp/Http/Middleware/CheckRole.php:25 - App\\Http\\Middleware\\CheckRole::handle\napp/Http/Middleware/Authenticate.php:54 - App\\Http\\Middleware\\Authenticate::handle\napp/Http/Middleware/CheckUpdate.php:35 - App\\Http\\Middleware\\CheckUpdate::handle\napp/Http/Middleware/LanguageMiddleware.php:33 - App\\Http\\Middleware\\LanguageMiddleware::handle\napp/Http/Middleware/VerifyCsrfToken.php:33 - App\\Http\\Middleware\\VerifyCsrfToken::handle\n</code></pre>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5c93183bcc2aa4001bbc0321?event_id=5c93183b003796b45ecf0000&amp;i=gh&amp;m=ci\">View full stacktrace</a></p>\n<p><em>Created automatically via Bugsnag</em></p>", []], "response": -1, "tags": "", "comments": ""}, {"subject": "faveo", "link": "/ladybirdweb/faveo-helpdesk/issues/1839", "title": "Symfony\\Component\\Debug\\Exception\\FatalErrorException in GET /safecity_helpdesk/public/index.php/thread/66", "status": "closed", "labels": ["bugsnag"], "priority": null, "description": ["<h2>Error in Faveo Community</h2>\n<p><strong>Symfony\\Component\\Debug\\Exception\\FatalErrorException</strong> in <strong>GET /safecity_helpdesk/public/index.php/thread/66</strong>\nMaximum execution time of 30 seconds exceeded</p>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5cc582d552f6050019d12b86?event_id=5cc582d50038cf1942df0000&amp;i=gh&amp;m=ci\">View on Bugsnag</a></p>\n<h2>Stacktrace</h2>\n<pre><code>C:\\xampp\\htdocs\\bitrix\\modules\\im\\lib\\user.php:4 - [main]\n</code></pre>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5cc582d552f6050019d12b86?event_id=5cc582d50038cf1942df0000&amp;i=gh&amp;m=ci\">View full stacktrace</a></p>\n<p><em>Created automatically via Bugsnag</em></p>", []], "response": -1, "tags": "", "comments": ""}, {"subject": "mrbs", "link": "https://sourceforge.net/p/mrbs/bugs/423/", "title": "#423 Admin rights do not override Max duration in Firefox", "status": "closed", "labels": "None", "priority": "1", "description": ["<div id=\"ticket_content\">\n  <div><div class=\"markdown_content\"><p>Greetings,</p>\n<p>I'm testing 1.7.1 for production and Firefox does not reflect the Admin rights for maximum duration. Put differently, when you go to reserve a room in Firefox as an Admin it limits reservations to the Max duration setting. This issue happens in Microsoft EDGE as well but not Chrome.  This is on Firefox 64.0 on PC and Mac</p>\n<p>Thanks for your help!<br>\nChristopher Schneider<br>\ncschneider1  /{AT}/ uchicago.edu</p></div></div>\n  \n</div>\n\n                    ", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><p>I think this is probably the same as <a href=\"https://sourceforge.net/p/mrbs/bugs/415/.\">https://sourceforge.net/p/mrbs/bugs/415/.</a>   In summary it is a caching problem and is fixed in the latest code in the default branch.</p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><ul>\n<li><strong>status</strong>: open --&gt; closed</li>\n</ul></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>"], "response": -1, "tags": "", "comments": ""}, {"subject": "faveo", "link": "/ladybirdweb/faveo-helpdesk/issues/4334", "title": "ErrorException in POST /help-topic-ticket-csv", "status": "open", "labels": ["bugsnag", "production"], "priority": null, "description": ["<h2>Error in Faveo Community</h2>\n<p><strong>ErrorException</strong> in <strong>POST /help-topic-ticket-csv</strong>\nUndefined variable: closedTickets</p>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5fe2eac09c286f0019a4e396?event_id=5fe2eac000659ce295310000&amp;i=gh&amp;m=ci\">View on Bugsnag</a></p>\n<h2>Stacktrace</h2>\n<pre><code>app/Http/Controllers/Agent/helpdesk/ReportController.php:586 - Illuminate\\Foundation\\Bootstrap\\HandleExceptions::handleError\napp/Http/Controllers/Agent/helpdesk/ReportController.php:586 - App\\Http\\Controllers\\Agent\\helpdesk\\ReportController::helptopicTicketCSV\napp/Http/Middleware/CheckRoleAgent.php:25 - App\\Http\\Middleware\\CheckRoleAgent::handle\napp/Http/Middleware/Authenticate.php:54 - App\\Http\\Middleware\\Authenticate::handle\napp/Http/Middleware/CheckUpdate.php:35 - App\\Http\\Middleware\\CheckUpdate::handle\napp/Http/Middleware/LanguageMiddleware.php:33 - App\\Http\\Middleware\\LanguageMiddleware::handle\napp/Http/Middleware/VerifyCsrfToken.php:33 - App\\Http\\Middleware\\VerifyCsrfToken::handle\n</code></pre>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5fe2eac09c286f0019a4e396?event_id=5fe2eac000659ce295310000&amp;i=gh&amp;m=ci\">View full stacktrace</a></p>\n<p><em>Created automatically via Bugsnag</em></p>", []], "response": -1, "tags": "", "comments": ""}, {"subject": "koel", "link": "/koel/koel/pull/1202", "title": "Vue highlighting added for Gitpod", "status": "closed", "labels": [], "priority": null, "description": ["<p>This PR adds vetur as an extension in Gitpod's VS code</p>\n<p>\"Vetur provides syntax highlighting, snippets, Emmet support, linting/error checking, auto-formatting, and auto-complete for Vue files.\"</p>\n<p>Atm the vue files look like this on Gitpod:</p>\n<p><img width=\"774\" alt=\"Screen Shot 2020-04-02 at 3 38 20 AM\" src=\"https://user-images.githubusercontent.com/3472889/78233759-7595fd80-7493-11ea-952e-cc297ffbef71.png\"></p>\n<p>After this change:</p>\n<p><img width=\"766\" alt=\"Screen Shot 2020-04-02 at 3 40 58 AM\" src=\"https://user-images.githubusercontent.com/3472889/78234031-cdccff80-7493-11ea-9ac0-518126eee212.png\"></p>", ["<h1><a href=\"https://codecov.io/gh/phanan/koel/pull/1202?src=pr&amp;el=h1\">Codecov</a> Report</h1>\n<blockquote>\n<p>Merging <a href=\"https://codecov.io/gh/phanan/koel/pull/1202?src=pr&amp;el=desc\">#1202</a> into <a href=\"https://codecov.io/gh/phanan/koel/commit/e7ea4651b5c6e6edc30cd1e1da5ab2cdfa8dd0c1&amp;el=desc\">master</a> will <strong>increase</strong> coverage by <code>0.18%</code>.\nThe diff coverage is <code>92.30%</code>.</p>\n</blockquote>\n<p><a href=\"https://codecov.io/gh/phanan/koel/pull/1202?src=pr&amp;el=tree\"><img alt=\"Impacted file tree graph\" src=\"https://codecov.io/gh/phanan/koel/pull/1202/graphs/tree.svg?width=650&amp;height=150&amp;src=pr&amp;token=bd5ECzRGv4\" /></a></p>\n<p>```diff\n@@             Coverage Diff              @@</p>\n<h2>master    #1202      +/-</h2>\n<p>============================================\n+ Coverage     66.83%   67.01%   +0.18%   <br />\n  Complexity      732      732            <br />\n============================================\n  Files           142      142            <br />\n  Lines          1821     1819       -2   <br />\n============================================\n+ Hits           1217     1219       +2   <br />\n+ Misses          604      600       -4   <br />\n```</p>\n<p>| <a href=\"https://codecov.io/gh/phanan/koel/pull/1202?src=pr&amp;el=tree\">Impacted Files</a> | Coverage \u0394 | Complexity \u0394 | |\n|---|---|---|---|\n| <a href=\"https://codecov.io/gh/phanan/koel/pull/1202/diff?src=pr&amp;el=tree#diff-YXBwL1NlcnZpY2VzL1N0cmVhbWVycy9UcmFuc2NvZGluZ1N0cmVhbWVyLnBocA==\">app/Services/Streamers/TranscodingStreamer.php</a> | <code>21.05% &lt;0.00%&gt; (\u00f8)</code> | <code>4.00 &lt;0.00&gt; (\u00f8)</code> | |\n| <a href=\"https://codecov.io/gh/phanan/koel/pull/1202/diff?src=pr&amp;el=tree#diff-YXBwL1NlcnZpY2VzL0ZpbGVTeW5jaHJvbml6ZXIucGhw\">app/Services/FileSynchronizer.php</a> | <code>94.01% &lt;100.00%&gt; (+0.05%)</code> | <code>55.00 &lt;0.00&gt; (\u00f8)</code> | |\n| <a href=\"https://codecov.io/gh/phanan/koel/pull/1202/diff?src=pr&amp;el=tree#diff-YXBwL1NlcnZpY2VzL0ludGVyYWN0aW9uU2VydmljZS5waHA=\">app/Services/InteractionService.php</a> | <code>94.87% &lt;100.00%&gt; (+0.13%)</code> | <code>7.00 &lt;0.00&gt; (\u00f8)</code> | |\n| <a href=\"https://codecov.io/gh/phanan/koel/pull/1202/diff?src=pr&amp;el=tree#diff-YXBwL1NlcnZpY2VzL1lvdVR1YmVTZXJ2aWNlLnBocA==\">app/Services/YouTubeService.php</a> | <code>57.69% &lt;100.00%&gt; (+1.69%)</code> | <code>13.00 &lt;0.00&gt; (\u00f8)</code> | |\n| <a href=\"https://codecov.io/gh/phanan/koel/pull/1202/diff?src=pr&amp;el=tree#diff-YXBwL1NlcnZpY2VzL2lUdW5lc1NlcnZpY2UucGhw\">app/Services/iTunesService.php</a> | <code>70.37% &lt;100.00%&gt; (+2.37%)</code> | <code>15.00 &lt;0.00&gt; (\u00f8)</code> | |\n| <a href=\"https://codecov.io/gh/phanan/koel/pull/1202/diff?src=pr&amp;el=tree#diff-YXBwL1NlcnZpY2VzL01lZGlhU3luY1NlcnZpY2UucGhw\">app/Services/MediaSyncService.php</a> | <code>84.69% &lt;0.00%&gt; (-1.31%)</code> | <code>34.00% &lt;0.00%&gt; (\u00f8%)</code> | |\n| <a href=\"https://codecov.io/gh/phanan/koel/pull/1202/diff?src=pr&amp;el=tree#diff-YXBwL1NlcnZpY2VzL0Rvd25sb2FkU2VydmljZS5waHA=\">app/Services/DownloadService.php</a> | <code>21.87% &lt;0.00%&gt; (+2.95%)</code> | <code>14.00% &lt;0.00%&gt; (\u00f8%)</code> | |</p>\n<hr />\n<p><a href=\"https://codecov.io/gh/phanan/koel/pull/1202?src=pr&amp;el=continue\">Continue to review full report at Codecov</a>.</p>\n<blockquote>\n<p><strong>Legend</strong> - <a href=\"https://docs.codecov.io/docs/codecov-delta\">Click here to learn more</a>\n<code>\u0394 = absolute &lt;relative&gt; (impact)</code>, <code>\u00f8 = not affected</code>, <code>? = missing data</code>\nPowered by <a href=\"https://codecov.io/gh/phanan/koel/pull/1202?src=pr&amp;el=footer\">Codecov</a>. Last update <a href=\"https://codecov.io/gh/phanan/koel/pull/1202?src=pr&amp;el=lastupdated\">cce534b...5d32b84</a>. Read the <a href=\"https://docs.codecov.io/docs/pull-request-comments\">comment docs</a>.</p>\n</blockquote>", "<p>Thanks!</p>"]], "response": -1, "tags": "", "comments": ""}, {"subject": "koel", "link": "/koel/koel/issues/657", "title": "Support for translations", "status": "open", "labels": ["PR Welcome", "[Type] Enhancement"], "priority": null, "description": ["<p>Any chances of translating this project to other languages? I could do Spanish and Catalan. \ud83d\ude03 </p>", ["<p>This has been raised before. I still think Koel doesn't need a translation given how simple the app is (and should be). I'm leaving this open this time though, just in case.</p>", "<p>It's simple, but there's a lot of people that doesn't know a simple word in English - focusing on end users, not devs.</p>", "<p>Well that's the thing \u2013 Koel aims at developers, as told on its homepage.\nBut I'm open to the idea.</p>\n<p>On Sat, Sep 30, 2017 at 08:55 David Gir\u00f3n <a href=\"&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#110;&#111;&#116;&#105;&#102;&#105;&#99;&#97;&#116;&#105;&#111;&#110;&#115;&#64;&#103;&#105;&#116;&#104;&#117;&#98;&#46;&#99;&#111;&#109;\">&#110;&#111;&#116;&#105;&#102;&#105;&#99;&#97;&#116;&#105;&#111;&#110;&#115;&#64;&#103;&#105;&#116;&#104;&#117;&#98;&#46;&#99;&#111;&#109;</a> wrote:</p>\n<blockquote>\n<p>It's simple, but there's a lot of people that doesn't know a simple word\nin English - focusing on end users, not devs.</p>\n<p>\u2014\nYou are receiving this because you commented.\nReply to this email directly, view it on GitHub\n<a href=\"https://github.com/phanan/koel/issues/657#issuecomment-333291746\">https://github.com/phanan/koel/issues/657#issuecomment-333291746</a>, or mute\nthe thread\n<a href=\"https://github.com/notifications/unsubscribe-auth/AHrt0pvv7s5sqVKVbQvSPRXgCRM1RIhKks5snfQLgaJpZM4PitVP\">https://github.com/notifications/unsubscribe-auth/AHrt0pvv7s5sqVKVbQvSPRXgCRM1RIhKks5snfQLgaJpZM4PitVP</a>\n.\n</p>\n</blockquote>", "<p>I do also think that Koel could benefit from multiple language. It should not be so complicated to offer this service and I share duhow's opinion about making your great software available for non-english speakers.\nAs a developper, I'm interested in hosting your software for people that are not familiar with english.</p>\n<p>I would do french.</p>", "<p>You're welcome to try and send a PR over :)</p>", "<p>I'm not familiar with Laravel nor Vue. Should I just add a folder in ressources/lang with the same files for english but translated ?</p>", "<p>I could translate it to Brazilian portuguese!</p>"]], "response": -1, "tags": "", "comments": ""}, {"subject": "mrbs", "link": "https://sourceforge.net/p/mrbs/bugs/185/", "title": "#185 Locale issue in FreeBSD", "status": "closed", "labels": "None", "priority": "5", "description": ["<div id=\"ticket_content\">\n  <div><div class=\"markdown_content\"><p>MRBS 1.4.2<br>\nFreeBSD 7.0<br>\nApache 2.2.13<br>\nPHP 5.2.8<br>\nFirefox 3.5.2 and IE 8</p>\n<p>Pages display \"<span>[Warning: Server failed to set locale to \"en_GB.utf-8\" (Unix)]</span> \" at top.</p>\n<p>Problem can be resolved by editing the chunk of code in language.inc around line 536 to do:</p>\n<p>$locale .= \".UTF-8\";</p>\n<p>instead of:</p>\n<p>$locale .= \".utf-8\";</p>\n<p>if $server_os==\"BSD\"</p>\n<p>Sorry I didn't submit a diff, don't remember exactly how and need to get some other things done tonight... Email with any questions if more info is needed - ian period rees atsign gmail dot com.  -Ian-</p></div></div>\n  \n</div>\n\n                    ", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><p>Checked in as SVN rev 1221.</p>\n<p>Cheers,</p>\n<p>John.</p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><p>Now released in MRBS 1.4.3.</p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>"], "response": -1, "tags": "", "comments": ""}, {"subject": "addressbook", "link": "https://sourceforge.net/p/php-addressbook/bugs/5/", "title": "#5 Exploit detected", "status": "open", "labels": "Security risk (5)", "priority": "5", "description": ["<div id=\"ticket_content\">\n  <div><div class=\"markdown_content\"><p>Advisory:       PHP Address Book 6.2.12 Multiple security vulnerabilities<br>\nAdvisory ID:        SSCHADV2012-007<br>\nAuthor:         Stefan Schurtz<br>\nAffected Software:  Successfully tested on PHP Address Book 6.2.12<br>\nVendor URL:     <a href=\"http://sourceforge.net/projects/php-addressbook/\">http://sourceforge.net/projects/php-addressbook/</a><br>\nVendor Status:      informed<br>\n==========================<br>\nVulnerability Description<br>\n==========================<br>\nPHP Address Book 6.2.12 is prone to multiple XSS and SQL-Injection vulnerabilities<br>\n==================<br>\nPoC-Exploit<br>\n==================<br>\n// (Blind) SQL-Injection<br>\nhttp://<span>[target]</span>/addressbook/edit.php?id=<span>[sql-injection]</span><br>\nhttp://<span>[target]</span>/addressbook/group.php?add=Add to&amp;group=1&amp;selected%5b%5d=132&amp;to_group=<span>[sql-injection]</span><br>\nhttp://<span>[target]</span>/addressbook/vcard.php?id=<span>[sql-injection]</span><br>\n// XSS<br>\nhttp://<span>[target]</span>/addressbook/preferences.php?from='\"&lt;/script&gt;&lt;script&gt;alert(document.cookie)&lt;/script&gt;<br>\nhttp://<span>[target]</span>/addressbook/index.php?group='\"&lt;/script&gt;&lt;script&gt;alert(document.cookie)&lt;/script&gt;<br>\n====================<br>\nDisclosure Timeline<br>\n====================<br>\n03-Mar-2012 - vendor informed<br>\n========<br>\nCredits<br>\n========<br>\nVulnerabilities found and advisory written by Stefan Schurtz.<br>\n===========<br>\nReferences<br>\n===========<br>\n<a href=\"http://sourceforge.net/tracker/?group_id=157964&amp;atid=8059299\">http://sourceforge.net/tracker/?group_id=157964&amp;atid=8059299</a><br>\n<a href=\"http://www.darksecurity.de/advisories/2012/SSCHADV2012-007.txt\" rel=\"nofollow\">http://www.darksecurity.de/advisories/2012/SSCHADV2012-007.txt</a></p></div></div>\n  \n</div>\n\n                    "], "response": -1, "tags": "", "comments": ""}, {"subject": "crater", "link": "/bytefury/crater/pull/149", "title": "Fix for \"Empty PDF rendered in Docker #69\"", "status": "closed", "labels": [], "priority": null, "description": ["<p>Fix for \"Empty PDF rendered in Docker\" https://github.com/bytefury/crater/issues/69</p>\n<p>Generation does not work due to:\n<code>iconv(): Wrong charset, conversion from `UTF-8' to `UTF-8//IGNORE' is not allowed</code></p>\n<p>Installing the library <code>gnu-libiconv</code> will solve the problem</p>", ["<p>Thank you for the PR @proea :) </p>\n<p>I agree with @BirkhoffLee, can you put this above and update your PR? </p>\n<p>I'll merge it as soon as that's done. </p>\n<p>Thanks</p>", "<p>@mohitpanjwani sure!</p>", "<p>I can confirm this commit fixes the issue and is ready to be merged.</p>"]], "response": -1, "tags": "", "comments": ""}, {"subject": "claroline", "link": "https://sourceforge.net/p/claroline/bugs/167/", "title": "#167 Hide \"All platform courses\" in the home page", "status": "closed", "labels": "general issue (13)", "priority": "1", "description": ["<div id=\"ticket_content\">\n  <div><div class=\"markdown_content\"><p>Add configuration parameter to show or hide All platform courses (show by default) </p></div></div>\n  \n</div>\n\n                    "], "response": -1, "tags": "", "comments": ""}, {"subject": "addressbook", "link": "https://sourceforge.net/p/php-addressbook/bugs/58/", "title": "#58 Footer outside container", "status": "closed", "labels": "Display error (45)", "priority": "7", "description": ["<div id=\"ticket_content\">\n  <div><div class=\"markdown_content\"><p>If a user is setup to access only one group, the footer is outside the container, causing the footer text (\"php-addressbook v6.1.4 - r370\") to be displayed at the very left margin of the window.</p>\n<p>(php-addressbook v6.1.4 - r370)</p></div></div>\n  \n</div>\n\n                    ", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><p>Still present in v6.2.3 r400</p>\n<p>Patch:</p>\n<p>replace lines 239-242 of index.php with</p>\n<div class=\"codehilite\"><pre><span></span>    echo \"<span class=\"nt\">&lt;/select&gt;&lt;/div&gt;</span>\";\n}\necho \"<span class=\"nt\">&lt;br</span> <span class=\"nt\">/&gt;&lt;br</span> <span class=\"na\">class=</span><span class=\"s\">'clear'</span> <span class=\"nt\">/&gt;&lt;/form&gt;</span>\";\n</pre></div>\n<p>(i.e. the  tag has to be moved)</p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><p>Will be fixed in next release. - Thx</p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>"], "response": -1, "tags": "", "comments": ""}, {"subject": "faveo", "link": "/ladybirdweb/faveo-helpdesk/issues/2579", "title": "Symfony\\Component\\Debug\\Exception\\FatalErrorException in vendor/laravel/framework/src/Illuminate/Routing/ControllerMiddlewareOptions.php:20", "status": "closed", "labels": ["bugsnag"], "priority": null, "description": ["<h2>Error in Faveo Community</h2>\n<p><strong>Symfony\\Component\\Debug\\Exception\\FatalErrorException</strong> in <strong>vendor/laravel/framework/src/Illuminate/Routing/ControllerMiddlewareOptions.php:20</strong>\nMaximum execution time of 30 seconds exceeded</p>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5d70f14d0b05970019baa581?event_id=5d70f14d004e7ed255f80000&amp;i=gh&amp;m=ci\">View on Bugsnag</a></p>\n<h2>Stacktrace</h2>\n<pre><code>vendor/laravel/framework/src/Illuminate/Routing/ControllerMiddlewareOptions.php:20 - [main]\n</code></pre>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5d70f14d0b05970019baa581?event_id=5d70f14d004e7ed255f80000&amp;i=gh&amp;m=ci\">View full stacktrace</a></p>\n<p><em>Created automatically via Bugsnag</em></p>", []], "response": -1, "tags": "", "comments": ""}, {"subject": "faveo", "link": "/ladybirdweb/faveo-helpdesk/issues/59", "title": "Not importing e-mails", "status": "closed", "labels": [], "priority": null, "description": ["<p>Hi Guys, </p>\n<p>Since I've added a workflow the system stops importing e-mails. I cannot find where it's going wrong... \nI've deleted the workflow and re-added all the e-mail addresses. </p>\n<p>When I manually go to the url /readmails it gives me the message Mailbox is empty while it's not empty... None of the in total 5 e-mail addresses I've added. There is nothing in the apache error logs or no errors in the others error logs. </p>", ["<p>Hi Bananenbaas, </p>\n<p>In the first scenario when you created the workflow, you might have choose an action to reject the emails. And when you remove the workflow the tickets went as more than one day ago older due to which the system didn\u2019t fetch the email and the current system IMAP settings don't receive tickets for more than one day ago.\nIn our next release we have added pop settings which will read all the unpopped emails that never got popped with this feature you can fetch all your tickets more than one day ago while you can keep using IMAP to fix for one day.\nDo let us know for more issue.</p>"]], "response": -1, "tags": "", "comments": ""}, {"subject": "faveo", "link": "/ladybirdweb/faveo-helpdesk/issues/3575", "title": "Illuminate\\Database\\QueryException in GET /heart_vote_dashboard", "status": "open", "labels": ["bugsnag", "local"], "priority": null, "description": ["<h2>Error in Faveo Community</h2>\n<p><strong>Illuminate\\Database\\QueryException</strong> in <strong>GET /heart_vote_dashboard</strong>\nSQLSTATE[23000]: Integrity constraint violation: 1052 Column 'parent_id' in where clause is ambiguous (SQL: select hb_dep_divs.name as name, cast(sum(heart_point) as UNSIGNED) as y, vote_for_depdiv_id as drilldown from <code>hb_vote_history</code> left join <code>hb_dep_divs</code> on <code>hb_dep_divs</code>.<code>id</code> = <code>hb_vote_history</code>.<code>vote_for_depdiv_id</code> where <code>month</code> = 6 and <code>year</code> = 2020 and <code>parent_id</code> = 49 group by <code>vote_for_depdiv_id</code> order by <code>y</code> desc)</p>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5f0bda845fd3670018badeac?event_id=5f0bda84005b8cec95990000&amp;i=gh&amp;m=ci\">View on Bugsnag</a></p>\n<h2>Stacktrace</h2>\n<pre><code>\\app\\Http\\Controllers\\Client\\helpdesk\\GuestController.php:367 - App\\Http\\Controllers\\Client\\helpdesk\\GuestController::heart_vote_dashboard_page\n\\app\\Http\\Middleware\\CheckBoard.php:27 - App\\Http\\Middleware\\CheckBoard::handle\n\\app\\Http\\Middleware\\Authenticate.php:54 - App\\Http\\Middleware\\Authenticate::handle\n\\app\\Http\\Middleware\\LanguageMiddleware.php:33 - App\\Http\\Middleware\\LanguageMiddleware::handle\n\\app\\Http\\Middleware\\VerifyCsrfToken.php:34 - App\\Http\\Middleware\\VerifyCsrfToken::handle\n</code></pre>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5f0bda845fd3670018badeac?event_id=5f0bda84005b8cec95990000&amp;i=gh&amp;m=ci\">View full stacktrace</a></p>\n<p><em>Created automatically via Bugsnag</em></p>", []], "response": -1, "tags": "", "comments": ""}, {"subject": "claroline", "link": "https://sourceforge.net/p/claroline/bugs/100/", "title": "#100 scan fault page needs more display coherence", "status": "open", "labels": "platform administration (16)", "priority": "1", "description": ["<div id=\"ticket_content\">\n  <div><div class=\"markdown_content\"><p>When there is no result,</p>\n<p>\"No Result\" is displayed in the following sections:<br>\n-Courses without student,<br>\n-User registered in a course having an unexisting (deprecated) status,<br>\n-Courses with unexisting users registered,<br>\n when... there is no result;</p>\n<p>and a line with \"-\" in the other section.</p></div></div>\n  \n</div>\n\n                    "], "response": -1, "tags": "", "comments": ""}, {"subject": "phplist", "link": "/phpList/phplist3/pull/331", "title": "#0019142: Remove \"add a new subscriber\" from the \"Subscribers\" menu", "status": "closed", "labels": [], "priority": null, "description": ["", ["<p>@samtuke for this to work behat of the application need to be modify. Do you know who wrote this tests?</p>"]], "response": -1, "tags": "", "comments": ""}, {"subject": "faveo", "link": "/ladybirdweb/faveo-helpdesk/pull/14", "title": "Update README.md", "status": "closed", "labels": [], "priority": null, "description": ["", []], "response": -1, "tags": "", "comments": ""}, {"subject": "tikiwiki", "link": "https://sourceforge.net/p/tikiwiki/bugs/1908/", "title": "#1908 Calendar: Small bug in calendar feature?", "status": "open", "labels": "Feature Partially Broken (680)", "priority": "5", "description": ["<div id=\"ticket_content\">\n  <div><div class=\"markdown_content\"><p>Hello all,</p>\n<p>trying the calendar feature I observed the following<br>\nbehaviour:</p>\n<p>Example: <br>\nGo to viewmode \"month\" and remember Day of the week<br>\n(e.g. 27. March 2005 is a Sunday,<br>\n<a href=\"http://tikiwiki.org/tiki-calendar.php%5C\" rel=\"nofollow\">http://tikiwiki.org/tiki-calendar.php\\</a>). </p>\n<p>Go to next month (\"\u0165\" above the calendar). Day of the<br>\nweek (27.March 2005) changes to Monday.</p>\n<p>Can somebody maybe fix that? I tried to read the<br>\nscripts to see whether I could make a quick patch<br>\nmyself, but I am afraid that I would need much more<br>\ntime for this than one of the experts.  </p>\n<p>Thank you in advance</p>\n<p>Best wishes </p>\n<p>Hubert kreutzmann</p></div></div>\n  \n</div>\n\n                    ", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><ul>\n<li><strong>summary</strong>: Small bug in calender feature? --&gt; Small bug in calendar feature?</li>\n</ul></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><ul>\n<li><strong>summary</strong>: Small bug in calendar feature? --&gt; Calendar: Small bug in calendar feature?</li>\n</ul></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>"], "response": -1, "tags": "", "comments": ""}, {"subject": "faveo", "link": "/ladybirdweb/faveo-helpdesk/issues/3823", "title": "ErrorException in GET /appsupport.io-repo/public/thread/187", "status": "open", "labels": ["bugsnag", "production"], "priority": null, "description": ["<h2>Error in Faveo Community</h2>\n<p><strong>ErrorException</strong> in <strong>GET /appsupport.io-repo/public/thread/187</strong>\nProperty [id] does not exist on this collection instance. (View: C:\\xampp\\htdocs\\appsupport.io-repo\\resources\\views\\themes\\default1\\agent\\helpdesk\\ticket\\timeline.blade.php)</p>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5f6c66d1665f8b0018463e71?event_id=5f6c66d1005e087ab1500000&amp;i=gh&amp;m=ci\">View on Bugsnag</a></p>\n<h2>Stacktrace</h2>\n<pre><code>\\app\\Http\\Middleware\\Authenticate.php:54 - App\\Http\\Middleware\\Authenticate::handle\n\\app\\Http\\Middleware\\LanguageMiddleware.php:33 - App\\Http\\Middleware\\LanguageMiddleware::handle\n\\app\\Http\\Middleware\\VerifyCsrfToken.php:33 - App\\Http\\Middleware\\VerifyCsrfToken::handle\n</code></pre>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5f6c66d1665f8b0018463e71?event_id=5f6c66d1005e087ab1500000&amp;i=gh&amp;m=ci\">View full stacktrace</a></p>\n<p><em>Created automatically via Bugsnag</em></p>", []], "response": -1, "tags": "", "comments": ""}, {"subject": "koel", "link": "/koel/koel/issues/520", "title": "understanding koel:sync", "status": "closed", "labels": [], "priority": null, "description": ["<p>Hello, could you please help me understand koel:sync \ni've got some data stored via a cms to the database on the songs table. Each time i do KOEL:SYNC it puts up data that i stored earlier on to this location. \nThe fields are titles, descriptions for each tracks and alike.\nnow again, i store some values say, by...database directly, next as i koel:sync, the command simply reverts it, makes it empty.</p>\n<p>Could it be that the ID3 tags aren't being placed into the tracks, and koel:sync applies what it sees under the ID3 tags, can you suggest if i'd turn off the ID3 sync, or if i'd sync the files to have the updated titles that i've stored in the database? i just dont want the whole thing reverted back each time it syncs?</p>\n<p>Could you please help through this, i've been digging this for 3 days and have found nothing that would help.</p>", ["<p>more info: i moved the data from one server to another and then all the additional data won't sync.</p>\n<p>so, i believe the koel:sync  / inotify checks for update_file tag? how is this working really, so in case i've to move folders in future, the data doesn't get lost, the additional data that i'm putting along each file, say title....description and so on?</p>", "<p>If the songs are kept intact (not moved or edited), sync process shouldn't reset its data. If it does, please file as a bug.</p>"]], "response": -1, "tags": "", "comments": ""}, {"subject": "tikiwiki", "link": "https://sourceforge.net/p/tikiwiki/bugs/1813/", "title": "#1813 Anonymous can view submissions", "status": "open", "labels": "Unknown (53)", "priority": "5", "description": ["<div id=\"ticket_content\">\n  <div><div class=\"markdown_content\"><p>TW 1.9 CVS</p>\n<p>When checking Submissions box in Features -&gt; Articles, <br>\na new option appears in application menu: Submit News <br>\nArticle. Which is ok.</p>\n<p>BUT a View submissions option appears too, and that's <br>\nnot ok. I don't want Anonymous to view the submission <br>\nof other Anonymous. At least unless I set permission so.</p>\n<p>I have not seen a view-submission perm to edit <br>\nanywhere. Well anyway I shouldn't have to edit it if I <br>\nonly allowed submit-article.</p>\n<p>In the present state View submissions becomes another <br>\ncategory for browsing articles, and articles are read <br>\nwhich Editors do not want to have published or have not <br>\naccepted yet.</p></div></div>\n  \n</div>\n\n                    "], "response": -1, "tags": "", "comments": ""}, {"subject": "pgweb", "link": "/sosedoff/pgweb/issues/495", "title": "Running Pgweb on ECS Fargate", "status": "closed", "labels": [], "priority": null, "description": ["<p>Is it possible to run pgweb on ECS Fargate with connectivity to a Postgres DB?</p>\n<p>I have tried to get pgweb up and running with the <code>sosedoff/pgweb</code> image, however it fails to resolve the host name of the database. I assume this is related to pgweb listening on localhost?</p>\n<p>Has anyone been able to deploy it to ECS Fargate?</p>", ["<p>I've run pgweb on ecs fargate so its definitely possible. Your issue is not clear, if you want me to troubleshoot you need to provide at least something, like ecs task definition or a command. You mention it fails to resolve the db hostname - it has nothing to do with pgweb and everything with how you're running the containers, so some context is a must in order to figure out your setup. </p>\n<p>basically the ecs setup boils down to the following:</p>\n<ul>\n<li>make sure your pgweb task runs in the same vpc as the postgres database (presumably rds) in order to use the internal dns</li>\n<li>postgres database security groups allow access from the pgweb ecs container</li>\n<li>pgweb task container has outbout rules to access the rds instance/ postgres database</li>\n</ul>", "<p>Thanks @sosedoff, it turns out that I need to add the RDS security group to the outbound ECS Task security group. Thanks for the pointer!</p>"]], "response": -1, "tags": "", "comments": ""}, {"subject": "phplist", "link": "/phpList/phplist3/pull/427", "title": "user acceptance tests for email delivery and content", "status": "closed", "labels": [], "priority": null, "description": ["<p>Further discussion for this issue in #412 </p>", ["<p>:+1: </p>"]], "response": -1, "tags": "", "comments": ""}, {"subject": "faveo", "link": "/ladybirdweb/faveo-helpdesk/issues/3845", "title": "Symfony\\Component\\Debug\\Exception\\FatalThrowableError in GET /appsupport.io-repo/public/user-manage/create", "status": "open", "labels": ["bugsnag", "production"], "priority": null, "description": ["<h2>Error in Faveo Community</h2>\n<p><strong>Symfony\\Component\\Debug\\Exception\\FatalThrowableError</strong> in <strong>GET /appsupport.io-repo/public/user-manage/create</strong>\nClass 'App\\Http\\Controllers\\Admin\\helpdesk\\CommonSettings' not found</p>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5f6ddab8c5e458001875e9ef?event_id=5f6ddab8005e0b81fd760000&amp;i=gh&amp;m=ci\">View on Bugsnag</a></p>\n<h2>Stacktrace</h2>\n<pre><code>\\app\\Http\\Controllers\\Admin\\helpdesk\\UserManagerController.php:29 - App\\Http\\Controllers\\Admin\\helpdesk\\UserManagerController::create\n\\app\\Http\\Middleware\\CheckUpdate.php:35 - App\\Http\\Middleware\\CheckUpdate::handle\n\\app\\Http\\Middleware\\LanguageMiddleware.php:33 - App\\Http\\Middleware\\LanguageMiddleware::handle\n\\app\\Http\\Middleware\\VerifyCsrfToken.php:33 - App\\Http\\Middleware\\VerifyCsrfToken::handle\n</code></pre>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5f6ddab8c5e458001875e9ef?event_id=5f6ddab8005e0b81fd760000&amp;i=gh&amp;m=ci\">View full stacktrace</a></p>\n<p><em>Created automatically via Bugsnag</em></p>", []], "response": -1, "tags": "", "comments": ""}, {"subject": "faveo", "link": "/ladybirdweb/faveo-helpdesk/issues/910", "title": "Symfony\\Component\\Debug\\Exception\\FatalErrorException in app/Http/Controllers/Common/Socialite.php:7", "status": "closed", "labels": ["bugsnag"], "priority": null, "description": ["<h2>Error in Faveo Community</h2>\n<p><strong>Symfony\\Component\\Debug\\Exception\\FatalErrorException</strong> in <strong>app/Http/Controllers/Common/Socialite.php:7</strong>\nCannot declare class App\\Http\\Controllers\\Common\\Socialite because the name is already in use</p>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5c62f6c16a085a0019991639?event_id=5c62f6c10035a15958870000&amp;i=gh&amp;m=ci\">View on Bugsnag</a></p>\n<h2>Stacktrace</h2>\n<pre><code>app/Http/Controllers/Common/Socialite.php:7 - Symfony\\Component\\Debug\\Exception\\FatalErrorException::__construct\n</code></pre>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5c62f6c16a085a0019991639?event_id=5c62f6c10035a15958870000&amp;i=gh&amp;m=ci\">View full stacktrace</a></p>\n<p><em>Created automatically via Bugsnag</em></p>", []], "response": -1, "tags": "", "comments": ""}, {"subject": "addressbook", "link": "https://sourceforge.net/p/php-addressbook/bugs/121/", "title": "#121 Search", "status": "open", "labels": "None", "priority": "5", "description": ["<div id=\"ticket_content\">\n  <div><div class=\"markdown_content\"><p>Is there anyway to have it search all fields? or at least search the notes box?</p></div></div>\n  \n</div>\n\n                    ", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><p>Hi, if you disable the \"ajax-search\" it should search in all fields.</p>\n<p>Just set in \"config.php\" =&gt;</p>\n<p>// Disable the AJAX-Mode with \"false\"<br/>\n$use_ajax = false;  </p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div class=\"active-md\" data-markdownlink=\"/p/php-addressbook/bugs/_discuss/thread/0c4d927c/042b/\"><div class=\"markdown_content\"><p>True!<br/>\n(and awesome)</p>\n<p>It's just that the results are not shown onscreen :)</p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div class=\"active-md\" data-markdownlink=\"/p/php-addressbook/bugs/_discuss/thread/0c4d927c/29e7/\"><div class=\"markdown_content\"><p>is there any way to search all fields with the ajax enabled? I understand it would create a load on the server, but this address book would be perfect for my use if there was a way of doing that. thanks</p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><p>Hi, ajax-full-search would not produce server-load, but all data has to be included in the page.<br/>\nRegards<br/>\nO.</p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div class=\"active-md\" data-markdownlink=\"/p/php-addressbook/bugs/_discuss/thread/0c4d927c/4a3a/\"><div class=\"markdown_content\"><p>If it feels sluggish (having a lot of contacts) try Chrome: worked great for me.</p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>"], "response": -1, "tags": "", "comments": ""}, {"subject": "crater", "link": "/bytefury/crater/issues/318", "title": "error during installation [RuntimeException]", "status": "closed", "labels": [], "priority": null, "description": ["<p>I am using these commands on a Debian 10 machine to install crater</p>\n<p>```</p>\n<h1>install docker</h1>\n<p>apt install -y curl\ncurl -fsSL https://get.docker.com -o get-docker.sh\nsh get-docker.sh</p>\n<h1>install compose</h1>\n<p>curl -L \"https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)\" -o /usr/local/bin/docker-compose\nchmod +x /usr/local/bin/docker-compose\nln -s /usr/local/bin/docker-compose /usr/bin/docker-compose\ndocker-compose --version</p>\n<h1>clone repository</h1>\n<p>apt install -y git\ngit clone https://github.com/bytefury/crater</p>\n<h1>run app</h1>\n<p>cd crater\ncp .env.example .env\ndocker-compose up -d\n./docker-compose/setup.sh\n```</p>\n<p>During the last stages of the installation I get this error.</p>\n<p><img alt=\"error\" src=\"https://user-images.githubusercontent.com/528302/102763102-e4005000-4381-11eb-81b6-83ae33f04d3d.png\" /></p>\n<p>What I'm I doing wrong here?</p>", ["<p>Hey, same error, fix it using non root user</p>", "<p>yes, this fixed it, thanks</p>"]], "response": -1, "tags": "", "comments": ""}, {"subject": "tikiwiki", "link": "https://sourceforge.net/p/tikiwiki/bugs/1979/", "title": "#1979 Users with space in login_name can`t  use messaging system", "status": "closed", "labels": "Feature Fully Broken (177)", "priority": "9", "description": ["<div id=\"ticket_content\">\n  <div><div class=\"markdown_content\"><p>if U use \"Test user\" as name - U can`t receive <br>\nmessages from anywhere</p></div></div>\n  \n</div>\n\n                    ", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><ul>\n<li><strong>priority</strong>: 5 --&gt; 9</li>\n<li><strong>assigned_to</strong>: nobody --&gt; damosoft</li>\n</ul></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><ul>\n<li><strong>assigned_to</strong>: damosoft --&gt; sylvieg</li>\n<li><strong>status</strong>: open --&gt; closed</li>\n</ul></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><p>Logged In: YES <br/>\nuser_id=784615</p>\n<p>I fixed this in 1.10<br/>\nNow the name must be separated with; and you have to use \\;<br/>\nfor a name with ;</p>\n<p>If you need the modification in 1.9, you can copy the file<br/>\nmessu-compose.php (was not able to fix in 1.9 as it involves<br/>\na new warning message and 1.9 is frozen)<br/>\n<a href=\"http://cvs.sourceforge.net/viewcvs.py/tikiwiki/tiki/messu-compose.php?rev=1.26\">http://cvs.sourceforge.net/viewcvs.py/tikiwiki/tiki/messu-compose.php?rev=1.26</a></p>\n<p>Thanks for reporting<br/>\nSylvie</p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>"], "response": -1, "tags": "", "comments": ""}, {"subject": "faveo", "link": "/ladybirdweb/faveo-helpdesk/issues/2744", "title": "BadMethodCallException in GET /auth/login", "status": "closed", "labels": ["bugsnag"], "priority": null, "description": ["<h2>Error in Faveo Community</h2>\n<p><strong>BadMethodCallException</strong> in <strong>GET /auth/login</strong>\nMethod Illuminate\\Routing\\Redirector::url does not exist.</p>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5dd25d4d1df0c700194039f3?event_id=5dd25d4d005328f132c00000&amp;i=gh&amp;m=ci\">View on Bugsnag</a></p>\n<h2>Stacktrace</h2>\n<pre><code>\\app\\Http\\Controllers\\Auth\\AuthController.php:284 - App\\Http\\Controllers\\Auth\\AuthController::getLogin\n\\app\\Http\\Middleware\\RedirectIfAuthenticated.php:43 - App\\Http\\Middleware\\RedirectIfAuthenticated::handle\n\\app\\Http\\Middleware\\LanguageMiddleware.php:33 - App\\Http\\Middleware\\LanguageMiddleware::handle\n\\app\\Http\\Middleware\\VerifyCsrfToken.php:33 - App\\Http\\Middleware\\VerifyCsrfToken::handle\n</code></pre>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5dd25d4d1df0c700194039f3?event_id=5dd25d4d005328f132c00000&amp;i=gh&amp;m=ci\">View full stacktrace</a></p>\n<p><em>Created automatically via Bugsnag</em></p>", []], "response": -1, "tags": "", "comments": ""}, {"subject": "faveo", "link": "/ladybirdweb/faveo-helpdesk/issues/1357", "title": "Symfony\\Component\\Debug\\Exception\\FatalErrorException in GET /faveo-helpdesk-master/public/index.php/get-filtered-tickets", "status": "closed", "labels": ["bugsnag"], "priority": null, "description": ["<h2>Error in Faveo Community</h2>\n<p><strong>Symfony\\Component\\Debug\\Exception\\FatalErrorException</strong> in <strong>GET /faveo-helpdesk-master/public/index.php/get-filtered-tickets</strong>\nAllowed memory size of 268435456 bytes exhausted (tried to allocate 134221824 bytes)</p>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5c907f84cc58ee00199eec48?event_id=5c907f8400377b6166540000&amp;i=gh&amp;m=ci\">View on Bugsnag</a></p>\n<h2>Stacktrace</h2>\n<pre><code>\\app\\Http\\Controllers\\Agent\\helpdesk\\TicketController.php:2717 - [main]\n</code></pre>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5c907f84cc58ee00199eec48?event_id=5c907f8400377b6166540000&amp;i=gh&amp;m=ci\">View full stacktrace</a></p>\n<p><em>Created automatically via Bugsnag</em></p>", []], "response": -1, "tags": "", "comments": ""}, {"subject": "koel", "link": "/koel/koel/pull/419", "title": "Clean UserTableSeeder", "status": "closed", "labels": [], "priority": null, "description": ["", ["<p>I dont know what happened.</p>"]], "response": -1, "tags": "", "comments": ""}, {"subject": "faveo", "link": "/ladybirdweb/faveo-helpdesk/issues/1712", "title": "Symfony\\Component\\Debug\\Exception\\FatalThrowableError in POST /validating-email-settings-on-update/1", "status": "closed", "labels": ["bugsnag"], "priority": null, "description": ["<h2>Error in Faveo Community</h2>\n<p><strong>Symfony\\Component\\Debug\\Exception\\FatalThrowableError</strong> in <strong>POST /validating-email-settings-on-update/1</strong>\nCall to a member function count() on null</p>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5cbe4cfb1911f4001869e9a3?event_id=5cbe4cfb0037f60789300000&amp;i=gh&amp;m=ci\">View on Bugsnag</a></p>\n<h2>Stacktrace</h2>\n<pre><code>\\app\\Http\\Controllers\\Agent\\helpdesk\\TicketController.php:908 - App\\Http\\Controllers\\Agent\\helpdesk\\TicketController::check_ticket\n\\app\\Http\\Controllers\\Agent\\helpdesk\\TicketController.php:712 - App\\Http\\Controllers\\Agent\\helpdesk\\TicketController::create_user\n\\app\\Http\\Controllers\\Agent\\helpdesk\\TicketWorkflowController.php:174 - App\\Http\\Controllers\\Agent\\helpdesk\\TicketWorkflowController::workflow\n\\app\\Http\\Controllers\\Agent\\helpdesk\\MailController.php:224 - App\\Http\\Controllers\\Agent\\helpdesk\\MailController::workflow\n\\app\\Http\\Controllers\\Agent\\helpdesk\\MailController.php:205 - App\\Http\\Controllers\\Agent\\helpdesk\\MailController::getMessageContent\n\\app\\Http\\Controllers\\Agent\\helpdesk\\MailController.php:185 - App\\Http\\Controllers\\Agent\\helpdesk\\MailController::message\n\\app\\Http\\Controllers\\Agent\\helpdesk\\MailController.php:177 - App\\Http\\Controllers\\Agent\\helpdesk\\MailController::fetch\n\\app\\Http\\Controllers\\Admin\\helpdesk\\EmailsController.php:669 - App\\Http\\Controllers\\Admin\\helpdesk\\EmailsController::fetch\n\\app\\Http\\Controllers\\Admin\\helpdesk\\EmailsController.php:235 - App\\Http\\Controllers\\Admin\\helpdesk\\EmailsController::store\n\\app\\Http\\Controllers\\Admin\\helpdesk\\EmailsController.php:120 - App\\Http\\Controllers\\Admin\\helpdesk\\EmailsController::validatingEmailSettings\n\\app\\Http\\Controllers\\Admin\\helpdesk\\EmailsController.php:374 - App\\Http\\Controllers\\Admin\\helpdesk\\EmailsController::validatingEmailSettingsUpdate\n\\app\\Http\\Middleware\\CheckRole.php:25 - App\\Http\\Middleware\\CheckRole::handle\n\\app\\Http\\Middleware\\Authenticate.php:54 - App\\Http\\Middleware\\Authenticate::handle\n\\app\\Http\\Middleware\\CheckUpdate.php:35 - App\\Http\\Middleware\\CheckUpdate::handle\n\\app\\Http\\Middleware\\LanguageMiddleware.php:33 - App\\Http\\Middleware\\LanguageMiddleware::handle\n\\app\\Http\\Middleware\\VerifyCsrfToken.php:33 - App\\Http\\Middleware\\VerifyCsrfToken::handle\n</code></pre>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5cbe4cfb1911f4001869e9a3?event_id=5cbe4cfb0037f60789300000&amp;i=gh&amp;m=ci\">View full stacktrace</a></p>\n<p><em>Created automatically via Bugsnag</em></p>", []], "response": -1, "tags": "", "comments": ""}, {"subject": "pgweb", "link": "/sosedoff/pgweb/pull/36", "title": "Implement Ctrl-Enter", "status": "closed", "labels": [], "priority": null, "description": ["<p>This brings along the AngularJS PR, as well as Sorting of columns and + Ctrl-Enter in Query editor.</p>\n<p>Review only commit 59f9143 for the Ctrl-Enter implementation.</p>\n<p>Fixes https://github.com/sosedoff/pgweb/issues/30</p>\n<p>/cc @sosedoff @brianlow</p>", []], "response": -1, "tags": "", "comments": ""}, {"subject": "koel", "link": "/koel/koel/issues/534", "title": "[] operator not supported for strings", "status": "closed", "labels": [], "priority": null, "description": ["<p>I attempted to sync a few songs and received an \"Unknown Error\". </p>\n<p>The song in question can be found here: http://freemusicarchive.org/search/?quicksearch=Ballad+for+typhon.</p>\n<p>At first I thought it may be a filename error as the filename contained many \"-\" and \"_\" chracters, however, after changing the filename to \"tester.mp3\", I was still able to reproduce the error. </p>\n<p>Koel Version: master branch.\nOS: Mac (Sierra)</p>\n<p>If such an error is to be expected on master branch, I'd recommend adding a failed sync feature where the sync function catches any exception, removes the songs entry (if added), and adds it to a failed_syncs table. I'd be more than happy to contribute to this functionality if it seems like something people would be interested in. </p>\n<p>```\n[2017-02-06 22:54:11] local.ERROR: Symfony\\Component\\Debug\\Exception\\FatalThrowableError: [] operator not supported for strings in /Users/user/Projects/forks/koel-streamer/koel/vendor/james-heinrich/getid3/getid3/module.audio.mp3.php:439\nStack trace:</p>\n<h1>0 /Users/user/Projects/forks/koel-streamer/koel/vendor/james-heinrich/getid3/getid3/module.audio.mp3.php(1056): getid3_mp3-&gt;decodeMPEGaudioHeader(2640910, Array, false)</h1>\n<h1>1 /Users/user/Projects/forks/koel-streamer/koel/vendor/james-heinrich/getid3/getid3/module.audio.mp3.php(852): getid3_mp3-&gt;RecursiveFrameScanning(2640774, 2640910, true)</h1>\n<h1>2 /Users/user/Projects/forks/koel-streamer/koel/vendor/james-heinrich/getid3/getid3/module.audio.mp3.php(1382): getid3_mp3-&gt;decodeMPEGaudioHeader(2640774, Array, true)</h1>\n<h1>3 /Users/user/Projects/forks/koel-streamer/koel/vendor/james-heinrich/getid3/getid3/module.audio.mp3.php(35): getid3_mp3-&gt;getOnlyMPEGaudioInfo(2640664)</h1>\n<h1>4 /Users/user/Projects/forks/koel-streamer/koel/vendor/james-heinrich/getid3/getid3/getid3.php(463): getid3_mp3-&gt;Analyze()</h1>\n<h1>5 /Users/user/Projects/forks/koel-streamer/koel/app/Models/File.php(100): getID3-&gt;analyze('/Users/user/...')</h1>\n<h1>6 /Users/user/Projects/forks/koel-streamer/koel/app/Models/File.php(200): App\\Models\\File-&gt;getInfo()</h1>\n<h1>7 /Users/user/Projects/forks/koel-streamer/koel/app/Services/Media.php(85): App\\Models\\File-&gt;sync(Array, false)</h1>\n<h1>8 /Users/user/Projects/forks/koel-streamer/koel/bootstrap/cache/compiled.php(6468): App\\Services\\Media-&gt;sync()</h1>\n<h1>9 /Users/user/Projects/forks/koel-streamer/koel/app/Http/Controllers/API/SettingController.php(25): Illuminate\\Support\\Facades\\Facade::__callStatic('sync', Array)</h1>\n<h1>10 [internal function]: App\\Http\\Controllers\\API\\SettingController-&gt;store(Object(App\\Http\\Requests\\API\\SettingRequest))</h1>\n<p>...\n```</p>", ["<p>This looks like a bug with <a href=\"https://github.com/JamesHeinrich/getID3\">getid3</a> and I don't think there's much Koel can do here.</p>\n<p>Re: <code>failed_syncs</code> table, how do we access it later? Personally I don't really think it's worth it.</p>", "<p>getid3 patched this issue on their end. You can get the new version from their github for now, until it gets including in a future koel release. </p>", "<p>Thanks for the input/solution. Went ahead and closed the issue. </p>\n<p>@phanan When a sync fails with a given file, I think it would be beneficial to remove it from the sync directory, move the file to a failed directory, and store the original_path and the current_path to a failed_syncs table. Then if they wished to try again, they could trigger a \"retry failed files\" action which would run a sync on the failed directory. </p>\n<p>However, depending on the current roadmap (is there public roadmap?), I don't know if this would be a high priority. Overall, I think adding file management to the front end would greatly improve the user experience. </p>", "<p>I ran into the exact same issue and I think it should be reopened.</p>\n<p>The <code>Unknown error</code> is too obscure: it is not acceptable that any underlying library could cause the whole import to fail, especially without even indicating which audio file is wrong.</p>\n<p>Hint for the impatient: Commenting lines that are supposed to set error messages do the trick. Even deleting <code>koel/vendor/james-heinrich/getid3/getid3/module.audio.mp3.php</code> seems to work fine for me\u2026</p>"]], "response": -1, "tags": "", "comments": ""}, {"subject": "tikiwiki", "link": "https://sourceforge.net/p/tikiwiki/bugs/1999/", "title": "#1999 sqlite", "status": "open", "labels": "Installation (68)", "priority": "5", "description": ["<div id=\"ticket_content\">\n  <div><div class=\"markdown_content\"><p>hi all,</p>\n<p>I have a maijor question ad depending the answer will<br>\ncontinue describing the installation problem:</p>\n<p>Have you eve tested tikiwiki on windows 2003 + sqlite<br>\nv2.8.x ?</p>\n<p>I think that you never made such a test if you did<br>\nprabably will find that the tikiwiki is NOT working al all.</p>\n<p>I made some changes into the tiki-1.9-sqlite.sql file<br>\nand the initialization of the database passed ok but<br>\nthare is a lot of sql statments that are NOT availiable<br>\ninto the SSQLite sql syntax ( READ THE DOCUMENTATION! ).</p>\n<p>Example : \"there is no command 'show tables' \" there is<br>\njust '.tables'.</p>\n<p>And the other question is DO you manage to have REAL<br>\nsupport for SQLite ?????</p>\n<p>Will be happy to help you and make the tikiwiki running<br>\nfine with SQLite backend data storage.</p>\n<p>Best regards<br>\nLukian</p></div></div>\n  \n</div>\n\n                    "], "response": -1, "tags": "", "comments": ""}, {"subject": "faveo", "link": "/ladybirdweb/faveo-helpdesk/issues/2836", "title": "ErrorException in GET /ticket/print/63", "status": "closed", "labels": ["bugsnag"], "priority": null, "description": ["<h2>Error in Faveo Community</h2>\n<p><strong>ErrorException</strong> in <strong>GET /ticket/print/63</strong>\nIllegal string offset 'Content-Disposition'</p>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5de497100a0808001b3b2ef6?event_id=5de497100053a2f8ba0a0000&amp;i=gh&amp;m=ci\">View on Bugsnag</a></p>\n<h2>Stacktrace</h2>\n<pre><code>\\app\\Http\\Controllers\\Agent\\helpdesk\\TicketController.php:548 - App\\Http\\Controllers\\Agent\\helpdesk\\TicketController::ticket_print\n\\app\\Http\\Middleware\\Authenticate.php:54 - App\\Http\\Middleware\\Authenticate::handle\n\\app\\Http\\Middleware\\CheckUpdate.php:35 - App\\Http\\Middleware\\CheckUpdate::handle\n\\app\\Http\\Middleware\\LanguageMiddleware.php:33 - App\\Http\\Middleware\\LanguageMiddleware::handle\n\\app\\Http\\Middleware\\VerifyCsrfToken.php:33 - App\\Http\\Middleware\\VerifyCsrfToken::handle\n</code></pre>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5de497100a0808001b3b2ef6?event_id=5de497100053a2f8ba0a0000&amp;i=gh&amp;m=ci\">View full stacktrace</a></p>\n<p><em>Created automatically via Bugsnag</em></p>", []], "response": -1, "tags": "", "comments": ""}, {"subject": "faveo", "link": "/ladybirdweb/faveo-helpdesk/pull/665", "title": "Apply fixes from StyleCI", "status": "closed", "labels": [], "priority": null, "description": ["<p>This pull request applies code style fixes from an analysis carried out by <a href=\"https://github.styleci.io\">StyleCI</a>.</p>\n<hr />\n<p>For more information, click <a href=\"https://github.styleci.io/analyses/z3QlZG\">here</a>.</p>", []], "response": -1, "tags": "", "comments": ""}, {"subject": "faveo", "link": "/ladybirdweb/faveo-helpdesk/issues/774", "title": "Symfony\\Component\\Debug\\Exception\\FatalErrorException in POST /validating-email-settings-on-update/4", "status": "closed", "labels": ["bugsnag"], "priority": null, "description": ["<h2>Error in Faveo Community</h2>\n<p><strong>Symfony\\Component\\Debug\\Exception\\FatalErrorException</strong> in <strong>POST /validating-email-settings-on-update/4</strong>\nMaximum execution time of 30 seconds exceeded</p>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5c57f532377ea30019508506?event_id=5c57f53200356ecbf8b70000&amp;i=gh&amp;m=ci\">View on Bugsnag</a></p>\n<h2>Stacktrace</h2>\n<pre><code>vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/Grammar.php:894 - [main]\n</code></pre>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5c57f532377ea30019508506?event_id=5c57f53200356ecbf8b70000&amp;i=gh&amp;m=ci\">View full stacktrace</a></p>\n<p><em>Created automatically via Bugsnag</em></p>", []], "response": -1, "tags": "", "comments": ""}, {"subject": "faveo", "link": "/ladybirdweb/faveo-helpdesk/issues/4219", "title": "Symfony\\Component\\Debug\\Exception\\FatalThrowableError in GET /ticket/tooltip", "status": "open", "labels": ["bugsnag", "local"], "priority": null, "description": ["<h2>Error in Faveo Community</h2>\n<p><strong>Symfony\\Component\\Debug\\Exception\\FatalThrowableError</strong> in <strong>GET /ticket/tooltip</strong>\nCall to a member function thread() on null</p>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5fa553c3afd4d20018127f54?event_id=5fa553c30062e65698320000&amp;i=gh&amp;m=ci\">View on Bugsnag</a></p>\n<h2>Stacktrace</h2>\n<pre><code>\\app\\Http\\Controllers\\Agent\\helpdesk\\TicketController.php:5124 - App\\Http\\Controllers\\Agent\\helpdesk\\TicketController::getTooltip\n\\app\\Http\\Middleware\\Authenticate.php:54 - App\\Http\\Middleware\\Authenticate::handle\n\\app\\Http\\Middleware\\CheckUpdate.php:35 - App\\Http\\Middleware\\CheckUpdate::handle\n\\app\\Http\\Middleware\\LanguageMiddleware.php:33 - App\\Http\\Middleware\\LanguageMiddleware::handle\n\\app\\Http\\Middleware\\VerifyCsrfToken.php:34 - App\\Http\\Middleware\\VerifyCsrfToken::handle\n</code></pre>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5fa553c3afd4d20018127f54?event_id=5fa553c30062e65698320000&amp;i=gh&amp;m=ci\">View full stacktrace</a></p>\n<p><em>Created automatically via Bugsnag</em></p>", []], "response": -1, "tags": "", "comments": ""}, {"subject": "mrbs", "link": "https://sourceforge.net/p/mrbs/bugs/91/", "title": "#91 New report.php code has error", "status": "closed", "labels": "MRBS (195)", "priority": "3", "description": ["<div id=\"ticket_content\">\n  <div><div class=\"markdown_content\"><p>Hi.<br>\n When I run a report without selecting any types <br>\nin \"Match Type\" every line in type box on the returned <br>\nform ends with: <br>\n<b>Warning</b>:  Wrong datatype for second argument <br>\nin call to in_array in <br>\n<b>SYS:/apache2/htdocs/mrbs/report.php</b> on line <br>\n<b>295</b><br></p>\n<p>If a type is selected their is no problem.</p>\n<p>Thanks</p></div></div>\n  \n</div>\n\n                    ", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><p>Logged In: YES <br/>\nuser_id=77869</p>\n<p>Problem replicated. </p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><p>Logged In: YES <br/>\nuser_id=77869</p>\n<p>I have committed a fix to cvs.  Please let me know if there <br/>\nare any issues. </p>\n<p>Gavin. </p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>"], "response": -1, "tags": "", "comments": ""}, {"subject": "crater", "link": "/bytefury/crater/issues/34", "title": "Ability to specify days for the financial year", "status": "open", "labels": ["enhancement"], "priority": null, "description": ["<p>In the UK the tax year starts on the 6th April each year and ends on the 5th April the following. This date, however, can be changed in some cases. For instance, if you're a self-employed then you have the ability to change this date to whatever suits you(r business) - I believe.</p>\n<p>But for the sake of simplicity, let's stick with the \"default\" tax year period and imagine the following scenario (financial year set to \"april-march\" in the settings):</p>\n<ul>\n<li>(Crater) user sends an invoice to the customer</li>\n<li>customer pays the invoice on the 2nd April</li>\n</ul>\n<p>This invoice will appear on the Dashboard in the \"Sales\" widget (chart period set to \"This year\"), but this invoice actually is for the last financial year.</p>\n<p>I think this issue could be solved by allowing to specify days for the financial year, not just the months.</p>", []], "response": -1, "tags": "", "comments": ""}, {"subject": "faveo", "link": "/ladybirdweb/faveo-helpdesk/issues/3710", "title": "ErrorException in POST /store", "status": "open", "labels": ["bugsnag", "production"], "priority": null, "description": ["<h2>Error in Faveo Community</h2>\n<p><strong>ErrorException</strong> in <strong>POST /store</strong>\nUndefined property: App\\Http\\Controllers\\Admin\\helpdesk\\SettingsController::$request</p>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5f5863d23ca096001773de8b?event_id=5f5863d2005dec040a8c0000&amp;i=gh&amp;m=ci\">View on Bugsnag</a></p>\n<h2>Stacktrace</h2>\n<pre><code>\\app\\Http\\Controllers\\Admin\\helpdesk\\SettingsController.php:719 - Illuminate\\Foundation\\Bootstrap\\HandleExceptions::handleError\n\\app\\Http\\Controllers\\Admin\\helpdesk\\SettingsController.php:719 - App\\Http\\Controllers\\Admin\\helpdesk\\SettingsController::storestatus\n\\app\\Http\\Middleware\\CheckRole.php:25 - App\\Http\\Middleware\\CheckRole::handle\n\\app\\Http\\Middleware\\Authenticate.php:54 - App\\Http\\Middleware\\Authenticate::handle\n\\app\\Http\\Middleware\\CheckUpdate.php:35 - App\\Http\\Middleware\\CheckUpdate::handle\n\\app\\Http\\Middleware\\LanguageMiddleware.php:33 - App\\Http\\Middleware\\LanguageMiddleware::handle\n\\app\\Http\\Middleware\\VerifyCsrfToken.php:33 - App\\Http\\Middleware\\VerifyCsrfToken::handle\n</code></pre>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5f5863d23ca096001773de8b?event_id=5f5863d2005dec040a8c0000&amp;i=gh&amp;m=ci\">View full stacktrace</a></p>\n<p><em>Created automatically via Bugsnag</em></p>", []], "response": -1, "tags": "", "comments": ""}, {"subject": "faveo", "link": "/ladybirdweb/faveo-helpdesk/issues/1329", "title": "Symfony\\Component\\Debug\\Exception\\FatalThrowableError in GET /faveo-helpdesk-master/public/index.php/create-ticket", "status": "closed", "labels": ["bugsnag"], "priority": null, "description": ["<h2>Error in Faveo Community</h2>\n<p><strong>Symfony\\Component\\Debug\\Exception\\FatalThrowableError</strong> in <strong>GET /faveo-helpdesk-master/public/index.php/create-ticket</strong>\nsyntax error, unexpected '$ticket_val' (T_VARIABLE)</p>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5c8f306ea7d84f0019b994b4?event_id=5c8f306e00378b80f0000000&amp;i=gh&amp;m=ci\">View on Bugsnag</a></p>\n<h2>Stacktrace</h2>\n<pre><code>\\app\\Http\\Controllers\\Client\\helpdesk\\FormController.php:254 - Composer\\Autoload\\includeFile\n</code></pre>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5c8f306ea7d84f0019b994b4?event_id=5c8f306e00378b80f0000000&amp;i=gh&amp;m=ci\">View full stacktrace</a></p>\n<p><em>Created automatically via Bugsnag</em></p>", []], "response": -1, "tags": "", "comments": ""}, {"subject": "koel", "link": "/koel/koel/pull/1035", "title": "Bump mikey179/vfsstream from 1.6.6 to 1.6.7", "status": "closed", "labels": ["Dependencies"], "priority": null, "description": ["<p>Bumps <a href=\"https://github.com/bovigo/vfsStream\">mikey179/vfsstream</a> from 1.6.6 to 1.6.7.</p>\n<details>\n<summary>Release notes</summary>\n\n*Sourced from [mikey179/vfsstream's releases](https://github.com/bovigo/vfsStream/releases).*\n\n> ## vfsStream 1.6.7\n> * fix PHP 7.4 deprecation warnings (backported [#189](https://github-redirect.dependabot.com/bovigo/vfsStream/issues/189) from master)\n</details>\n<details>\n<summary>Changelog</summary>\n\n*Sourced from [mikey179/vfsstream's changelog](https://github.com/bovigo/vfsStream/blob/v1.6.7/CHANGELOG.md).*\n\n> 1.6.7 (2019-07-31)\n> ------------------\n> \n>    * fix PHP 7.4 deprecation warnings (backported [#189](https://github-redirect.dependabot.com/bovigo/vfsStream/issues/189) from master)\n</details>\n<details>\n<summary>Commits</summary>\n\n- [`2b544ac`](https://github.com/bovigo/vfsStream/commit/2b544ac3a21bcc4dde5d90c4ae8d06f4319055fb) Merge pull request [#197](https://github-redirect.dependabot.com/bovigo/vfsStream/issues/197) from allejo/changelog-167\n- [`8376576`](https://github.com/bovigo/vfsStream/commit/8376576afc2fb4a6625dfba878425b567c2f9aa6) Update CHANGELOG for 1.6.7 release\n- [`b4dd949`](https://github.com/bovigo/vfsStream/commit/b4dd94960a680d02dd78fb4c282feed6f9cde13c) Merge pull request [#196](https://github-redirect.dependabot.com/bovigo/vfsStream/issues/196) from allejo/v1.x-php-53-74-testing\n- [`bc0019b`](https://github.com/bovigo/vfsStream/commit/bc0019bb1f098238c66e9f8808e03b7bf20df23e) Update to CI configuration files\n- [`99cf5ad`](https://github.com/bovigo/vfsStream/commit/99cf5ad18d2e5202657c2fcd5ac34820ee7bfa4b) Add some notes about our hackish bootstrap\n- [`acfcfd5`](https://github.com/bovigo/vfsStream/commit/acfcfd5bbdde8fe875b35df01635e3cc9c4d0e44) Silence reflection deprecation warnings\n- [`54ad2ef`](https://github.com/bovigo/vfsStream/commit/54ad2ef12fc2addfa865e5cd8bf31ae39209fe21) Add a BC hack for cross-PHPUnit support\n- [`d13ecf9`](https://github.com/bovigo/vfsStream/commit/d13ecf92871f0b4b1cb9db3e9dedd86f60fa65b2) Fix changed is_executable behavior in 7.3\n- [`7d5b0e7`](https://github.com/bovigo/vfsStream/commit/7d5b0e769379adb2d5793e16c0c59b36dcc8c185) String offset access syntax with curly braces (PHP 7.4 compat)\n- [`9b71042`](https://github.com/bovigo/vfsStream/commit/9b71042f51dc4a6b395db37025344c88e7212368) Update PHP testing on Travis\n- See full diff in [compare view](https://github.com/bovigo/vfsStream/compare/v1.6.6...v1.6.7)\n</details>\n<p><br /></p>\n<p><a href=\"https://dependabot.com/compatibility-score.html?dependency-name=mikey179/vfsstream&amp;package-manager=composer&amp;previous-version=1.6.6&amp;new-version=1.6.7\"><img alt=\"Dependabot compatibility score\" src=\"https://api.dependabot.com/badges/compatibility_score?dependency-name=mikey179/vfsstream&amp;package-manager=composer&amp;previous-version=1.6.6&amp;new-version=1.6.7\" /></a></p>\n<p>Dependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting <code>@dependabot rebase</code>.</p>\n<hr />\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot merge` will merge this PR after your CI passes on it\n- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it\n- `@dependabot cancel merge` will cancel a previously requested merge and block automerging\n- `@dependabot reopen` will reopen this PR if it is closed\n- `@dependabot ignore this [patch|minor|major] version` will close this PR and stop Dependabot creating any more for this minor/major version (unless you reopen the PR or upgrade to it). To ignore the version in this PR you can just close it\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot use these labels` will set the current labels as the default for future PRs for this repo and language\n- `@dependabot use these reviewers` will set the current reviewers as the default for future PRs for this repo and language\n- `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language\n- `@dependabot use this milestone` will set the current milestone as the default for future PRs for this repo and language\n- `@dependabot badge me` will comment on this PR with code to add a \"Dependabot enabled\" badge to your readme\n\nAdditionally, you can set the following in your Dependabot [dashboard](https://app.dependabot.com):\n- Update frequency (including time of day and day of week)\n- Automerge options (never/patch/minor, and dev/runtime dependencies)\n- Pull request limits (per update run and/or open at any time)\n- Out-of-range updates (receive only lockfile updates, if desired)\n- Security updates (receive only security updates, if desired)\n\nFinally, you can contact us by mentioning @dependabot.\n\n</details>", ["<h1><a href=\"https://codecov.io/gh/phanan/koel/pull/1035?src=pr&amp;el=h1\">Codecov</a> Report</h1>\n<blockquote>\n<p>Merging <a href=\"https://codecov.io/gh/phanan/koel/pull/1035?src=pr&amp;el=desc\">#1035</a> into <a href=\"https://codecov.io/gh/phanan/koel/commit/5bfe97cf04b2a4490ef50f57be848f01f5711ace?src=pr&amp;el=desc\">master</a> will <strong>not change</strong> coverage.\nThe diff coverage is <code>n/a</code>.</p>\n</blockquote>\n<p><a href=\"https://codecov.io/gh/phanan/koel/pull/1035?src=pr&amp;el=tree\"><img alt=\"Impacted file tree graph\" src=\"https://codecov.io/gh/phanan/koel/pull/1035/graphs/tree.svg?width=650&amp;token=bd5ECzRGv4&amp;height=150&amp;src=pr\" /></a></p>\n<p>```diff\n@@            Coverage Diff            @@</p>\n<h2>master    #1035   +/-</h2>\n<p>=========================================\n  Coverage     67.99%   67.99%         <br />\n  Complexity      726      726         <br />\n=========================================\n  Files           140      140         <br />\n  Lines          1781     1781         <br />\n=========================================\n  Hits           1211     1211         <br />\n  Misses          570      570\n```</p>\n<hr />\n<p><a href=\"https://codecov.io/gh/phanan/koel/pull/1035?src=pr&amp;el=continue\">Continue to review full report at Codecov</a>.</p>\n<blockquote>\n<p><strong>Legend</strong> - <a href=\"https://docs.codecov.io/docs/codecov-delta\">Click here to learn more</a>\n<code>\u0394 = absolute &lt;relative&gt; (impact)</code>, <code>\u00f8 = not affected</code>, <code>? = missing data</code>\nPowered by <a href=\"https://codecov.io/gh/phanan/koel/pull/1035?src=pr&amp;el=footer\">Codecov</a>. Last update <a href=\"https://codecov.io/gh/phanan/koel/pull/1035?src=pr&amp;el=lastupdated\">5bfe97c...5f5b377</a>. Read the <a href=\"https://docs.codecov.io/docs/pull-request-comments\">comment docs</a>.</p>\n</blockquote>"]], "response": -1, "tags": "", "comments": ""}, {"subject": "phplist", "link": "/phpList/phplist3/pull/176", "title": "Mantis 18437 - The domain stats page", "status": "closed", "labels": [], "priority": null, "description": ["<p>Several sets of changes to this page to make the results more consistent:</p>\n<ul>\n<li>rework the sql as described in the mantis issue</li>\n<li>display confirmed, unconfirmed and blacklisted in a similar way to the lists page</li>\n<li>show percentages of the total number of subscribers</li>\n<li>round() percentages instead of truncating</li>\n<li>avoid repetition of the formatting of each column</li>\n<li>use function s() for translations</li>\n</ul>", ["<p>Has any performance testing been done with these changes? E.g. to see if page load increases or decreases when &gt;1 million subscribers are in the system?</p>", "<p>I cannot test with anything like that number of subscribers, but expect that, for the Top 50 domains, the query times of before/after would be similar. Using EXPLAIN you can see that both the old and new queries need full table scans.</p>\n<p>```\n+----+-------------+-------------------+------+---------------+------+---------+------+-------+----------------------------------------------+\n| id | select_type | table             | type | possible_keys | key  | key_len | ref  | rows  | Extra                                        |\n+----+-------------+-------------------+------+---------------+------+---------+------+-------+----------------------------------------------+\n|  1 | SIMPLE      | phplist_user_user | ALL  | NULL          | NULL | NULL    | NULL | 81038 | Using where; Using temporary; Using filesort |\n+----+-------------+-------------------+------+---------------+------+---------+------+-------+----------------------------------------------+</p>\n<p>```</p>\n<p>```\n+----+-------------+-------------------+------+---------------+------+---------+------+-------+----------+---------------------------------+\n| id | select_type | table             | type | possible_keys | key  | key_len | ref  | rows  | filtered | Extra                           |\n+----+-------------+-------------------+------+---------------+------+---------+------+-------+----------+---------------------------------+\n|  1 | SIMPLE      | phplist_user_user | ALL  | NULL          | NULL | NULL    | NULL | 81039 |   100.00 | Using temporary; Using filesort |\n+----+-------------+-------------------+------+---------------+------+---------+------+-------+----------+---------------------------------+</p>\n<p>```</p>", "<p>@bramley Thanks for the additional detail.</p>\n<p>We can test this on a large scale phpList installation; @michield  I propose obtaining those results before merging.</p>", "<p>I tried it on a system with 2.3 million subscribers on my laptop, which is less powerful than the servers, and it loaded fine. It took a little while to load, but not too long. </p>"]], "response": -1, "tags": "", "comments": ""}, {"subject": "mrbs", "link": "https://sourceforge.net/p/mrbs/bugs/143/", "title": "#143 Endless loop (apache-thread-kill) in case of n-weekly repeat", "status": "closed", "labels": "MRBS (195)", "priority": "5", "description": ["<div id=\"ticket_content\">\n  <div><div class=\"markdown_content\"><p>In case of creating a series for n-weekly without specifing a day for the series ( this not catched on GUI), MRBS ends in an endless loop and is killed by apache after a specified time.</p>\n<p>This is not a normal case but can happen, due to missing catch of input values (It was definitely the first input by test-DAU did when I gave the system it him :-((((()</p>\n<p>REASON:</p>\n<p>Following happens in mrbs_sql.inc:340....following</p>\n<p>The while(1) loop never breaks, because no day is set and the decision if ... &amp;&amp; ($rep_opt<span>[$cur_day]</span>==1) never is true.</p>\n<p>SOLUTION:</p>\n<p>I replaced the lines with a while loop that checks for reaching the end of the series last possible day ($enddate) see attached file.</p>\n<p>possible DISADVANTAGE of solution:</p>\n<p>This definitely takes same time as if any day is specified, although no other entry can ever be placed, but is a very easy solution.</p></div></div>\n  \n</div>\n\n                    ", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><p>corrected file (possible (my) solution)</p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><p>Logged In: YES <br/>\nuser_id=71843<br/>\nOriginator: NO</p>\n<p>Thanks for this bug report, I'll look at it when I have more time. (I did wonder when I programmed a while(1) if it'd ever come back to bite me...).</p>\n<p>John.</p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><p>Logged In: YES <br/>\nuser_id=1818995<br/>\nOriginator: NO</p>\n<p>The attached file did not work for me, I still receive errors.</p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><p>Logged In: YES <br/>\nuser_id=71843<br/>\nOriginator: NO</p>\n<p>Fixed in MRBS 1.2.6.1</p>\n<p>John.</p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>"], "response": -1, "tags": "", "comments": ""}, {"subject": "faveo", "link": "/ladybirdweb/faveo-helpdesk/issues/95", "title": "Unknown or bad timezone after login", "status": "closed", "labels": ["Bug", "Need issuer's Feedback", "Question"], "priority": null, "description": ["<p>After the installation is completed, when I tried to login using the admin account, I am getting a 500 error.</p>\n<p>After debug is enabled on the app.php, I got the following error\n<a href=\"http://pastebin.com/kHW7s623\">http://pastebin.com/kHW7s623</a></p>\n<p>OS: Ubuntu 14.04</p>\n<p>Before installation even made the changes mentioned on this article: <a href=\"http://www.ladybirdweb.com/support/show/500-error\">http://www.ladybirdweb.com/support/show/500-error</a></p>", ["<p>We have posted new Ubuntu 14.04 installation instruction here http://ladybirdweb.com/support/show/how-to-install-faveo-helpdesk-on-ubuntu-1404-trusty-lts</p>\n<p>See if everything is installed as per instructions here, we will also update a video for installation on this page soon</p>", "<p>Still got bot 500 error and this error.\nIs Ngix is a must?</p>", "<p>You can use Apache also. Just Enable mod rewrite.\u00a0Make debugging true and send the error message.\u00a0</p>", "<p>I tried to install many time. Install process completed without any error but still get 500 error, can not view dashboard and can not see the ticket that I created.</p>", "<p>Go to config/app.php and make debug as true and post the exact error message</p>", "<p>[2016-06-30 02:34:41] production.ERROR: exception 'InvalidArgumentException' with message 'Unknown or bad timezone (-24)' in /var/www/faveo/vendor/nesbot/carbon/src/Carbon/Carbon.php:182</p>\n<p>I got this error on screen :</p>\n<p>Sorry, Something went wrong\nWere working on it and we'll get it fixed as soon as we can.</p>", "<p>Please make this change\n<strong>In</strong> App\\Http\\Middleware\\CheckUpdate;<br />\n<strong>Replace</strong> \\Carbon\\Carbon::now(-24); <strong>With</strong> \\Carbon\\Carbon::yesterday();</p>\n<p>In next version we will fix this.</p>", "<p>got it work! Thank you very much!</p>", "<p>Have you tried to install the latest version? Does the issue still persist in the latest version?</p>", "<p>A few months back, I tried to install Faveo on Ubuntu for a client.</p>\n<p>If you are confident, that the issue is fixed, feel free to close the issue. </p>"]], "response": -1, "tags": "", "comments": ""}, {"subject": "faveo", "link": "/ladybirdweb/faveo-helpdesk/issues/4449", "title": "Symfony\\Component\\Debug\\Exception\\FatalThrowableError in POST /appsupport.io-repo/public/help-topic-ticket-csv", "status": "open", "labels": ["bugsnag", "production"], "priority": null, "description": ["<h2>Error in Faveo Community</h2>\n<p><strong>Symfony\\Component\\Debug\\Exception\\FatalThrowableError</strong> in <strong>POST /appsupport.io-repo/public/help-topic-ticket-csv</strong>\nsyntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST)</p>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/600c21383b782a00170d466d?event_id=600c21380069a0571d400000&amp;i=gh&amp;m=ci\">View on Bugsnag</a></p>\n<h2>Stacktrace</h2>\n<pre><code>app/Http/Controllers/Agent/helpdesk/ReportController.php:967 - Composer\\Autoload\\includeFile\n</code></pre>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/600c21383b782a00170d466d?event_id=600c21380069a0571d400000&amp;i=gh&amp;m=ci\">View full stacktrace</a></p>\n<p><em>Created automatically via Bugsnag</em></p>", []], "response": -1, "tags": "", "comments": ""}, {"subject": "crater", "link": "/bytefury/crater/issues/165", "title": "Missing detailed manual Installation", "status": "closed", "labels": [], "priority": null, "description": ["<p><strong>Describe the bug</strong>\nUnable to install system.</p>\n<p><strong>Please complete the following information:</strong>\n- Crater version: 3.0.0\n- PHP version: 7.3.14\n- Database type and version: mysql 5.7</p>\n<p><strong>Optional info</strong>\n- OS:  Win32\n- Browser: chrome</p>\n<p>I can see error 500 only.</p>\n<p>In log is:\nproduction.ERROR: No application encryption key has been specified. {\"exception\":\"[object] (RuntimeException(code: 0): No application encryption key has been specified.</p>", ["<p>Fixed rename .env.example</p>"]], "response": -1, "tags": "", "comments": ""}, {"subject": "koel", "link": "/koel/koel/pull/386", "title": "Applied fixes from StyleCI", "status": "closed", "labels": [], "priority": null, "description": ["<p>This pull request applies code style fixes from an analysis carried out by <a href=\"https://styleci.io\">StyleCI</a>.</p>\n<hr />\n<p>For more information, click <a href=\"https://styleci.io/analyses/q22aMl\">here</a>.</p>", []], "response": -1, "tags": "", "comments": ""}, {"subject": "koel", "link": "/koel/koel/pull/79", "title": "Applied fixes from StyleCI", "status": "closed", "labels": [], "priority": null, "description": ["<p>This pull request applies code style fixes from an analysis carried out by <a href=\"https://styleci.io\">StyleCI</a>.</p>\n<hr />\n<p>For more information, click <a href=\"https://styleci.io/analyses/qBJ0gq\">here</a>.</p>", []], "response": -1, "tags": "", "comments": ""}, {"subject": "phplist", "link": "/phpList/phplist3/pull/527", "title": "When validating a subscription display all field errors", "status": "closed", "labels": [], "priority": null, "description": ["<!---Thanks for contributing to phpList!-->\n\n<h2>Description</h2>\n<!--- Please provide a general description of your changes in the Pull Request -->\n\n<p>When validating a subscription display all errors found instead of just one. This is one of the points raised in this forum post https://discuss.phplist.org/t/email-address-removed-if-captcha-wrong/5243</p>\n<h2>Related Issue</h2>\n<!--- If it fixes an open issue on Mantis (https://mantis.phplist.org), please include a link to the issue here. -->\n\n<h2>Screenshots (if appropriate):</h2>\n<p>Now shows all errors. In this case\ncountry not selected\nlist not selected\ncaptcha not entered (this is validation by a plugin)\na disposable email address has been used (again, validation by a plugin)</p>\n<p><img alt=\"image\" src=\"https://user-images.githubusercontent.com/3147688/57131834-9478a500-6d95-11e9-9d61-1454e901822c.png\" /></p>", []], "response": -1, "tags": "", "comments": ""}, {"subject": "koel", "link": "/koel/koel/pull/346", "title": "Applied fixes from StyleCI", "status": "closed", "labels": [], "priority": null, "description": ["<p>This pull request applies code style fixes from an analysis carried out by <a href=\"https://styleci.io\">StyleCI</a>.</p>\n<hr />\n<p>For more information, click <a href=\"https://styleci.io/analyses/qo7Mv7\">here</a>.</p>", []], "response": -1, "tags": "", "comments": ""}, {"subject": "tikiwiki", "link": "https://sourceforge.net/p/tikiwiki/bugs/657/", "title": "#657 user information: wrong theme is shown", "status": "closed-fixed", "labels": "Feature Partially Broken (680)", "priority": "5", "description": ["<div id=\"ticket_content\">\n  <div><div class=\"markdown_content\"><p>If a user has not selected a theme for himself yet <br>\nand you visit his usr information <br>\n(tiki-user_information.php?view_user=...), YOUR <br>\ntheme is shown under 'theme', not the default one <br>\nthat is set for the site.</p></div></div>\n  \n</div>\n\n                    ", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><p>Logged In: YES <br/>\nuser_id=807810</p>\n<p>Fixed in latest CVS.</p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><ul>\n<li><strong>assigned_to</strong>: nobody --&gt; teedog</li>\n<li><strong>status</strong>: open --&gt; closed-fixed</li>\n</ul></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>"], "response": -1, "tags": "", "comments": ""}, {"subject": "faveo", "link": "/ladybirdweb/faveo-helpdesk/issues/2488", "title": "Symfony\\Component\\Debug\\Exception\\FatalErrorException in vendor/laravel/framework/src/Illuminate/Database/Connection.php:1069", "status": "closed", "labels": ["bugsnag"], "priority": null, "description": ["<h2>Error in Faveo Community</h2>\n<p><strong>Symfony\\Component\\Debug\\Exception\\FatalErrorException</strong> in <strong>vendor/laravel/framework/src/Illuminate/Database/Connection.php:1069</strong>\nMaximum execution time of 30 seconds exceeded</p>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5d680411af14580019dc6f92?event_id=5d680411004e33db52630000&amp;i=gh&amp;m=ci\">View on Bugsnag</a></p>\n<h2>Stacktrace</h2>\n<pre><code>vendor/laravel/framework/src/Illuminate/Database/Connection.php:1069 - [main]\n</code></pre>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5d680411af14580019dc6f92?event_id=5d680411004e33db52630000&amp;i=gh&amp;m=ci\">View full stacktrace</a></p>\n<p><em>Created automatically via Bugsnag</em></p>", ["<p>I am getting these similar errors, but you are suppose to increase your execution time in php.ini from 30 seconds to 120 seconds.</p>"]], "response": -1, "tags": "", "comments": ""}, {"subject": "faveo", "link": "/ladybirdweb/faveo-helpdesk/issues/2200", "title": "ErrorException in GET /safecity_helpdesk/public/index.php/change_user_language", "status": "closed", "labels": ["bugsnag"], "priority": null, "description": ["<h2>Error in Faveo Community</h2>\n<p><strong>ErrorException</strong> in <strong>GET /safecity_helpdesk/public/index.php/change_user_language</strong>\nUndefined variable: lang</p>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5d12fcee35835c0018d27018?event_id=5d12fcee00461cdc48fd0000&amp;i=gh&amp;m=ci\">View on Bugsnag</a></p>\n<h2>Stacktrace</h2>\n<pre><code>\\app\\Http\\Controllers\\Client\\helpdesk\\UnAuthController.php:451 - Illuminate\\Foundation\\Bootstrap\\HandleExceptions::handleError\n\\app\\Http\\Controllers\\Client\\helpdesk\\UnAuthController.php:451 - App\\Http\\Controllers\\Client\\helpdesk\\UnAuthController::ChangeLanguageSpecific\n\\app\\Http\\Middleware\\CheckBoard.php:27 - App\\Http\\Middleware\\CheckBoard::handle\n\\app\\Http\\Middleware\\LanguageMiddleware.php:36 - App\\Http\\Middleware\\LanguageMiddleware::handle\n\\app\\Http\\Middleware\\VerifyCsrfToken.php:33 - App\\Http\\Middleware\\VerifyCsrfToken::handle\n</code></pre>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5d12fcee35835c0018d27018?event_id=5d12fcee00461cdc48fd0000&amp;i=gh&amp;m=ci\">View full stacktrace</a></p>\n<p><em>Created automatically via Bugsnag</em></p>", []], "response": -1, "tags": "", "comments": ""}, {"subject": "tikiwiki", "link": "https://sourceforge.net/p/tikiwiki/bugs/1005/", "title": "#1005 Can add Wiki page to category with wrong case", "status": "closed-accepted", "labels": "Visual / Interface (232)", "priority": "2", "description": ["<div id=\"ticket_content\">\n  <div><div class=\"markdown_content\"><p>1. Create a wiki page called FooFoo<br>\n2. Enter a URL like tiki-editpage.php?page=foofoo<br>\n3. Add the page to the &amp;quot;foo&amp;quot; category</p>\n<p>Result:  The category will show &amp;quot;foofoo&amp;quot; is in the<br>\n&amp;quot;foo&amp;quot; category, instead of &amp;quot;FooFoo.&amp;quot;  Wrong case.</p></div></div>\n  \n</div>\n\n                    ", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><ul>\n<li><strong>labels</strong>: 544454 --&gt; Visual / Interface</li>\n<li><strong>milestone</strong>: 337037 --&gt; 344008</li>\n<li><strong>priority</strong>: 5 --&gt; 2</li>\n<li><strong>status</strong>: open --&gt; open-accepted</li>\n</ul></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><p>Logged In: YES <br/>\nuser_id=738765</p>\n<p>Same thing v1.7.4.<br/>\nAnother example of disadvantages of name-indentification :s</p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><ul>\n<li><strong>milestone</strong>: 344008 --&gt; </li>\n</ul></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><p>Logged In: YES <br/>\nuser_id=379264</p>\n<p>Hello,<br/>\nThis is a broadcast message for all open bugs left before 2004/01/05.<br/>\nWe hope it was checked but no bug update took place.<br/>\nThe bug you reported may have been fixed.<br/>\nAdditionally, if you are using an older form of TikiWiki,<br/>\nit is highly recommended you update at least to 1.8.5<br/>\nwith new security fixes.</p>\n<p>So we open a procedure over the 2 next weeks:<br/>\nPlease, check your bug or request.<br/>\nIf you feel it's not relevant anymore, then close it.<br/>\nBut, if you mind it's still current,<br/>\nwe invite you to open a new fresh request.</p>\n<p>At the end of this period,<br/>\nan automatic cleaning with notifications will take place.</p>\n<p>Tikily yours,<br/>\n-- <br/>\nTikiwiki Bugs Cleaners<br/>\n(contact ---&gt; toggg)</p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><ul>\n<li><strong>status</strong>: open-accepted --&gt; closed-accepted</li>\n</ul></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>"], "response": -1, "tags": "", "comments": ""}, {"subject": "faveo", "link": "/ladybirdweb/faveo-helpdesk/issues/3030", "title": "Symfony\\Component\\Debug\\Exception\\FatalErrorException in GET /public/thread/701", "status": "closed", "labels": ["bugsnag"], "priority": null, "description": ["<h2>Error in Faveo Community</h2>\n<p><strong>Symfony\\Component\\Debug\\Exception\\FatalErrorException</strong> in <strong>GET /public/thread/701</strong>\nClass 'App\\Model\\helpdesk\\task\\task_Thread' not found</p>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5e0b31458489de0018c4f39b?event_id=5e0b31450054e1c86bfd0000&amp;i=gh&amp;m=ci\">View on Bugsnag</a></p>\n<h2>Stacktrace</h2>\n<pre><code>storage/framework/views/a37554cdf386693d14605eccf6c1dd1b9a08e986.php:284 - [main]\n</code></pre>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5e0b31458489de0018c4f39b?event_id=5e0b31450054e1c86bfd0000&amp;i=gh&amp;m=ci\">View full stacktrace</a></p>\n<p><em>Created automatically via Bugsnag</em></p>", []], "response": -1, "tags": "", "comments": ""}, {"subject": "koel", "link": "/koel/koel/issues/179", "title": "How to update an existing install ?", "status": "closed", "labels": [], "priority": null, "description": ["<p>Hi,\nI am happy with my fresh install of Koel but I am wondering : how to update it ?\nAfter <code>git pull</code>, do I need to run <code>npm install</code> and/or <code>composer install</code> ?</p>", ["<p>The instruction is right in the README.</p>", "<p>Thank you, I have read carefully the wiki,not the README...</p>"]], "response": -1, "tags": "", "comments": ""}, {"subject": "faveo", "link": "/ladybirdweb/faveo-helpdesk/issues/2005", "title": "Doctrine\\DBAL\\Driver\\PDOException in GET /_debugbar/assets/stylesheets", "status": "closed", "labels": ["Testing", "bugsnag"], "priority": null, "description": ["<h2>Error in Faveo Community</h2>\n<p><strong>Doctrine\\DBAL\\Driver\\PDOException</strong> in <strong>GET /_debugbar/assets/stylesheets</strong>\nSQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)</p>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5cdd2e80c2f507001827d05a?event_id=5cdd2e800039fa5990040000&amp;i=gh&amp;m=ci\">View on Bugsnag</a></p>\n<h2>Stacktrace</h2>\n<pre><code>\\app\\Http\\helpers.php:451 - isPlugin\n\\app\\Providers\\ComposerServiceProvider.php:18 - App\\Providers\\ComposerServiceProvider::boot\n</code></pre>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5cdd2e80c2f507001827d05a?event_id=5cdd2e800039fa5990040000&amp;i=gh&amp;m=ci\">View full stacktrace</a></p>\n<p><em>Created automatically via Bugsnag</em></p>", []], "response": -1, "tags": "", "comments": ""}, {"subject": "faveo", "link": "/ladybirdweb/faveo-helpdesk/issues/2977", "title": "Symfony\\Component\\Debug\\Exception\\FatalThrowableError in POST /ticketing/public/task/thread/reply/83", "status": "closed", "labels": ["bugsnag"], "priority": null, "description": ["<h2>Error in Faveo Community</h2>\n<p><strong>Symfony\\Component\\Debug\\Exception\\FatalThrowableError</strong> in <strong>POST /ticketing/public/task/thread/reply/83</strong>\nClass 'App\\Events\\ClienttaskFormPost' not found</p>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5e01ddb1c3b70e001ae4806f?event_id=5e01ddb10054c4b499ea0000&amp;i=gh&amp;m=ci\">View on Bugsnag</a></p>\n<h2>Stacktrace</h2>\n<pre><code>\\app\\Http\\Controllers\\Agent\\helpdesk\\TaskController.php:1510 - App\\Http\\Controllers\\Agent\\helpdesk\\TaskController::reply\n\\app\\Http\\Middleware\\Authenticate.php:54 - App\\Http\\Middleware\\Authenticate::handle\n\\app\\Http\\Middleware\\CheckUpdate.php:35 - App\\Http\\Middleware\\CheckUpdate::handle\n\\app\\Http\\Middleware\\LanguageMiddleware.php:21 - App\\Http\\Middleware\\LanguageMiddleware::handle\n</code></pre>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5e01ddb1c3b70e001ae4806f?event_id=5e01ddb10054c4b499ea0000&amp;i=gh&amp;m=ci\">View full stacktrace</a></p>\n<p><em>Created automatically via Bugsnag</em></p>", []], "response": -1, "tags": "", "comments": ""}, {"subject": "tikiwiki", "link": "https://sourceforge.net/p/tikiwiki/bugs/1078/", "title": "#1078 Event Calendar - Link to invoke editing is incomprehensible", "status": "closed-accepted", "labels": "Visual / Interface (232)", "priority": "5", "description": ["<div id=\"ticket_content\">\n  <div><div class=\"markdown_content\"><p>The little tiny single character (is it caret or something) <br>\nthat appears on the right side of each calendar day, <br>\nthat you click to edit the day is impossible to guess at.  </p>\n<p>Besides being tiny, it isn't obvious.  In fact, what is it <br>\nsupposed to be for?  If it is to change into create event <br>\nmode then make a  button at the top of the <br>\npage &amp;quot;Create Event&amp;quot; or something and get rid of this <br>\nobscure thing.</p>\n<p>It leads the user to believe they need to click that to <br>\nedit the events for the day, which isn't correct.  It <br>\nseems it's only use is to enter create new event mode.<br>\nIf so, it's totally confusing.</p></div></div>\n  \n</div>\n\n                    ", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><ul>\n<li><strong>summary</strong>: Event Calendar - Link for invoke editing is incomprehensible --&gt; Event Calendar - Link to invoke editing is incomprehensible</li>\n</ul></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><ul>\n<li><strong>assigned_to</strong>: nobody --&gt; mose</li>\n<li><strong>status</strong>: open --&gt; open-accepted</li>\n</ul></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><p>Logged In: YES <br/>\nuser_id=738765</p>\n<p>I noted that too on ReleaseProcess18, maybe mose will want<br/>\nto comment.<br/>\nI think that new users will be confused with calendar.</p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><ul>\n<li><strong>milestone</strong>: 356877 --&gt; v1.8</li>\n</ul></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><ul>\n<li><strong>assigned_to</strong>: mose --&gt; nobody</li>\n</ul></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><ul>\n<li><strong>status</strong>: open-accepted --&gt; closed-accepted</li>\n</ul></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><p>Logged In: YES <br/>\nuser_id=379264</p>\n<p>Hello,<br/>\nThis is a broadcast message for all open bugs left before 2004/01/05.<br/>\nWe hope it was checked but no bug update took place.<br/>\nThe bug you reported may have been fixed.<br/>\nAdditionally, if you are using an older form of TikiWiki,<br/>\nit is highly recommended you update at least to 1.8.5<br/>\nwith new security fixes.</p>\n<p>So we open a procedure over the 2 next weeks:<br/>\nPlease, check your bug or request.<br/>\nIf you feel it's not relevant anymore, then close it.<br/>\nBut, if you mind it's still current,<br/>\nwe invite you to open a new fresh request.</p>\n<p>At the end of this period,<br/>\nan automatic cleaning with notifications will take place.</p>\n<p>Tikily yours,<br/>\n-- <br/>\nTikiwiki Bugs Cleaners<br/>\n(contact ---&gt; toggg)</p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>"], "response": -1, "tags": "", "comments": ""}, {"subject": "tikiwiki", "link": "https://sourceforge.net/p/tikiwiki/bugs/1921/", "title": "#1921 bug in trakers", "status": "closed", "labels": "PHP Error (166)", "priority": "5", "description": ["<div id=\"ticket_content\">\n  <div><div class=\"markdown_content\"><p>I found this source in the tiki_view_trakers.tpl file and I <br>\nCan\u00b4t delete an item trakers.</p>\n<p>{if $tiki_p_view_trackers eq 'y' or <br>\n$tiki_p_modify_tracker_items eq 'y' or <br>\n$tiki_p_comment_tracker_items eq 'y'}&lt;/a&gt;{/if}</p></div></div>\n  \n</div>\n\n                    ", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><p>Logged In: YES <br/>\nuser_id=784615</p>\n<p>This line is the closing link to view item . It has nothing<br/>\nto do with delete an item.<br/>\nThe delete button is on the right of the table (after the<br/>\ncolumn description).<br/>\nPerms can be tricky in trackers. Try as an admin ... I think<br/>\nthe buttom will appear<br/>\nReopen the bug if not.<br/>\nthanks<br/>\nsylvie</p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><ul>\n<li><strong>assigned_to</strong>: nobody --&gt; sylvieg</li>\n<li><strong>status</strong>: open --&gt; closed</li>\n</ul></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>"], "response": -1, "tags": "", "comments": ""}, {"subject": "koel", "link": "/koel/koel/pull/118", "title": "Fix song length issue", "status": "closed", "labels": [], "priority": null, "description": ["<p>Laravel's Eloquent ORM returns all properties as strings unless explicitly casting them to other types. <code>Song.length</code> is now cast to <code>float</code>.</p>", ["<p>Can you squash into 1 commit?</p>"]], "response": -1, "tags": "", "comments": ""}, {"subject": "tikiwiki", "link": "https://sourceforge.net/p/tikiwiki/bugs/577/", "title": "#577 mod_rewrite functionality not working", "status": "closed-out-of-date", "labels": "Feature Fully Broken (177)", "priority": "7", "description": ["<div id=\"ticket_content\">\n  <div><div class=\"markdown_content\"><p>At first glance the mod_rewrite version of the following page <br>\non the tiki site seems ok : <a href=\"http://www.tikiwiki.org/article/5\" rel=\"nofollow\">http://www.tikiwiki.org/article/5</a></p>\n<p>but in fact is broken.  Note the links such as http://<br>\nwww.tikiwiki.org/article/tiki-view_articles.php are invalid, <br>\nand have not been rewritten.  This link (according to the <br>\nrules in .htaccess should be something like http://<br>\nwww.tikiwiki.org/articles/ </p>\n<p>My site at <a href=\"http://www.screwfree.com\" rel=\"nofollow\">http://www.screwfree.com</a> shows similar <br>\nproblems at url <a href=\"http://www.screwfree.com/articles/\" rel=\"nofollow\">http://www.screwfree.com/articles/</a></p>\n<p>I am using the rules that come with 1.7 with the addition of <br>\none contributed by mose:</p>\n<p>RewriteRule ^/.*/styles/([-_a-z]+.css) /styles/$1                           <br>\n[L]</p></div></div>\n  \n</div>\n\n                    ", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><ul>\n<li><strong>labels</strong>: 544454 --&gt; Feature Fully Broken</li>\n<li><strong>priority</strong>: 5 --&gt; 7</li>\n</ul></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><p>Logged In: YES <br/>\nuser_id=644229</p>\n<p>I can confirm this.  I too have the Rewrite Rules enabled<br/>\nthrough the .htaccess file and the URL's are not rewritten.</p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><p>Logged In: NO </p>\n<p>does anyone have this working?</p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><p>Logged In: NO </p>\n<p>Yeah... I have the same problem... a lot of search engines and <br/>\nstats tracking packages have trouble with php sites so am <br/>\ndesperate to make this work.  Does anyone know if this can be <br/>\nworked around?</p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><p>Logged In: YES <br/>\nuser_id=807810</p>\n<p>I too have not gotten it to work, but my problem is probably<br/>\ndue to Tiki not running at the root of my domain.</p>\n<p>The rules work on tikiwiki.org.  Can any Apache experts<br/>\nenlighten us?</p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><p>Logged In: YES <br/>\nuser_id=644229</p>\n<p>teedog,</p>\n<p>When I visit the tikiwiki.org site the rewrite rules do not<br/>\nseem to be working.  All the URL's I see are not the<br/>\nrewritten URL's.  Am I not seeing something?</p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><p>Logged In: YES <br/>\nuser_id=807810</p>\n<p>einstine,<br/>\nTry this link:<br/>\n<a href=\"http://tikiwiki.org/ReleaseProcess171\" rel=\"nofollow\">http://tikiwiki.org/ReleaseProcess171</a><br/>\nThe real URL for that link is:<br/>\n<a href=\"http://tikiwiki.org/tiki-index.php?page=ReleaseProcess171\" rel=\"nofollow\">http://tikiwiki.org/tiki-index.php?page=ReleaseProcess171</a></p>\n<p>By the way, you should join us on IRC some time.  You file<br/>\nexcellent bug reports. :)</p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><p>Logged In: YES <br/>\nuser_id=644229</p>\n<p>Thanks teedog, I will join you at IRC.</p>\n<p>Regarding the Rewrite Rules, I thought the way they are<br/>\nsupposed to work is when we type a URL that looks like this:</p>\n<p><a href=\"http://tikiwiki.org/tiki-index.php?page=ReleaseProcess171\" rel=\"nofollow\">http://tikiwiki.org/tiki-index.php?page=ReleaseProcess171</a></p>\n<p>it gets rewritten like this:<br/>\n<a href=\"http://tikiwiki.org/ReleaseProcess171\" rel=\"nofollow\">http://tikiwiki.org/ReleaseProcess171</a>, so our users do not<br/>\nknow that the original URL looked liked the former?  On my<br/>\nsite, the URL format <a href=\"http://mysite.com/the_page\" rel=\"nofollow\">http://mysite.com/the_page</a> only works<br/>\nfor Wiki pages.  They don't work for any other type of page<br/>\n(HTML pages, articles, blogs, etc.).</p>\n<p>Also, for tikiwiki.org, when you visit an Articles page like<br/>\nthis one,<br/>\n<a href=\"http://www.tikiwiki.org/tiki-read_article.php?articleId=25\" rel=\"nofollow\">http://www.tikiwiki.org/tiki-read_article.php?articleId=25</a>,<br/>\nand then you visit the Rewrite equivalent,<br/>\n<a href=\"http://www.tikiwiki.org/article/25\" rel=\"nofollow\">http://www.tikiwiki.org/article/25</a>, the page does not render<br/>\nproperly.  The images in the footer bottom section do not<br/>\nshow up.</p>\n<p>Furthermore, when you then click on another link, it puts<br/>\nthe /article/ onto the resulting URL, though this may be a<br/>\nresult of tikiwiki.org URL's being relative URL's rather<br/>\nthan being absolute URL's.</p>\n<p>Any ideas would be much appreciated.</p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><p>Logged In: YES <br/>\nuser_id=403318</p>\n<p>The bug you reported may have been fixed.  Please get the latest<br/>\nversion from<br/>\n<a href=\"http://sourceforge.net/project/showfiles.php?group_id=64258\">http://sourceforge.net/project/showfiles.php?group_id=64258</a> , or<br/>\nfrom CVS <a href=\"http://sourceforge.net/cvs/?group_id=64258\">http://sourceforge.net/cvs/?group_id=64258</a> , and retest<br/>\nthe issue.<br/>\nIf the problem persists then please add a comment with<br/>\nmore details to the same bug item.<br/>\nIf the problem is gone then please close the bug.</p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><ul>\n<li><strong>status</strong>: open --&gt; closed-out-of-date</li>\n</ul></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>"], "response": -1, "tags": "", "comments": ""}, {"subject": "mrbs", "link": "https://sourceforge.net/p/mrbs/bugs/346/", "title": "#346 Don't work Start and end of day", "status": "open", "labels": "None", "priority": "1", "description": ["<div id=\"ticket_content\">\n  <div><div class=\"markdown_content\"><p>Hello, in my website don't work Start and end of day. It's my file config.inc.php in attachment. Anyone know why does not work? Sorry for my bad english :) </p></div></div>\n  \n    <strong class=\"grid-18\">1 Attachments</strong>\n    <div class=\"clear\">\n    \n        <div class=\"attachment_thumb\">\n          \n          <a href=\"/p/mrbs/bugs/346/attachment/config2.php\">config2.php</a>\n        </div>\n    \n    </div>\n    <div style=\"clear:both\"></div>\n  \n</div>\n\n                    ", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><p>The config seetings only change the default settings for <em>new</em> areas.   To change the settings for existing areas you have to do it through the browser.   Login to MRBS as an admin, go to the \"Rooms\" page, select the area you want to change, click the Edit icon and make the changes.</p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div class=\"active-md\" data-markdownlink=\"/p/mrbs/bugs/_discuss/thread/9a04a7a9/a00c/\"><div class=\"markdown_content\"><p>OK, thanks! :D</p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>"], "response": -1, "tags": "", "comments": ""}, {"subject": "mrbs", "link": "https://sourceforge.net/p/mrbs/bugs/465/", "title": "#465 Conflict on multiple reservations", "status": "closed", "labels": "None", "priority": "1", "description": ["<div id=\"ticket_content\">\n  <div><div class=\"markdown_content\"><p>Hello. I have a problem with the application. I created an area and inside I inserted several rooms, some of these with capacities greater than 1. When I insert a reservation it registers it correctly but if I try to insert another one for the same day at the same time, obviously with name and different description, the system reports:</p>\n<p>\"Booking conflict<br>\nThe new reservation will conflict with this (s): \"</p>\n<p>Showing me the reservation already present.<br>\nI don't understand where the error lies, I specified a number greater than one in the room but nevertheless it would seem not to consider it. Can someone help me? Thanks!</p></div></div>\n  \n</div>\n\n                    ", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><p>The capacity is a just for information and tells people how many people the room holds.  It does not determine the number of simultaneous reservations you can have, which is always 1.</p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><p>Thanks for the quick response. But if I need to set up multiple appointments simultaneously there is no possibility then?</p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><p>I give an example. If I have a room and inside this room two consultants with two desks that can serve two people at the same time, can nothing be done?</p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><p>You could divide the room into two, ie have two rooms called Room 1A and Room 1B etc.</p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><p>Yes, I had thought about this solution. Thanks again!</p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><p>In MRBS 1.9.1 there is a new feature that allows admins to create bookings for which other people can register up to  a specified limit.   This doesn't quite solve the example you give of two desks in a room because the desks can only be booked for the duration of the parent booking. </p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><ul>\n<li><strong>status</strong>: open --&gt; closed</li>\n</ul></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>"], "response": -1, "tags": "", "comments": ""}, {"subject": "faveo", "link": "/ladybirdweb/faveo-helpdesk/issues/1249", "title": "Symfony\\Component\\Debug\\Exception\\FatalThrowableError in GET /genereate-pdf/454697", "status": "closed", "labels": ["bugsnag"], "priority": null, "description": ["<h2>Error in Faveo Community</h2>\n<p><strong>Symfony\\Component\\Debug\\Exception\\FatalThrowableError</strong> in <strong>GET /genereate-pdf/454697</strong>\nCall to a member function header() on null</p>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5c84cb9d53dc7b0019fd16fa?event_id=5c84cb9d0036cbec224a0000&amp;i=gh&amp;m=ci\">View on Bugsnag</a></p>\n<h2>Stacktrace</h2>\n<pre><code>app/Http/Controllers/Agent/helpdesk/TicketController.php:3208 - App\\Http\\Controllers\\Agent\\helpdesk\\TicketController::pdfThread\napp/Http/Middleware/Authenticate.php:54 - App\\Http\\Middleware\\Authenticate::handle\napp/Http/Middleware/LanguageMiddleware.php:21 - App\\Http\\Middleware\\LanguageMiddleware::handle\napp/Http/Middleware/VerifyCsrfToken.php:30 - App\\Http\\Middleware\\VerifyCsrfToken::handle\n</code></pre>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5c84cb9d53dc7b0019fd16fa?event_id=5c84cb9d0036cbec224a0000&amp;i=gh&amp;m=ci\">View full stacktrace</a></p>\n<p><em>Created automatically via Bugsnag</em></p>", []], "response": -1, "tags": "", "comments": ""}, {"subject": "faveo", "link": "/ladybirdweb/faveo-helpdesk/issues/1052", "title": "Symfony\\Component\\Debug\\Exception\\FatalThrowableError in database/seeds/UsersTableSeeder.php:34", "status": "closed", "labels": ["bugsnag"], "priority": null, "description": ["<h2>Error in Faveo Community</h2>\n<p><strong>Symfony\\Component\\Debug\\Exception\\FatalThrowableError</strong> in <strong>database/seeds/UsersTableSeeder.php:34</strong>\nsyntax error, unexpected '=&gt;' (T_DOUBLE_ARROW), expecting ']'</p>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5c6afef7104e4f0019718c2c?event_id=5c6afef700358fa13b400000&amp;i=gh&amp;m=ci\">View on Bugsnag</a></p>\n<h2>Stacktrace</h2>\n<pre><code>database/seeds/UsersTableSeeder.php:34 - Composer\\Autoload\\includeFile\n</code></pre>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5c6afef7104e4f0019718c2c?event_id=5c6afef700358fa13b400000&amp;i=gh&amp;m=ci\">View full stacktrace</a></p>\n<p><em>Created automatically via Bugsnag</em></p>", []], "response": -1, "tags": "", "comments": ""}, {"subject": "phplist", "link": "/phpList/phplist3/pull/325", "title": "show busy image when exporting subscribers", "status": "closed", "labels": [], "priority": null, "description": ["<p>https://mantis.phplist.org/view.php?id=19243</p>", []], "response": -1, "tags": "", "comments": ""}, {"subject": "claroline", "link": "https://sourceforge.net/p/claroline/bugs/128/", "title": "#128 CLWRK : zip.lib.php needs too much memory", "status": "open", "labels": "modules (until moved to claro-pack) (45)", "priority": "7", "description": ["<div id=\"ticket_content\">\n  <div><div class=\"markdown_content\"><p>zip.lib.php needs at least two times the total size of the files to zip to generate a zip archive !</p>\n<p>FIXME : use PCLZip instead and check if native php_zip extension is available.</p></div></div>\n  \n</div>\n\n                    "], "response": -1, "tags": "", "comments": ""}, {"subject": "faveo", "link": "/ladybirdweb/faveo-helpdesk/issues/861", "title": "Symfony\\Component\\Debug\\Exception\\FatalErrorException in GET /faveo-helpdesk-master/public/security", "status": "closed", "labels": ["bugsnag"], "priority": null, "description": ["<h2>Error in Faveo Community</h2>\n<p><strong>Symfony\\Component\\Debug\\Exception\\FatalErrorException</strong> in <strong>GET /faveo-helpdesk-master/public/security</strong>\nCannot use App\\Model\\helpdesk\\Settings\\Company as Company because the name is already in use</p>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5c5d09ea0925c6001a0dfb55?event_id=5c5d09ea003592128ee00000&amp;i=gh&amp;m=ci\">View on Bugsnag</a></p>\n<h2>Stacktrace</h2>\n<pre><code>\\app\\Http\\Controllers\\Admin\\helpdesk\\SecurityController.php:34 - Symfony\\Component\\Debug\\Exception\\FatalErrorException::__construct\n</code></pre>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5c5d09ea0925c6001a0dfb55?event_id=5c5d09ea003592128ee00000&amp;i=gh&amp;m=ci\">View full stacktrace</a></p>\n<p><em>Created automatically via Bugsnag</em></p>", []], "response": -1, "tags": "", "comments": ""}, {"subject": "faveo", "link": "/ladybirdweb/faveo-helpdesk/issues/3646", "title": "BadMethodCallException in GET /thread/28", "status": "open", "labels": ["bugsnag", "local"], "priority": null, "description": ["<h2>Error in Faveo Community</h2>\n<p><strong>BadMethodCallException</strong> in <strong>GET /thread/28</strong>\nMethod Illuminate\\Database\\Query\\Builder::ordeyBy does not exist.</p>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5f3cc8d32d9a270017841587?event_id=5f3cc8d3005b68e1ee840000&amp;i=gh&amp;m=ci\">View on Bugsnag</a></p>\n<h2>Stacktrace</h2>\n<pre><code>\\app\\Http\\Controllers\\Agent\\helpdesk\\TicketController.php:2450 - App\\Http\\Controllers\\Agent\\helpdesk\\TicketController::thread\n\\app\\Http\\Middleware\\Authenticate.php:54 - App\\Http\\Middleware\\Authenticate::handle\n\\app\\Http\\Middleware\\CheckUpdate.php:35 - App\\Http\\Middleware\\CheckUpdate::handle\n\\app\\Http\\Middleware\\LanguageMiddleware.php:33 - App\\Http\\Middleware\\LanguageMiddleware::handle\n\\app\\Http\\Middleware\\VerifyCsrfToken.php:34 - App\\Http\\Middleware\\VerifyCsrfToken::handle\n</code></pre>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5f3cc8d32d9a270017841587?event_id=5f3cc8d3005b68e1ee840000&amp;i=gh&amp;m=ci\">View full stacktrace</a></p>\n<p><em>Created automatically via Bugsnag</em></p>", []], "response": -1, "tags": "", "comments": ""}, {"subject": "faveo", "link": "/ladybirdweb/faveo-helpdesk/issues/4451", "title": "ErrorException in GET /tickets", "status": "open", "labels": ["bugsnag", "local"], "priority": null, "description": ["<h2>Error in Faveo Community</h2>\n<p><strong>ErrorException</strong> in <strong>GET /tickets</strong>\nTrying to access array offset on value of type null (View: /home/www/html/csinternal/resources/views/themes/default1/agent/helpdesk/ticket/tickets.blade.php)</p>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/600fd9ceda30330017fdbca1?event_id=600fd9ce0069b04871800000&amp;i=gh&amp;m=ci\">View on Bugsnag</a></p>\n<h2>Stacktrace</h2>\n<pre><code>app/Http/Middleware/IsFirstLoginAgent.php:23 - App\\Http\\Middleware\\IsFirstLoginAgent::handle\napp/Http/Middleware/CheckUpdate.php:35 - App\\Http\\Middleware\\CheckUpdate::handle\napp/Http/Middleware/Install.php:21 - App\\Http\\Middleware\\Install::handle\napp/Http/Middleware/CheckTwoFa.php:22 - App\\Http\\Middleware\\CheckTwoFa::handle\napp/Http/Middleware/Authenticate.php:54 - App\\Http\\Middleware\\Authenticate::handle\napp/Http/Middleware/CheckRoleAgent.php:28 - App\\Http\\Middleware\\CheckRoleAgent::handle\napp/Http/Middleware/LanguageMiddleware.php:33 - App\\Http\\Middleware\\LanguageMiddleware::handle\napp/Http/Middleware/VerifyCsrfToken.php:34 - App\\Http\\Middleware\\VerifyCsrfToken::handle\n</code></pre>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/600fd9ceda30330017fdbca1?event_id=600fd9ce0069b04871800000&amp;i=gh&amp;m=ci\">View full stacktrace</a></p>\n<p><em>Created automatically via Bugsnag</em></p>", []], "response": -1, "tags": "", "comments": ""}, {"subject": "faveo", "link": "/ladybirdweb/faveo-helpdesk/issues/1184", "title": "Symfony\\Component\\Debug\\Exception\\FatalErrorException in GET /", "status": "closed", "labels": ["bugsnag"], "priority": null, "description": ["<h2>Error in Faveo Community</h2>\n<p><strong>Symfony\\Component\\Debug\\Exception\\FatalErrorException</strong> in <strong>GET /</strong>\nUncaught Symfony\\Component\\Debug\\Exception\\FatalThrowableError: syntax error, unexpected ',', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in C:\\Users\\Gideo\\Desktop\\repos\\faveohelpdesk\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:717\nStack trace:</p>\n<h1>0 C:\\Users\\Gideo\\Desktop\\repos\\faveohelpdesk\\vendor\\composer\\ClassLoader.php(322): Composer\\Autoload\\includeFile('C:\\Users\\Gideo\\...')</h1>\n<h1>1 [internal function]: Composer\\Autoload\\ClassLoader-&gt;loadClass('Illuminate\\Data...')</h1>\n<h1>2 C:\\Users\\Gideo\\Desktop\\repos\\faveohelpdesk\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(268): spl_autoload_call('Illuminate\\Data...')</h1>\n<h1>3 C:\\Users\\Gideo\\Desktop\\repos\\faveohelpdesk\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(76): Illuminate\\Database\\Connectors\\ConnectionFactory-&gt;createConnection('mysql', Object(Closure), 'faveolocal', '', Array)</h1>\n<h1>4 C:\\Users\\Gideo\\Desktop\\repos\\faveohelpdesk\\vendor...</h1>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5c7c4072dfac68001a726471?event_id=5c7c40720036628257f70000&amp;i=gh&amp;m=ci\">View on Bugsnag</a></p>\n<h2>Stacktrace</h2>\n<pre><code>\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:717 - [main]\n</code></pre>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5c7c4072dfac68001a726471?event_id=5c7c40720036628257f70000&amp;i=gh&amp;m=ci\">View full stacktrace</a></p>\n<p><em>Created automatically via Bugsnag</em></p>", []], "response": -1, "tags": "", "comments": ""}, {"subject": "faveo", "link": "/ladybirdweb/faveo-helpdesk/issues/4189", "title": "Symfony\\Component\\Debug\\Exception\\FatalErrorException in \\app\\Http\\Controllers\\Agent\\helpdesk\\NotificationController.php:87", "status": "open", "labels": ["bugsnag", "production"], "priority": null, "description": ["<h2>Error in Faveo Community</h2>\n<p><strong>Symfony\\Component\\Debug\\Exception\\FatalErrorException</strong> in <strong>\\app\\Http\\Controllers\\Agent\\helpdesk\\NotificationController.php:87</strong>\nAllowed memory size of 268435456 bytes exhausted (tried to allocate 125833216 bytes)</p>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5fa3c23c4a56dc0017cec041?event_id=5fa3c23c00621aabe7310000&amp;i=gh&amp;m=ci\">View on Bugsnag</a></p>\n<h2>Stacktrace</h2>\n<pre><code>\\app\\Http\\Controllers\\Agent\\helpdesk\\NotificationController.php:87 - [main]\n</code></pre>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5fa3c23c4a56dc0017cec041?event_id=5fa3c23c00621aabe7310000&amp;i=gh&amp;m=ci\">View full stacktrace</a></p>\n<p><em>Created automatically via Bugsnag</em></p>", []], "response": -1, "tags": "", "comments": ""}, {"subject": "mrbs", "link": "https://sourceforge.net/p/mrbs/bugs/280/", "title": "#280 Array.indexOf not supported in IE8", "status": "open", "labels": "None", "priority": "1", "description": ["<div id=\"ticket_content\">\n  <div><div class=\"markdown_content\"><p>IE versions before version 9 do not support Array.indexOf as used in (e.g.) js/edit_entry.js.php line 45 (referring to mrbs-1.4.10). Please include a compatibility implementation of the function. You can find one on <a href=\"http://stackoverflow.com/a/3629211\" rel=\"nofollow\">http://stackoverflow.com/a/3629211</a>, and a more recent one on MDN (see \"from MDC\" link on that page).</p>\n<p><span>[Personally I use recent versions of IE of course, if at all. But there are still users of IE8 out there, such as my client. Rather than trying to convince all of them or change all occurrences of this function in your code, providing the compatibility implementation seems easiest.]</span></p></div></div>\n  \n</div>\n\n                    ", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><p>Alternatively, I imagine it could be done with some jQuery invocation</p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><p>Yes, I'm just looking at it now.  I think $.inArray() is the answer.   Will check in a fix later.</p>\n<p>Campbell</p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><p>Fixed in Rev 2573.   I think the example you quoted above was the only instance.</p>\n<p>Campbell</p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>"], "response": -1, "tags": "", "comments": ""}, {"subject": "faveo", "link": "/ladybirdweb/faveo-helpdesk/issues/1282", "title": "Symfony\\Component\\Debug\\Exception\\FatalErrorException in GET /helpdesk/public/index.php", "status": "closed", "labels": ["bugsnag"], "priority": null, "description": ["<h2>Error in Faveo Community</h2>\n<p><strong>Symfony\\Component\\Debug\\Exception\\FatalErrorException</strong> in <strong>GET /helpdesk/public/index.php</strong>\nMaximum execution time of 30 seconds exceeded</p>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5c87338f3c3339001c60a58d?event_id=5c87338f00376754c0270000&amp;i=gh&amp;m=ci\">View on Bugsnag</a></p>\n<h2>Stacktrace</h2>\n<pre><code>\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php:8 - [main]\n</code></pre>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5c87338f3c3339001c60a58d?event_id=5c87338f00376754c0270000&amp;i=gh&amp;m=ci\">View full stacktrace</a></p>\n<p><em>Created automatically via Bugsnag</em></p>", []], "response": -1, "tags": "", "comments": ""}, {"subject": "tikiwiki", "link": "https://sourceforge.net/p/tikiwiki/bugs/845/", "title": "#845 Wiki Links as headline", "status": "closed-fixed", "labels": "Feature Partially Broken (680)", "priority": "5", "description": ["<div id=\"ticket_content\">\n  <div><div class=\"markdown_content\"><p>Hi</p>\n<p>I updated my TikiWiki from version 1.6.? to version <br>\n1.7.1.1 (the newest version) and now I have a little <br>\nproblem:<br>\nI can not open a link in the format<br>\n!!NewPage    or<br>\n!((NewPage))<br>\n(the number of exclamation mark can be variable)<br>\nTikiwiki creates a heading but no link...<br>\nWhen the page is new then it writes:<br>\nNewPage?<br>\nor sometimes just<br>\nNewPage<br>\nbut it creates no link. Neither you can click to the word, <br>\nnor to the question mark.<br>\nplease help me...</p>\n<p>thank you<br>\nLars<br>\nl.franke@delta-energy.ch</p></div></div>\n  \n</div>\n\n                    ", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><p>Logged In: YES <br/>\nuser_id=738765</p>\n<p>Seems fixed on 1.8 but will probably stick on 1.7.5.<br/>\nBoth the exclamation mark and the possibility to force link<br/>\nwith (())</p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><ul>\n<li><strong>labels</strong>: 544455 --&gt; Feature Partially Broken</li>\n<li><strong>milestone</strong>:  --&gt; v1.7.4</li>\n<li><strong>status</strong>: open --&gt; open-fixed</li>\n</ul></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><ul>\n<li><strong>status</strong>: open-fixed --&gt; closed-fixed</li>\n</ul></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>"], "response": -1, "tags": "", "comments": ""}, {"subject": "tikiwiki", "link": "https://sourceforge.net/p/tikiwiki/bugs/1181/", "title": "#1181 Articles : MySQL error editing a submitted article", "status": "closed-fixed", "labels": "Database Error (139)", "priority": "5", "description": ["<div id=\"ticket_content\">\n  <div><div class=\"markdown_content\"><p>When logged in as admin, editing+saving of an article <br>\ncauses a database error.</p>\n<p>- Logged in as admin<br>\n- Edit submitted article<br>\n- Editing session goes fine<br>\n- Clicking on save button causes the following:</p>\n<p>Warning: MYSQL error: DB Error: syntax error in query:<br>\nselect * from tiki_submissions where subId=<br>\nin /data/www/html/tiki/lib/tikilib.php on line 101</p>\n<p>- The article ID was properly in the URL but isn't making <br>\nit into the SQL code<br>\n- The edit of the page is successful so the error must <br>\noccur after the page update</p>\n<p>Page: tiki-edit_submission.php<br>\nReferrer: tiki-edit_submission.php?subID=1</p>\n<p>Thanks,</p>\n<p>Cameron</p></div></div>\n  \n</div>\n\n                    ", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><ul>\n<li><strong>summary</strong>: Articles: bug in admin edit of submitted article --&gt; Articles : MySQL error editing a submitted article</li>\n<li><strong>status</strong>: open --&gt; open-fixed</li>\n</ul></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><p>Logged In: YES <br/>\nuser_id=738765</p>\n<p>This seems to be fixed. I'll add it on ArticleDev until we<br/>\nrelease 1.8.0.</p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><p>Logged In: YES <br/>\nuser_id=453914</p>\n<p>Re-reading my original submission, I may not have stated <br/>\nclearly that the error occurs when someone else has created <br/>\nan article and the admin is reviewing it for possible approval --<br/>\nand edits the article at that point, and then tries to save.</p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><p>Logged In: YES <br/>\nuser_id=738765</p>\n<p>Or was it me that was unclear? :)<br/>\nI can reproduce the bug on 1.7.4.<br/>\nIndicate if you can on 1.8.</p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><ul>\n<li><strong>status</strong>: open-fixed --&gt; closed-fixed</li>\n</ul></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><p>Logged In: YES <br/>\nuser_id=738765</p>\n<p>Pending confirmation on 1.8.</p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>"], "response": -1, "tags": "", "comments": ""}, {"subject": "mrbs", "link": "https://sourceforge.net/p/mrbs/bugs/138/", "title": "#138 Login using table from another MySQL schema", "status": "closed", "labels": "MRBS (195)", "priority": "5", "description": ["<div id=\"ticket_content\">\n  <div><div class=\"markdown_content\"><p>Hi,</p>\n<p>Is it possible to link my user table in another MySQL schema for authentication purpose.</p>\n<p>I am using the following fields in my table, I have a single login for all my other apps running on IIS, PHP and MySQL. The fields in my user table are</p>\n<p><code>PersonID</code><br>\n<code>Name</code><br>\n<code>Surname</code><br>\n<code>JobTitle</code><br>\n<code>Department_Name</code><br>\n<code>Phone</code><br>\n<code>Mobile</code><br>\n<code>Password</code> - Password<br>\n<code>UserID</code><br>\n<code>LName</code> - Login<br>\n<code>Email</code><br>\n<code>Dept_ID</code></p>\n<p>I would link to link my abouve table to mrbs as authentication means, so I have a single login.</p>\n<p>Yhanks</p></div></div>\n  \n</div>\n\n                    ", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><p>Logged In: YES <br/>\nuser_id=71843<br/>\nOriginator: NO</p>\n<p>Read the documentation then, particularly the file AUTHENTICATION. The authentication scheme you want is 'db_ext'.</p>\n<p>John.</p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>"], "response": -1, "tags": "", "comments": ""}, {"subject": "addressbook", "link": "https://sourceforge.net/p/php-addressbook/bugs/90/", "title": "#90 vCard: Fix line feed encoding", "status": "open", "labels": "None", "priority": "5", "description": ["<div id=\"ticket_content\">\n  <div><div class=\"markdown_content\"><p>The line feed encoding is not (yet) correct:</p>\n<p>ENCODING=QUOTED-PRINTABLE:Firstline=0D=0ASecond Line</p></div></div>\n  \n</div>\n\n                    "], "response": -1, "tags": "", "comments": ""}, {"subject": "koel", "link": "/koel/koel/issues/1185", "title": "Koel lets you log in with the same user multiple times", "status": "closed", "labels": [], "priority": null, "description": ["<p>Koel lets you log in with the same user multiple times. I can login using the same credential many times on different browsers at the same time. This breaks the user security and could lead to potential issues if credentials are intercepted.</p>", ["<blockquote>\n<p>This breaks the user security and could lead to potential issues if credentials are intercepted.</p>\n</blockquote>\n<p>I don't think so. A lot of other services (Google/Gmail/Facebook/Twitter included) allow this. Granted, they have a screen to manage the logins and allow you to log out individually, but I don't have any plan to support that.</p>"]], "response": -1, "tags": "", "comments": ""}, {"subject": "faveo", "link": "/ladybirdweb/faveo-helpdesk/issues/3817", "title": "ErrorException in GET /appsupport.io-repo/public/testing_mail", "status": "open", "labels": ["bugsnag", "production"], "priority": null, "description": ["<h2>Error in Faveo Community</h2>\n<p><strong>ErrorException</strong> in <strong>GET /appsupport.io-repo/public/testing_mail</strong>\nTrying to access array offset on value of type null</p>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5f6c5a0c6cc8da0017e9deb7?event_id=5f6c5a0c005df7c19f5b0000&amp;i=gh&amp;m=ci\">View on Bugsnag</a></p>\n<h2>Stacktrace</h2>\n<pre><code>\\app\\Http\\Controllers\\Agent\\helpdesk\\TicketController.php:84 - App\\Http\\Controllers\\Agent\\helpdesk\\TicketController::testing_mail\n\\app\\Http\\Middleware\\Authenticate.php:54 - App\\Http\\Middleware\\Authenticate::handle\n\\app\\Http\\Middleware\\LanguageMiddleware.php:33 - App\\Http\\Middleware\\LanguageMiddleware::handle\n\\app\\Http\\Middleware\\VerifyCsrfToken.php:33 - App\\Http\\Middleware\\VerifyCsrfToken::handle\n</code></pre>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5f6c5a0c6cc8da0017e9deb7?event_id=5f6c5a0c005df7c19f5b0000&amp;i=gh&amp;m=ci\">View full stacktrace</a></p>\n<p><em>Created automatically via Bugsnag</em></p>", []], "response": -1, "tags": "", "comments": ""}, {"subject": "faveo", "link": "/ladybirdweb/faveo-helpdesk/issues/1165", "title": "Symfony\\Component\\Debug\\Exception\\FatalThrowableError in GET /public/index.php/laravel-filemanager", "status": "closed", "labels": ["bugsnag"], "priority": null, "description": ["<h2>Error in Faveo Community</h2>\n<p><strong>Symfony\\Component\\Debug\\Exception\\FatalThrowableError</strong> in <strong>GET /public/index.php/laravel-filemanager</strong>\nClass 'UniSharp\\LaravelFilemanager\\Breadcrumbs' not found</p>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5c7914cc25dbc2001c992ddf?event_id=5c7914cc003661d2d1f80000&amp;i=gh&amp;m=ci\">View on Bugsnag</a></p>\n<h2>Stacktrace</h2>\n<pre><code>vendor/unisharp/laravel-filemanager/src/LaravelFilemanagerServiceProvider.php:46 - UniSharp\\LaravelFilemanager\\LaravelFilemanagerServiceProvider::boot\n</code></pre>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5c7914cc25dbc2001c992ddf?event_id=5c7914cc003661d2d1f80000&amp;i=gh&amp;m=ci\">View full stacktrace</a></p>\n<p><em>Created automatically via Bugsnag</em></p>", []], "response": -1, "tags": "", "comments": ""}, {"subject": "tikiwiki", "link": "https://sourceforge.net/p/tikiwiki/bugs/1470/", "title": "#1470 PEAR error renders attachments unreadable from remote hosts", "status": "closed", "labels": "Feature Partially Broken (680)", "priority": "5", "description": ["<div id=\"ticket_content\">\n  <div><div class=\"markdown_content\"><p>I'm running Tiki v1.8.3 (CVS) atop the latest EasyPHP<br>\n(v1.7) distribution.  The Tiki setup went smoothly and<br>\nI enabled wikis and forums.  From the machine hosting<br>\nTiki I can upload and download attachments with ease<br>\nbut from other machines I can not downoad attachments.<br>\nThis holds for both the wiki and the forum.  This<br>\nproblem is not browser specific as both Internet<br>\nExplorer and Netscape return the same error.  The error<br>\nis as follows when attempting to download the<br>\nattachment with this URL<br>\n/tikiwiki/tiki-download_wiki_attachment.php?attId=15.<br>\nThanks for entertaining this as an bug. -Joe</p>\n<p>Warning: main(PEAR.php): failed to open stream: No such<br>\nfile or directory in c:\\easyphp17<br>\n\\www\\tikiwiki\\lib\\adodb\\adodb-pear.inc.php on line 41</p>\n<p>Warning: main(): Failed opening 'PEAR.php' for inclusion<br>\n(include_path='lib/adodb;.;c:\\php4\\pear') in<br>\nc:\\easyphp17 \\www\\tikiwiki\\lib\\adodb\\adodb-pear.inc.php<br>\non line 41</p>\n<p>Warning: main(PEAR.php): failed to open stream: No such<br>\nfile or directory in c:\\easyphp17<br>\n\\www\\tikiwiki\\lib\\adodb\\adodb-errorpear.inc.php on line 13</p>\n<p>Warning: main(): Failed opening 'PEAR.php' for inclusion<br>\n(include_path='lib/adodb;.;c:\\php4\\pear') in<br>\nc:\\easyphp17<br>\n\\www\\tikiwiki\\lib\\adodb\\adodb-errorpear.inc.php on line 13</p>\n<p>Warning: main(PEAR.php): failed to open stream: No such<br>\nfile or directory in c:\\easyphp17<br>\n\\www\\tikiwiki\\lib\\pear\\Net\\Socket.php on line 23</p>\n<p>Fatal error: main(): Failed opening required 'PEAR.php'<br>\n(include_path='lib/adodb;.;c:\\php4\\pear') in<br>\nc:\\easyphp17 \\www\\tikiwiki\\lib\\pear\\Net\\Socket.php on<br>\nline 23</p></div></div>\n  \n</div>\n\n                    ", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><p>Logged In: YES <br/>\nuser_id=738765</p>\n<p>I doubt this code changed recently.<br/>\nPEAR.php is shipped in tiki/lib/pear/, but your include_path<br/>\nmisses tiki/lib/pear/ as tiki/db/tiki-db.php is supposed to<br/>\nset on line 77 :<br/>\n    TikiInit::prependIncludePath('lib/pear');<br/>\nThis happens just before<br/>\n    include_once ('adodb-pear.inc.php');<br/>\nat line 86, which contains the problematic includes. Your<br/>\ninclude_path has instead \"c:\\php4\\pear\", any idea why?</p>\n<p>In summary tiki-download_wiki_attachment.php includes<br/>\ntiki-setup_base.php which includes tiki/db/tiki-db.php which<br/>\nshould add tiki/lib/pear to include_path before it includes<br/>\ntiki/lib/adodb/adodb-pear.inc.php which doesn't work due to<br/>\nproblem with include_path.</p>\n<p>It would be *particularly* strange that your include_path<br/>\nwould only be misconfigured when the script is not called<br/>\nlocally.</p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><ul>\n<li><strong>milestone</strong>: 356877 --&gt; BRANCH-1-8_(CVS)</li>\n</ul></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><p>Logged In: YES <br/>\nuser_id=1049822</p>\n<p>OK, I've altered adodb-errorpear.inc.php, adodb-pear.inc.php<br/>\nand Socket.php so the path to PEAR.php is explicit.  The<br/>\n\"main(PEAR.php): failed to open stream\" errors are now gone.<br/>\nInstead some other errors appear at the top of every<br/>\nTikiWiki page regardless if it is localhost or remote. <br/>\nThese errors are (note that I've changed the tikiwiki home<br/>\ndirectory when I reinstalled it): </p>\n<p>Warning: session_start(): Cannot send session cookie -<br/>\nheaders already sent by (output started at<br/>\nc:\\easyphp17\\www\\tiki_install2\\lib\\adodb\\adodb-errorpear.inc.php:88)<br/>\nin c:\\easyphp17\\www\\tiki_install2\\tiki-setup_base.php on line 46</p>\n<p>Warning: session_start(): Cannot send session cache limiter<br/>\n- headers already sent (output started at<br/>\nc:\\easyphp17\\www\\tiki_install2\\lib\\adodb\\adodb-errorpear.inc.php:88)<br/>\nin c:\\easyphp17\\www\\tiki_install2\\tiki-setup_base.php on line 46</p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><p>Logged In: YES <br/>\nuser_id=1049822</p>\n<p>After logging out afte the alterations for the PEAR.php<br/>\npath, it appears I now can no longer even login!  </p>\n<p><a href=\"http://127.0.0.1/tiki_install2/tiki-login.php\" rel=\"nofollow\">http://127.0.0.1/tiki_install2/tiki-login.php</a></p>\n<p>Warning: session_start(): Cannot send session cookie -<br/>\nheaders already sent by (output started at<br/>\nc:\\easyphp17\\www\\tiki_install2\\lib\\adodb\\adodb-errorpear.inc.php:88)<br/>\nin c:\\easyphp17\\www\\tiki_install2\\tiki-setup_base.php on line 46</p>\n<p>Warning: session_start(): Cannot send session cache limiter<br/>\n- headers already sent (output started at<br/>\nc:\\easyphp17\\www\\tiki_install2\\lib\\adodb\\adodb-errorpear.inc.php:88)<br/>\nin c:\\easyphp17\\www\\tiki_install2\\tiki-setup_base.php on line 46</p>\n<p>Warning: error: You have an error in your SQL syntax. Check<br/>\nthe manual that corresponds to your MySQL server version for<br/>\nthe right syntax to use near '' at line 1 in query:<br/>\nselect `email` from `users_users` where `login` = ?<br/>\nin c:\\easyphp17\\www\\tiki_install2\\lib\\tikidblib.php on line 125<br/>\nValues:<br/>\nArray ( [0] =&gt; )<br/>\n$result is false<br/>\n$result is empty</p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><p>Logged In: YES <br/>\nuser_id=1049822</p>\n<p>OK.  Maybe it's OK to disregard the previous two Followups.<br/>\nI was fumbling around and prematurely posted.  It appears<br/>\nI've resolved the problem thanks to the comments of chealer.<br/>\nIn a fresh install the problem reappears.  That is, I get<br/>\nthe following error message when trying to download an<br/>\nattachment using URL<br/>\n<a href=\"http://127.0.0.1/tiki_install3/tiki-download_wiki_attachment.php?attId=19\" rel=\"nofollow\">http://127.0.0.1/tiki_install3/tiki-download_wiki_attachment.php?attId=19</a><br/>\nNote that the error now appears wheb the browser is located<br/>\non localhost AND from a browser on a remote machine--I don't<br/>\nknow why it was remote only before.</p>\n<p>-------------------------------<br/>\nWarning: main(PEAR.php): failed to open stream: No such file<br/>\nor directory in<br/>\nc:\\easyphp17\\www\\tiki_install3\\lib\\adodb\\adodb-pear.inc.php<br/>\non line 41</p>\n<p>Warning: main(): Failed opening 'PEAR.php' for inclusion<br/>\n(include_path='lib/adodb;.;c:\\php4\\pear') in<br/>\nc:\\easyphp17\\www\\tiki_install3\\lib\\adodb\\adodb-pear.inc.php<br/>\non line 41</p>\n<p>Warning: main(PEAR.php): failed to open stream: No such file<br/>\nor directory in<br/>\nc:\\easyphp17\\www\\tiki_install3\\lib\\adodb\\adodb-errorpear.inc.php<br/>\non line 13</p>\n<p>Warning: main(): Failed opening 'PEAR.php' for inclusion<br/>\n(include_path='lib/adodb;.;c:\\php4\\pear') in<br/>\nc:\\easyphp17\\www\\tiki_install3\\lib\\adodb\\adodb-errorpear.inc.php<br/>\non line 13</p>\n<p>Warning: main(PEAR.php): failed to open stream: No such file<br/>\nor directory in<br/>\nc:\\easyphp17\\www\\tiki_install3\\lib\\pear\\Net\\Socket.php on<br/>\nline 23</p>\n<p>Fatal error: main(): Failed opening required 'PEAR.php'<br/>\n(include_path='lib/adodb;.;c:\\php4\\pear') in<br/>\nc:\\easyphp17\\www\\tiki_install3\\lib\\pear\\Net\\Socket.php on<br/>\nline 23<br/>\n-----------</p>\n<p>If the tiki-db.php file is then edited by adding <br/>\nTikiInit::prependIncludePath('lib/pear');<br/>\nafter <br/>\nTikiInit::prependIncludePath('lib/adodb');<br/>\nthe problem goes away and the same URL permits access to the<br/>\nattachment. I don't know why this change is necessary.  Any<br/>\nideas?  </p></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>", "<div class=\"display_post\">\n<div><div class=\"markdown_content\"><ul>\n<li><strong>status</strong>: open --&gt; closed</li>\n</ul></div></div>\u00a0\n            <div class=\"reactions\" style=\"user-select: none; cursor: default\">\n</div>\n</div>"], "response": -1, "tags": "", "comments": ""}, {"subject": "faveo", "link": "/ladybirdweb/faveo-helpdesk/issues/2031", "title": "Symfony\\Component\\Debug\\Exception\\FatalErrorException in GET /public/warrantyclaim", "status": "closed", "labels": ["bugsnag"], "priority": null, "description": ["<h2>Error in Faveo Community</h2>\n<p><strong>Symfony\\Component\\Debug\\Exception\\FatalErrorException</strong> in <strong>GET /public/warrantyclaim</strong>\nCall to undefined method App\\Http\\Controllers\\Client\\helpdesk\\WarrantyClaimController::getMiddleware()</p>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5ce42460ffd9fa001b74e914?event_id=5ce42460003a002a10db0000&amp;i=gh&amp;m=ci\">View on Bugsnag</a></p>\n<h2>Stacktrace</h2>\n<pre><code>vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php:110 - [main]\n</code></pre>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5ce42460ffd9fa001b74e914?event_id=5ce42460003a002a10db0000&amp;i=gh&amp;m=ci\">View full stacktrace</a></p>\n<p><em>Created automatically via Bugsnag</em></p>", []], "response": -1, "tags": "", "comments": ""}, {"subject": "pgweb", "link": "/sosedoff/pgweb/issues/26", "title": "Overlap between table names in the \"Database Tables\" left column", "status": "closed", "labels": ["bug"], "priority": null, "description": ["<p>There is an overlap of table names when there are table names that contains hypens, whitespaces, underscores, start with upper case letters, or contain upper case letters\nor when the table names are longer that the width of the left box where the table names are displayed.</p>", ["<p>Can you please provide a screenshot?</p>", "<p><img alt=\"pg_web_overlap\" src=\"https://cloud.githubusercontent.com/assets/528448/4839396/38e31c7e-5ffe-11e4-8c18-9cbc76b9fdf7.png\" /></p>\n<p><img alt=\"overlap_test_tables\" src=\"https://cloud.githubusercontent.com/assets/528448/4839401/47ed7886-5ffe-11e4-8c96-b9b40f4b8293.png\" /></p>", "<p>This should be fixed in master now. </p>"]], "response": -1, "tags": "", "comments": ""}, {"subject": "koel", "link": "/koel/koel/issues/1036", "title": "Performance with ~50k+ Albums / 650000 songs?", "status": "open", "labels": ["Performance", "[Status] Keep Open", "[Type] Question"], "priority": null, "description": ["<p>I like the interface and all but before I jump on the train and waste my time. With how many songs/albums is this server tested? Currently using Plex and have to create a lot of different libraries in order to keep the performance scrolling through albums or artists. Search in Plex is pretty good, else I would not use it, but browsing is a problem.</p>", ["<p>I am going to close out this issue as it is stale. My install currently has 5,822 songs. If anyone with a larger library would like to comment please feel free to add your experiences with Koel to this issue.</p>", "<p>Let's keep it open for easier discovery. Implementing support for huge libraries is actually something on Koel's roadmap, though I'm not sure when I'll have time for it yet.</p>", "<p>Has anyone ever encountered this mistake\uff1f\n`root@8ebc0d05f82c:/var/www/html# php artisan koel:sync\nSyncing media from /music</p>\n<pre><code>1/5517 [\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591]   0%\n</code></pre>\n<p>In AbstractDecoder.php line 236:</p>\n<p>Allowed memory size of 134217728 bytes exhausted (tried to allocate 7171431 bytes) \n`\nand I have modified the params 'memory_limit = 128M', but not worked\uff0ccan't it scan in batches?</p>", "<p>when i try to scan an album , it worked finally...so I knew that koel can't scan a huge music library,how depressing it is :cry:</p>", "<p>You allocated a mere 128MB to scan 650,000 songs? I don't think it's a Koel issue \ud83d\ude2c</p>", "<p>oh~ '128M' is the default value. 'modified' means that I change it to '4096M' but also not worked.It's a hyzual's docker. So sorry hhh~ it's not exactly a Koel issue. They all not use the latest version for Koel. I just wanna find some solutions here. I use another one(alexphillips's docker) then all problems has gone:smile:~</p>"]], "response": -1, "tags": "", "comments": ""}, {"subject": "faveo", "link": "/ladybirdweb/faveo-helpdesk/issues/944", "title": "ErrorException in POST /helptopic/682", "status": "closed", "labels": ["bugsnag"], "priority": null, "description": ["<h2>Error in Faveo Community</h2>\n<p><strong>ErrorException</strong> in <strong>POST /helptopic/682</strong>\nTrying to get property of non-object</p>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5c64b0c96b77d40019714c00?event_id=5c64b0c900359de2d4370000&amp;i=gh&amp;m=ci\">View on Bugsnag</a></p>\n<h2>Stacktrace</h2>\n<pre><code>app/Http/Controllers/Admin/helpdesk/HelptopicController.php:287 - Illuminate\\Foundation\\Bootstrap\\HandleExceptions::handleError\napp/Http/Controllers/Admin/helpdesk/HelptopicController.php:287 - App\\Http\\Controllers\\Admin\\helpdesk\\HelptopicController::destroy\napp/Http/Middleware/CheckRole.php:25 - App\\Http\\Middleware\\CheckRole::handle\napp/Http/Middleware/Authenticate.php:52 - App\\Http\\Middleware\\Authenticate::handle\napp/Http/Middleware/CheckUpdate.php:40 - App\\Http\\Middleware\\CheckUpdate::handle\napp/Http/Middleware/LanguageMiddleware.php:21 - App\\Http\\Middleware\\LanguageMiddleware::handle\n</code></pre>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5c64b0c96b77d40019714c00?event_id=5c64b0c900359de2d4370000&amp;i=gh&amp;m=ci\">View full stacktrace</a></p>\n<p><em>Created automatically via Bugsnag</em></p>", []], "response": -1, "tags": "", "comments": ""}, {"subject": "faveo", "link": "/ladybirdweb/faveo-helpdesk/issues/2431", "title": "ErrorException in GET /service/public/ticket/export_ticket_xls", "status": "closed", "labels": ["bugsnag"], "priority": null, "description": ["<h2>Error in Faveo Community</h2>\n<p><strong>ErrorException</strong> in <strong>GET /service/public/ticket/export_ticket_xls</strong>\nUndefined offset: 672</p>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5d66687eb79dd2001a4fe509?event_id=5d66687e004e4fe9a3070000&amp;i=gh&amp;m=ci\">View on Bugsnag</a></p>\n<h2>Stacktrace</h2>\n<pre><code>app/Http/Controllers/Agent/helpdesk/TicketController.php:165 - Illuminate\\Foundation\\Bootstrap\\HandleExceptions::handleError\napp/Http/Controllers/Agent/helpdesk/TicketController.php:165 - App\\Http\\Controllers\\Agent\\helpdesk\\TicketController::export_ticket_xls\napp/Http/Middleware/Authenticate.php:54 - App\\Http\\Middleware\\Authenticate::handle\napp/Http/Middleware/CheckUpdate.php:35 - App\\Http\\Middleware\\CheckUpdate::handle\napp/Http/Middleware/LanguageMiddleware.php:21 - App\\Http\\Middleware\\LanguageMiddleware::handle\n</code></pre>\n<p><a href=\"https://app.bugsnag.com/ladybird-web-solution-pvt-ltd/faveo-community/errors/5d66687eb79dd2001a4fe509?event_id=5d66687e004e4fe9a3070000&amp;i=gh&amp;m=ci\">View full stacktrace</a></p>\n<p><em>Created automatically via Bugsnag</em></p>", []], "response": -1, "tags": "", "comments": ""}]
+	json_uploaded = '';
+	submitted = 0;
+	saved = 0;
+	inferred = 0;
+	autoNextEnabled = false;
+	skipAssigned = false;
+	transitiveAssign = false;
+	tags = ['installation error',
+	'email integration', 'printing issues',
+	'wrong color', 'wrong position', 'wrong size', 'overlapping elements',
+	'data error', 'adblocker error', 'back-end issue',
+	'wrong transition', 'incorrect data validation', 'missing functionality', 'back-end issue',
+	'advertisement positions', 'wrong data', 'back-end issue',
+	'external data check'];
+	tagsDisplayed = [];
+	preloadedBins = [];
+	availableBins = [];
+	newBins = {};
+
+	function saveJson() {
+		var fileName = 'bugAnalysis_100_20210219.json'; 
+		if(Object.entries(newBins) != 0){
+			json_data['newBins'] = newBins;
+		}
+		var a = document.createElement("a");
+		var file = new Blob([JSON.stringify(json_data)], {type: 'text/plain'});
+		a.href = URL.createObjectURL(file);
+		a.download = fileName;
+		a.click();
+		saved = submitted;
+		window.onbeforeunload = null;
+		$("#saveJson").html("Save Reponses as JSON <span class='badge'>" + (submitted-saved).toString()  + "</span>");
+	}
+
+	function loadJson(e) {
+		if(e){
+			console.log(e);
+			if(saved != submitted){
+				ezBSAlert({
+					type: "confirm",
+					messageText: "Do you Want to save your current changes?",
+					alertType: "danger"
+				}).done(function(e){
+					if(e){
+						saveJson();
+						console.log("saving current changes.")
+						loadJsonConfirm();
+					}
+					else{
+						console.log("Purging current changes.")
+						loadJsonConfirm();
+					}
+				});
+			}
+			else{
+				loadJsonConfirm()
+			}
+
+		}
+		else{
+			console.log(e);
+			console.log("Ignoring the file.");
+		}
+	}
+
+
+	function checkDataFromJSON(json){
+		/*console.log(json)
+		if(!json.hasOwnProperty('pairs') || !json.hasOwnProperty('states')){
+			return false;
+		}
+		if((json['pairs'].length ==0) ||(Object.keys(json['states']).length==0)){
+			return false;
+		}
+		*/
+		return true;
+		
+	}
+
+	function updateStateForJson(){
+		submitted = 0;
+		saved = 0;
+		var min = -1;
+		for(jsonId in pairs){
+			if(pairs[jsonId].response != -1){
+				pair = pairs[jsonId];
+				// console.log("Setting max : " + jsonId + " : " + pairs[jsonId]);
+				submitted +=1;
+
+				if(min == -1){
+					min=parseInt(jsonId);
+				}
+			}
+		}
+		saved = submitted;
+		//loadTagsFromJson();
+		updateProgressBar();
+		currentImage = min;
+		loadNextImage();
+	}
+
+	
+
+	function loadJsonConfirm(){
+
+			console.log("Loading JSON from file.");
+			var isValid = checkDataFromJSON(json_uploaded);
+			if(isValid){
+				json_data = json_uploaded;
+
+				pairs = json_data['pairs'];
+				states=json_data['states'];
+				ezBSAlert({
+					messageText: "Successfully loaded the JSON",
+					alertType: "success"
+				}).done(function (e) {console.log("Alert shown and done.")});
+				
+				updateStateForJson();
+			}
+	}
+
+	
+
+	doneImage = "doneImage.png"
+	beginImage = "beginImage.png"
+	currentImage = -1;
+	doneTakingResponses = false;
+	imageZoom = 1;
+
+	function showImage(imageToShow){
+		if(imageToShow == null){
+			
+			$("#Subject").html(pairs[currentImage].subject);
+			$("#BugTitle").html(
+			'<a href="' +pairs[currentImage].link+'" target="_blank">' + pairs[currentImage].title + '</a>');
+
+			$("#BugPriority").html(pairs[currentImage].priority);
+			$("#BugLabels").html(pairs[currentImage].labels);
+			$("#BugStatus").html(pairs[currentImage].status);
+// 			$("#BugUrl").html(pairs[currentImage].link)
+			descriptionHtml = "<table class='table'>";
+			for(comment in pairs[currentImage].description){
+				descriptionHtml += "<tr><td>" + pairs[currentImage].description[comment] + "</td></tr>";
+			}
+			descriptionHtml += "</table>";
+			$("#BugDescription").html(descriptionHtml);			$("#imageToShow").html($("#BugDetails").html());
+
+// 			$("#imageToShow>.container").width(window.innerWidth - 50);
+		}
+		else{
+			$("#imageToShow").html(
+				"<img src = \"images/" + 
+				imageToShow + 
+				"\">"
+			);
+		}
+	}
+
+	function checkIfAssigned(imageIndex){
+		if(imageIndex >= pairs.length){
+			return false;
+		}
+
+		var pair = pairs[imageIndex];
+		if(pair.response == -1 || 
+			// pair.eventResponse == -1 ||
+			 pair.appChangeResponse == -1){
+			return false;
+		}
+// 		var state1 = states[pair.state1];
+// 		var state2 = states[pair.state2];
+// 		if(state1.bin=="" || state2.bin==""){
+// 			return false;
+// 		}
+		return true;
+	}
+
+	function getNextUnassigned(){
+		var nextUnassigned = currentImage;
+		var assigned = true;
+		while(assigned){
+			nextUnassigned +=1;
+			assigned = checkIfAssigned(nextUnassigned);
+		}
+		return nextUnassigned;
+	}
+
+	function loadNextImage(){
+		var imageToShow = null;
+
+		if(skipAssigned){
+			currentImage = getNextUnassigned();
+		}
+		else{
+			currentImage += 1;
+		}
+
+		if(currentImage == pairs.length){
+			imageToShow = doneImage;
+			doneTakingResponses = true;
+		}
+		
+			
+		console.log('currentImage : ' + currentImage)
+
+
+// 		$("#imageToShow").html(
+// 			"<img src = \"images/" + 
+// 			imageToShow + 
+// 			"\">"
+// 			);
+
+		updateStateForCurrentImage();
+		showImage(imageToShow);
+	}
+
+	function loadPreviousImage(){
+
+		var imageToShow =null;
+		if(currentImage <= 0 ){
+			imageToShow = beginImage;
+			// $("#responseForm").hide("slide");
+			// $("#nextButton").show();
+			// $("#prevButton").hide();
+			currentImage-=1;
+			// $("#imagePanel>.panel-heading").html("Images to Compare");
+		}
+		else {
+			currentImage -= 1;
+			// $("#responseForm").show("slide");
+			// $("#imagePanel>.panel-heading").html("Images to Compare");
+			console.log('currentImage : ' + currentImage);
+			// imageToShow =  pairs[currentImage].image;
+			// $("#nextButton").show();
+		}
+
+		// $("#imageToShow").html(
+		// 	"<img src = \"images/" + 
+		// 	imageToShow + 
+		// 	"\">"
+		// 	);
+
+		updateStateForCurrentImage();
+		showImage(imageToShow);
+
+	}
+
+
+	function updateStateForCurrentImage(){
+
+// 		$('#imageToShow').html('');
+
+		$("#tags").val("");
+		var tagArray = [];
+		tagArray = tagArray.concat(tags[0].concat(tags[1].concat(tags[2])));
+		// $(".autocomplete").autocomplete({
+		// 		    source: tagArray
+		// 		});
+
+// 		var checkedRadio = $("input[name='response']:checked");
+// 		if(checkedRadio.length != 0){
+// 			checkedRadio.prop('checked', false);
+// 		}
+
+		$('#categorySelect').selectpicker('deselectAll');
+
+		$('#categorySelect').selectpicker('refresh');
+
+		var appCheckBox = $("#appChangeResponse:checked")
+		if(appCheckBox.length >0 ){
+			appCheckBox.prop('checked', false)
+		}
+
+		$("#comments").val("");
+		$("#imageHeading>strong").html("Images to Compare");
+		$("#imageHeading>dummy").html('');
+		$("#currentImageNumber").html('');
+
+		if(currentImage == pairs.length ){
+			$("#responseForm").hide("slide");
+			//$("#saveJson").show();
+			$("#nextButton").hide();
+			$("#prevButton").show();
+			return;
+		}
+		else if(currentImage < 0 ){
+			$("#responseForm").hide("slide");
+			$("#nextButton").show();
+			$("#prevButton").hide();
+			return;
+		}
+		else {
+			$("#responseForm").show("slide");
+			$("#prevButton").show();
+			$("#nextButton").show();
+			$("#currentImageNumber").html((currentImage + 1).toString());
+		}
+
+		$("#successAlert").hide();
+		$("#errorAlert").hide();
+		$("#binErrorAlert").hide();
+		$("#binErrorAlert_Inconsistent").hide();
+
+
+		////////////////////////////////////////////////////////////////////////////////
+		// Bin Management
+
+
+
+
+		$("#tags").val((pairs[currentImage].tags).toString());
+		$("#comments").val(pairs[currentImage].comments);
+
+
+		if(pairs[currentImage].response !=-1){
+			$('#categorySelect').selectpicker('val', pairs[currentImage].response)
+
+// 			var previouslyCheckedRadio = $("input[name='response'][responseId='" + pairs[currentImage].response + "']");
+// 			//pairs[currentImage].response = checkedRadio.attr('responseId')
+// 			previouslyCheckedRadio.prop('checked', true);
+
+// 			$("#imageHeading>strong").html("Response Recorded : ");
+// 			if(pairs[currentImage].response == 0){
+// 				$("#imageHeading>dummy").html( $("#imageHeading>dummy").html() + " <span class='badge'>" + "clone" +"</span>");
+
+// 			}
+// 			if(pairs[currentImage].response == 1){
+// 				$("#imageHeading>dummy").html( $("#imageHeading>dummy").html() + " <span class='badge'>" + "near-duplicate" +"</span>");
+
+// 			}
+// 			if(pairs[currentImage].response == 2){
+// 				$("#imageHeading>dummy").html( $("#imageHeading>dummy").html() + " <span class='badge'>" + "different" +"</span>");
+// 			}
+			for(cat in pairs[currentImage].response){
+				$("#imageHeading>dummy").html( $("#imageHeading>dummy").html() + " <span class='badge'>" + pairs[currentImage].response[cat] +"</span>");
+			}
+
+			for(tag in pairs[currentImage].tags){
+				$("#imageHeading>dummy").html( $("#imageHeading>dummy").html() + " <span class='badge'>" + pairs[currentImage].tags[tag] +"</span>");
+			}
+		}
+
+
+
+		updateAutocompleteTagsForCategory();
+
+	}
+
+	function updateAutocompleteTagsForCategory(){
+		var checkedRadio = $("input[name='response']:checked");
+		tagsDisplayed = [];
+		$("#tagSugs").html('');
+		var tagsToDisplay = tags;
+		/*
+		if(checkedRadio.length != 0){
+			var responseId = checkedRadio.attr('responseId');
+			tagsToDisplay = tags[responseId];
+			tagsToDisplay = [...new Set(tagsToDisplay)];
+		}
+		else{
+			tagsToDisplay= tagsToDisplay.concat(tags[0].concat(tags[1].concat(tags[2])));
+			tagsToDisplay = [...new Set(tagsToDisplay)];
+		}
+		*/
+		var tagSugHtml = $("#tagSugs").html(); 
+
+		for(tag in tagsToDisplay){
+			if(!tagsDisplayed.includes(tagsToDisplay[tag])){
+				tagsDisplayed.push(tagsToDisplay[tag]);
+				tagSugHtml =  tagSugHtml + "<li class='tagSug' onclick='addSuggestedTag(this)'>"+ tagsToDisplay[tag]+ "</li>";
+			}
+		}
+		$("#tagSugs").html(tagSugHtml);
+		
+	}
+
+	function updateTags(){
+		var tagText = $("#tags").val();
+		pairs[currentImage].tags = tagText.split(",").map(Function.prototype.call, String.prototype.trim);
+		pairs[currentImage].tags = [...new Set(pairs[currentImage].tags)];
+	}
+
+	function addSuggestedTag(tag){
+		$(tag).remove();
+		delete tagsDisplayed[tagsDisplayed.indexOf(tagText)];
+		var tagText = $(tag).text();
+		if(!pairs[currentImage].tags.includes(tagText)){
+			$("#tags").val($("#tags").val() + ", " + tagText);
+			updateTags();
+		}
+		console.log(tagText);
+	}
+
+
+
+	function updateProgressBar(){
+		var percent = (submitted/pairs.length)*100;
+		$('.progress-bar').css('width', percent+'%');
+
+		$('.progress-bar').removeClass('progress-bar-danger');
+		$('.progress-bar').removeClass('progress-bar-warning');
+		$('.progress-bar').removeClass('progress-bar-info');
+		$('.progress-bar').removeClass('progress-bar-success');
+		if(percent <= 33){
+			$('.progress-bar').addClass('progress-bar-danger');
+		}
+		if(percent >= 33 && percent <=66){
+			$('.progress-bar').addClass('progress-bar-warning');
+		}
+		if(percent >= 66 && percent < 100){
+			$('.progress-bar').addClass('progress-bar-info');
+		}
+		if(percent == 100){
+			$('.progress-bar').addClass('progress-bar-success');
+		}
+		$('.progress-bar').html(submitted + "Reponses_submitted_out_of_" + pairs.length);
+		$("#saveJson").html("Save Reponses as JSON <span class='badge'>" + (submitted-saved).toString()  + "</span>");
+
+	}
+	STATUS_ERROR=-1;
+	STATUS_SUCCESS = 1;
+	ERROR_NOCATEGORY_SELECTED = "Please select how you want to classify the given pair of Images!!";
+	ERROR_ASSIGNMENT_MISSING = "Assignment Missing";
+	ERROR_D_SAME="You Selected Different, but Both have been placed in same Bin!!";
+	ERROR_CND_DIFFERENT = "You Selected Clone/NearDuplicate. But the States belong to different Bins!!";
+
+
+	
+
+	function recordResponse(){
+		var newResponse = pairs[currentImage].response==-1 
+		var checkedRadio = $('#categorySelect').selectpicker('val');
+		var tagText = $("#tags").val();
+		var comments = $("#comments").val();
+		if(checkedRadio.length == 0){
+			$("#errorAlert").show();
+			return;
+		}
+
+		//////////////////////////////////////////
+		var responseRecorded = $('#categorySelect').selectpicker('val');
+
+		// var elementResponseRec =  $("#elementResponse:checked");
+
+		var appChangeResponseRec =  $("#appChangeResponse:checked");
+
+		pairs[currentImage].response = responseRecorded
+		// pairs[currentImage].eventResponse = elementResponseRec.length;
+		pairs[currentImage].appChangeResponse = appChangeResponseRec.length;
+
+		/////////////////////////////////////////
+		$("#successAlert").show();
+
+		if(newResponse){
+			window.onbeforeunload = beforeUnload;
+			submitted += 1;
+			updateProgressBar();
+		}
+
+		pairs[currentImage].tags = tagText.split(",").map(Function.prototype.call, String.prototype.trim);
+// 		for(tag in pairs[currentImage].tags){
+// 			if (!tags[pairs[currentImage].response].includes(pairs[currentImage].tags[tag])){
+// 				tags[pairs[currentImage].response].push(pairs[currentImage].tags[tag]);
+// 			}
+// 		}
+		pairs[currentImage].comments = comments;
+		updateStateForCurrentImage();
+		if(autoNextEnabled){
+			loadNextImage();
+		}
+
+		
+	}
+
+	function on() {
+	document.getElementById("overlay").style.display = "block";
+	}
+
+	function off() {
+	document.getElementById("overlay").style.display = "none";
+	}
+
+	
+
+	function beforeUnload() {
+		if(saved != submitted){
+			saveJson();
+
+		}
+		return true;
+	}
+
+
+	function toggleSkipAssigned(){
+		skipAssigned = !skipAssigned;
+		if(skipAssigned){
+			$("#skipAssignedLabel").html("SkipAssigned Enabled");
+		}
+		else{
+			$("#skipAssignedLabel").html("SkipAssigned Disabled");
+		}
+	}
+
+	function toggleAutoNext(){
+		autoNextEnabled = !autoNextEnabled;
+		if(autoNextEnabled){
+			$("#autoNextLabel").html("AutoNext Enabled");
+		}
+		else{
+			$("#autoNextLabel").html("AutoNext Disabled");
+		}
+	}
+
+	function bs_input_file() {
+	$(".input-file").before(
+		function() {
+			if ( ! $(this).prev().hasClass('input-ghost') ) {
+				var element = $("<input type='file' class='input-ghost' id='chosenJsonFile' style='visibility:hidden; height:0'>");
+				element.attr("name",$(this).attr("name"));
+				element.change(function(event){
+					var uploadedFile = event.target.files[0]; 
+				//element.change(function(){
+					element.next(element).find('input').val((element.val()).split('\\').pop());
+
+					if(uploadedFile.type !== "text/javascript" && uploadedFile.type !== "application/json") { 
+					        alert("Wrong file type == " + uploadedFile.type); 
+					        return false;
+					    }
+
+					    if (uploadedFile) {
+					        var readFile = new FileReader();
+					        readFile.onload = function(e) { 
+					            var contents = e.target.result;
+					            json_uploaded = JSON.parse(contents);
+					            console.log("JSON from file parsed");
+					        };
+							readFile.readAsText(uploadedFile);
+					    } else { 
+					        console.log("Failed to load file");
+					    }
+					});
+
+				$(this).find("button.btn-choose").click(function(){
+					element.click();
+				});
+				$(this).find("button.btn-reset").click(function(){
+					element.val(null);
+					$(this).parents(".input-file").find('input').val('');
+				});
+				$(this).find('input').css("cursor","pointer");
+				$(this).find('input').mousedown(function() {
+					$(this).parents('.input-file').prev().click();
+					return false;
+				});
+				return element;
+			}
+		}
+	);
+	}
+	// $(function() {
+		
+	// 	//$('.input-group').css('position', 'absolute');
+	// });
+
+	$(document).ready(
+		function(){
+			console.log("ready");
+			json_data = json_data_original;
+			pairs = json_data;
+// 			states=json_data['states'];
+// 			preloadedBins = preloadedBins.concat([]);
+// 			loadBinsFromJson();
+
+			doneTakingResponses = false;
+			$("#responseForm").hide("slide")
+			//$("#saveJson").hide()
+			$("#prevButton").hide()
+			$("#nextButton").click(loadNextImage);
+			$("#prevButton").click(loadPreviousImage);
+			$("#saveJson").click(saveJson);
+			$("#responseSubmit").click(recordResponse);
+			$("#infoButton").click(on);
+			$('.progress-bar').html(submitted + "_Reponses_submitted_out_of_" + pairs.length);
+			$("#tags").on("keypress", function(e){
+				if(e.keyCode == 13){
+					e.preventDefault();
+					updateTags();
+				}
+			});
+
+			$(".tagSug").click(function(e){addSuggestedTag(e.target);});
+
+			$("#successAlert").hide();
+			$("#errorAlert").hide();
+			$("#binErrorAlert").hide();
+			$("#binErrorAlert_Inconsistent").hide();
+			window.onbeforeunload = null;
+			$('#autoNextToggle').click(toggleAutoNext);
+			$('#autoNextToggle').click();
+
+			$('#skipAssigned').click(toggleSkipAssigned);
+			$("#skipAssigned").click();
+
+
+			
+// 			$('#transitiveAssignToggle').click(toggleTransitiveAssign);
+// 			$("#transitiveAssignToggle").click();
+			
+
+			$('#zoomValueField').val(100);
+
+			bs_input_file();
+			$("#loadJsonButton").on("click", function(){  	
+				ezBSAlert({
+					type: "confirm",
+					messageText: "Do you Want to load this JSON?",
+					alertType: "info"
+				}).done(function(e){loadJson(e);});
+			});
+
+// 			$(".radio-inline").click(handleCategorySelect);
+			$('.input-file').css('position', 'absolute');
+
+			$("#imageToShow").click(function(){
+				if(currentImage<0){
+					loadNextImage();
+				}
+			});
+
+			$("#LbinGroup").hide();
+			$("#RbinGroup").hide();
+			$("#imagesToCompare").hide();
+// 			updateStateForJson();
+		}
+	);
+		
+
+	function ezBSAlert (options) {
+		var deferredObject = $.Deferred();
+		var defaults = {
+			type: "alert", //alert, prompt,confirm 
+			modalSize: 'modal-sm', //modal-sm, modal-lg
+			okButtonText: 'Ok',
+			cancelButtonText: 'Cancel',
+			yesButtonText: 'Yes',
+			noButtonText: 'No',
+			headerText: 'Attention',
+			messageText: 'Message',
+			alertType: 'default', //default, primary, success, info, warning, danger
+			inputFieldType: 'text', //could ask for number,email,etc
+		}
+		$.extend(defaults, options);
+	  
+		var _show = function(){
+			var headClass = "navbar-default";
+			switch (defaults.alertType) {
+				case "primary":
+					headClass = "alert-primary";
+					break;
+				case "success":
+					headClass = "alert-success";
+					break;
+				case "info":
+					headClass = "alert-info";
+					break;
+				case "warning":
+					headClass = "alert-warning";
+					break;
+				case "danger":
+					headClass = "alert-danger";
+					break;
+	        }
+			$('BODY').append(
+				'<div id="ezAlerts" class="modal fade">' +
+				'<div class="modal-dialog" class="' + defaults.modalSize + '">' +
+				'<div class="modal-content">' +
+				'<div id="ezAlerts-header" class="modal-header ' + headClass + '">' +
+				'<button id="close-button" type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>' +
+				'<h4 id="ezAlerts-title" class="modal-title">Modal title</h4>' +
+				'</div>' +
+				'<div id="ezAlerts-body" class="modal-body">' +
+				'<div id="ezAlerts-message" ></div>' +
+				'</div>' +
+				'<div id="ezAlerts-footer" class="modal-footer">' +
+				'</div>' +
+				'</div>' +
+				'</div>' +
+				'</div>'
+			);
+
+			$('.modal-header').css({
+				'padding': '15px 15px',
+				'-webkit-border-top-left-radius': '5px',
+				'-webkit-border-top-right-radius': '5px',
+				'-moz-border-radius-topleft': '5px',
+				'-moz-border-radius-topright': '5px',
+				'border-top-left-radius': '5px',
+				'border-top-right-radius': '5px'
+			});
+	    
+			$('#ezAlerts-title').text(defaults.headerText);
+			$('#ezAlerts-message').html(defaults.messageText);
+
+			var keyb = "false", backd = "static";
+			var calbackParam = "";
+			switch (defaults.type) {
+				case 'alert':
+					keyb = "true";
+					backd = "true";
+					$('#ezAlerts-footer').html('<button class="btn btn-' + defaults.alertType + '">' + defaults.okButtonText + '</button>').on('click', ".btn", function () {
+						calbackParam = true;
+						$('#ezAlerts').modal('hide');
+					});
+					break;
+				case 'confirm':
+					var btnhtml = '<button id="ezok-btn" class="btn btn-primary">' + defaults.yesButtonText + '</button>';
+					if (defaults.noButtonText && defaults.noButtonText.length > 0) {
+						btnhtml += '<button id="ezclose-btn" class="btn btn-default">' + defaults.noButtonText + '</button>';
+					}
+					$('#ezAlerts-footer').html(btnhtml).on('click', 'button', function (e) {
+							if (e.target.id === 'ezok-btn') {
+								calbackParam = true;
+								$('#ezAlerts').modal('hide');
+							} else if (e.target.id === 'ezclose-btn') {
+								calbackParam = false;
+								$('#ezAlerts').modal('hide');
+							}
+						});
+					break;
+				case 'prompt':
+					$('#ezAlerts-message').html(defaults.messageText + '<br /><br /><div class="form-group"><input type="' + defaults.inputFieldType + '" class="form-control" id="prompt" /></div>');
+					$('#ezAlerts-footer').html('<button class="btn btn-primary">' + defaults.okButtonText + '</button>').on('click', ".btn", function () {
+						calbackParam = $('#prompt').val();
+						$('#ezAlerts').modal('hide');
+					});
+					break;
+			}
+	   
+			$('#ezAlerts').modal({ 
+	          show: false, 
+	          backdrop: backd, 
+	          keyboard: keyb 
+	        }).on('hidden.bs.modal', function (e) {
+				$('#ezAlerts').remove();
+				deferredObject.resolve(calbackParam);
+			}).on('shown.bs.modal', function (e) {
+				if ($('#prompt').length > 0) {
+					$('#prompt').focus();
+				}
+			}).modal('show');
+		}
+	    
+	  _show();  
+	  return deferredObject.promise();    
+	}
+
+
+
+
+// var obj = {a: "Hello", b: "World"};
+// saveText( JSON.stringify(obj));
+</script>
+</head>
+<body>
+
+	<nav class="navbar navbar-default navbar-fixed-top" >
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="#">Web App Bug Analysis</a>
+	    </div>
+	    <ul class="nav navbar-nav">
+		<li class="nav-item active" >
+			<a class="nav-link active" href="#" id = "nextButton">Load Next</a>
+		</li>
+		
+		<li class="nav-item active">
+			<a class="nav-link active" href="#" id = "prevButton">Previous</a>
+		</li>
+		
+
+<!-- 		<li class="nav-item active">
+			<a class="nav-link active" href="#" id = "infoButton">Instructions</a>
+		</li> -->
+
+		</ul>
+
+		 <ul class="nav navbar-nav navbar-center">
+		<li>
+
+	    <button id = "saveJson" class="btn btn-danger navbar-btn">Save responses as JSON</button>
+
+	    </li>
+	    </ul>
+<!-- 
+		<li class = "nav-item active">
+			<a class="nav-link active" href="#">Load Json
+<input type = "file" id="loadJsonButton"/>
+			</a>
+ -->	
+  		<ul class="nav navbar-nav navbar-right">
+	 		<!-- <li class="nav-item active">
+			<div class="form-group">
+			    <label for="loadJsonButton">Load Json with previous Responses</label>
+			    <input type="file" class="form-control-file" id="loadJsonButton">
+			</div>
+		   		
+			</li> -->
+			<li>
+				<!-- COMPONENT START -->
+				<div class="form-group">
+					<div class="input-group input-file" name="Fichier1">
+						<span class="input-group-btn">
+			        		<button class="btn btn-default btn-choose" type="button">Choose</button>
+			    		</span>
+			    		<input type="text" class="form-control" placeholder='Choose a file...' />
+			    		<span class="input-group-btn">
+			       			 <button class="btn btn-default btn-info" type="button" id="loadJsonButton">Load</button>
+			    		</span>
+					</div>
+				 </div> 
+	<!-- COMPONENT END -->
+			</li>
+		</ul>
+
+
+
+	  </div>
+
+	
+	</nav>
+
+
+	<div class="panel panel-default">
+	  <div class="panel-heading">Progress Bar</div>
+	  <div class="panel-body" >
+	  	
+	 <div class="progress" >
+		<div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+		</div>
+	</div>
+
+	  </div>
+	</div>
+	 
+
+	<div class="panel panel-default" id="imagePanel">
+		<div class="panel-heading form-group-row">
+		
+		  	<div id = "imageHeading">
+		  		<span id="currentImageNumber" class='badge'></span>
+		  		<strong>Images to Compare </strong>
+		  		<dummy></dummy>
+		  	</div>
+		  	<div >
+				
+				<input type="checkbox" class="form-check-input" id="autoNextToggle">
+				<label id="autoNextLabel" class="form-check-label" for="autoNextToggle">Toggle AutoNext</label>
+				
+				<input type="checkbox" class="form-check-input" id="skipAssigned">
+				<label id="skipAssignedLabel" class="form-check-label" for="skipAssigned">Toggle SkipAssigned</label>
+				
+<!-- 				<input type="checkbox" class="form-check-input" id="transitiveAssignToggle">
+				<label id="transitiveAssignLabel" class="form-check-label" for="transitiveAssignToggle">Toggle TransitiveAssignment</label>
+				 -->
+			</div>
+	  	</div>
+		
+		<div class="panel-body" style="height:55%;overflow:auto">
+		  	<div id = "BugDetails" style="display: none;">
+		  		<div class='container container-fluid'>
+					<div class= 'row'>
+						<div id='BugTitle' class='col-sm-10'>
+
+						</div>
+
+						<span id ='Subject' class='badge col-sm-2'>
+						</span>
+
+					</div>
+<!-- 					<div class= 'row'>
+						<div id='BugUrl' class='col-lg-12'>
+
+						</div>
+					</div> -->
+					<table class='table table-hover'>
+					<thead class='thead-light'>
+						<tr>
+							<th>
+							Status
+							</th>
+							<th> 
+							Priority
+							</th>
+							<th> 
+							Labels
+							</th>
+						</tr>
+					</thead
+					<tr>
+					<td id='BugStatus'> 
+						</td>
+						<td  id='BugPriority'> 
+						</td>
+						<td id='BugLabels'> 
+						</td>
+					</tr>
+					</table>
+					<div class='row' style='background-color:'>
+						
+					</div>
+					<div class='row'>
+						
+					</div>					
+					<div class= 'panel'>
+						<div id='BugDescription' class='col-lg-12'>
+
+						</div>
+					</div>
+				</div>
+		  	</div>
+			<div id = "imageToShow"> 
+				<img src = "images/beginImage.png">
+				
+			</div>
+			
+		</div>
+		
+	</div>
+
+	<div class="panel panel-default">
+	  <div class="panel-heading"> Please Submit your Response Here</div>
+	  <div class="panel-body" style="height:250px">
+
+
+
+
+	  	<div id = "responseForm" >
+
+			
+			<form>
+				<div class = "container form-group">
+					<div class="row">
+						<div class="col-lg-9">
+<!--							<strong> State Comparison </strong> <br/>-->
+<!--							<label class="radio-inline"><input type="radio" name="response" responseId=0>Installation</label>-->
+<!--							<label class="radio-inline"><input type="radio" name="response" responseId=1>External Integration</label>-->
+<!--							<label class="radio-inline"><input type="radio" name="response" responseId=2>Appearance</label>-->
+<!--							<label class="radio-inline"><input type="radio" name="response" responseId=3>Missing Elements</label>-->
+<!--							<label class="radio-inline"><input type="radio" name="response" responseId=4>Wrong Functionality</label>-->
+<!--							<label class="radio-inline"><input type="radio" name="response" responseId=4>Unexpected Elements</label>-->
+<!--							<label class="radio-inline"><input type="radio" name="response" responseId=6>NO UI Manifestation</label>-->
+							<select id="categorySelect" class="selectpicker" data-live-search="true" title="Select Bug Categories" data-header="Select Bug Categories" data-width="fit" multiple>
+								<option data-tokens="install upgrade">Installation </option>
+								<option data-tokens="external email"> External Integration</option>
+								<option data-tokens="unknown"> Feature Request </option>
+								<option data-tokens="UI look small big"> Appearance</option>
+								<option data-tokens="notfound find">Missing Elements </option>
+								<option data-tokens="transition error action event function">Wrong Event</option>
+								<option data-tokens="error message"> Unexpected Elements</option>
+								<option data-tokens="log database"> NO UI Manifestation</option>
+								<option data-tokens="unknown"> UI Unknown </option>
+							</select>
+						</div>
+						
+						<div class="col-lg-2">
+					    	<button class="btn btn-info" type="button" id ="responseSubmit">Submit Response</button>
+					    </div>
+
+						<div id="successAlert" class="col-lg-3 alert alert-success">
+						  	<strong>Success!</strong> Your response has been recorded.
+						</div>
+
+						<div id="errorAlert" class="col-lg-3 alert alert-danger">
+							<strong>Error!</strong> Please select a category.
+						</div>
+						<div id="binErrorAlert" class="col-lg-3 alert alert-danger">
+							<strong>Error!</strong> Please select a Bin for each Image.
+						</div>
+						<div id="binErrorAlert_Inconsistent" class="col-lg-3 alert alert-danger">
+							<strong>Error!</strong> Inconsistent Bin Assignment!!
+							<br/>
+							<strong class='errorMessage'></strong>
+						</div>
+					</div>
+
+				</div>
+			    <div class = "form-group" id="tagGroup">
+			    	<!-- <label for="tags">Add Custom Tags separated by commas :</label> -->
+  					<!-- <input type="text" class="form-control" id="tags" placeholder="Add Custom Tags separated by commas"> -->
+			   
+					<div class="input-group">
+					    <div class="input-group-btn">
+					    	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Available Tags <span class="caret"></span></button>
+					    	<ul id="tagSugs" class="dropdown-menu">
+					    		<li class='tagSug' onclick='addSuggestedTag(this)'>dummy</li>
+							</ul>
+					    </div><!-- /btn-group -->
+	  					<input type="text" class="form-control" id="tags" placeholder="Add Custom Tags separated by commas">
+					</div><!-- /input-group -->
+			    </div>
+
+
+			    <div class="form-group" id="commentGroup">
+			      <label for="comment">Comments :</label>
+			      <textarea class="form-control" rows="5" id="comments"></textarea>
+			    </div>
+			  </form>
+		</div>
+		
+
+	  </div>
+	</div>
+	
+	<div id="overlay" onclick="off()">
+
+	
+
+	<div class="overlay">
+	<div style="padding:10%">
+	<div class="panel panel-default">
+	  <div class="panel-heading"> Instructions </div>
+	  <div class="panel-body" style="height:250px;overflow:auto">
+	  	<p>	Responses are only recorded if Submit Response Button is clicked after chosing one of the provided Categories </p>
+	  	<p> You May also chose any custom tag you think may be helpful in categorizing these images.<p>
+	  	<p> Comments may include why you decided to classify the pair the way you did. <p> 
+
+	  	<h4> Deciding how to classify given two images</h4>
+	<ul>
+		<li>
+		CLONE : If the pages have no perceptible changes in functionality or appearance, they are considered Clones
+		</li>
+		<li>
+		NEAR-DUPLICATES : If the changes between the pages are subtle and do not probably affect the functionality offered 
+			<ul>
+				<li>
+					Advertisements 
+				</li>
+
+				<li>
+					Background Images 
+				</li>
+
+				<li>
+					Minor Elements that were shown vs hidden because of user actions like hovering for example navigation lists that appears vs not  
+				</li>
+			</ul>
+		</li>
+
+		<li>
+		DIFFERENT : 	If the pages are very different and represent completely different functionality
+		</li>
+	</ul>
+
+	  </div>
+	</div>
+
+	</div>
+	</div>
+
+
+	
+</body>
+</html>

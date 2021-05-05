@@ -1,0 +1,10 @@
+{
+  "eventStore": {
+    "host": "localhost",
+    "port": 1113
+  },
+  "broker": {
+    "host": "localhost",
+    "port": 5672
+  }
+}

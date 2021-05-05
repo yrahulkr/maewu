@@ -1,0 +1,301 @@
+operator,class,bugSeverity,stubborn,killed,subject,categories,labels,testRequirement,candidate
+StyleVisibility,noneq,2.5,2.0,False,addressbook,['missingElements'],"['codeError', 'missingInfo']","['assert', 'execute']",StyleVisibility_AddressBookAddMultipleAddressBookTest_84_-HTML1-BODY1-DIV1-DIV4-FORM2-TABLE1-TBODY1-TR4-TD8-A1
+EventHandlerReplace,noneq,2.5,2.0,False,addressbook,['brokenEventHandling'],['codeError'],"['execute', 'assert']",EventHandlerReplace_AddressBookAddAddressBookTest_32_-HTML1-BODY1-DIV1-DIV4-FORM2-TABLE1-TBODY1-TR1-TH4-A1
+AttributeAdd,noneq,0.5,2.0,False,addressbook,['none'],['none'],['assert'],AttributeAdd_AddressBookAddGroupTest_40_-HTML1-BODY1-DIV1-DIV5-UL1-LI1-A1
+AttributeReplace,noneq,2.5,3.0,False,addressbook,"['unExpectedElements', 'brokenEventHandling']",['wrongPage'],['executeAssertImmediate'],AttributeReplace_AddressBookAddMultipleAddressBookTest_84_-HTML1-BODY1-DIV1-DIV4-FORM2-TABLE1-TBODY1-TR4-TD6-A1
+StyleVisibility,noneq,2.0,2.0,True,addressbook,['missingElements'],['missingInfo'],"['find', 'execute', 'assert']",StyleVisibility_AddressBookRemoveMultipleAddressBookTest_36_-HTML1-BODY1-DIV1-DIV4
+EventHandlerAdd,noneq,2.5,3.0,False,addressbook,"['brokenEventHandling', 'wrongElements']","['wrongPage', 'codeError']",['executeAssertImmediate'],EventHandlerAdd_AddressBookAddMultipleAddressBookTest_84_-HTML1-BODY1-DIV1-DIV4-FORM2-TABLE1-TBODY1-TR4-TD8-A1-IMG1
+TextDelete,noneq,2.0,2.0,True,addressbook,['missingElements'],['missingInfo'],['assert'],TextDelete_AddressBookRemoveMultipleAddressBookTest_36_-HTML1-BODY1-DIV1-DIV4-FORM2-TABLE1-TBODY1-TR2-TD5
+StyleSize,noneq,1.0,2.0,False,addressbook,"['wrongSize', 'wrongPosition']","['cosmetic', 'css']",['assert'],StyleSize_AddressBookAddAddressBookTest_34_-HTML1-BODY1-DIV1-DIV4-FORM1-INPUT16
+TextReplace,noneq,2.0,4.0,False,addressbook,['wrongElements'],['missingInfo'],['executeAssertPropagated'],TextReplace_AddressBookAddAddressBookTest_34_-HTML1-BODY1-DIV1-DIV4-FORM1-SELECT1-OPTION1
+SubtreeDelete,noneq,2.5,1.0,True,addressbook,['missingElements'],"['missingInfo', 'wrongPage']",['find'],SubtreeDelete_AddressBookRemoveFromGroupTest_35_-HTML1-BODY1-DIV1-DIV4-FORM2-TABLE1-TBODY1-TR2-TD7
+AttributeReplace,noneq,2.5,2.0,True,addressbook,"['unExpectedElements', 'missingElements']",['codeError'],"['find', 'execute']",AttributeReplace_AddressBookAddMultipleAddressBookTest_84_-HTML1-BODY1-DIV1-DIV4-FORM2-TABLE1-TBODY1-TR3-TD1-INPUT1
+SubtreeDelete,noneq,2.5,1.0,True,addressbook,['missingElements'],"['missingInfo', 'wrongPage']",['find'],SubtreeDelete_AddressBookAddAddressBookTest_32_-HTML1-BODY1-DIV1-DIV3-UL1-LI4
+StylePosition,noneq,1.0,2.0,True,addressbook,['wrongPosition'],"['css', 'cosmetic']",['assert'],StylePosition_AddressBookAddAddressBookTest_32_-HTML1-BODY1-DIV1-DIV2
+StyleColor,noneq,1.0,2.0,False,addressbook,['wrongColor'],"['css', 'cosmetic']",['assert'],StyleColor_AddressBookAddAddressBookTest_49_-HTML1-BODY1-DIV1-DIV1
+AttributeDelete,noneq,2.5,3.0,True,addressbook,"['wrongElements', 'wrongElementState']",['codeError'],"['execute', 'executeAssertImmediate']",AttributeDelete_AddressBookAddGroupTest_43_-HTML1-BODY1-DIV1-DIV4-FORM1-INPUT6
+SubtreeInsert,noneq,0.5,2.0,False,addressbook,['unExpectedElements'],"['missingInfo', 'cosmetic']",['assert'],SubtreeInsert_AddressBookRemoveFromGroupTest_35_-HTML1-BODY1-DIV1-DIV4-FORM2-DIV4
+TextDelete,noneq,2.0,2.0,False,addressbook,['missingElements'],['missingInfo'],['assert'],TextDelete_AddressBookAddAddressBookTest_49_-HTML1-BODY1-DIV1-DIV1-FORM1-B1
+SubtreeDelete,noneq,2.0,2.0,True,addressbook,['missingElements'],['missingInfo'],"['find', 'assert']",SubtreeDelete_AddressBookCheckBirthdayInfoTest_33_-HTML1-BODY1-DIV1-DIV4-TABLE1-TBODY1-TR2-TD5
+EventHandlerAdd,noneq,2.5,3.0,False,addressbook,['brokenEventHandling'],['codeError'],['executeAssertImmediate'],EventHandlerAdd_AddressBookAddMultipleGroupsTest_51_-HTML1-BODY1-DIV1-DIV4-FORM1-INPUT2
+SubtreeInsert,noneq,0.5,2.0,False,addressbook,['unExpectedElements'],"['missingInfo', 'cosmetic']",['assert'],SubtreeInsert_AddressBookRemoveFromGroupTest_35_-HTML1-BODY1-DIV1-DIV4-FORM2-TABLE1-TBODY1-TR2-TD5
+StyleSize,noneq,0.5,2.0,False,addressbook,['wrongPosition'],['cosmetic'],['assert'],StyleSize_AddressBookAddAddressBookTest_33_-HTML1-BODY1-DIV1-DIV1
+AttributeAdd,noneq,2.5,3.0,False,addressbook,"['brokenLink', 'brokenEventHandling']",['wrongPage'],['executeAssertImmediate'],AttributeAdd_AddressBookRemoveFromGroupTest_36_-HTML1-BODY1-DIV1-DIV1-FORM1-A1
+StyleSize,noneq,1.0,2.0,False,addressbook,['wrongSize'],"['cosmetic', 'css']",['assert'],StyleSize_AddressBookRemoveFromMultipleGroupsTest_35_-HTML1-BODY1-DIV1-DIV4-FORM2-TABLE1-TBODY1-TR1-TH4
+TextDelete,noneq,2.0,2.0,False,addressbook,['missingElements'],['missingInfo'],['assert'],TextDelete_AddressBookAddAddressBookTest_33_-HTML1-BODY1-DIV1-DIV1-FORM1-B1
+SubtreeMove,noneq,1.0,2.0,True,addressbook,['wrongPosition'],"['cosmetic', 'css']",['assert'],SubtreeMove_AddressBookRemoveFromGroupTest_35_-HTML1-BODY1-DIV1-DIV4-FORM2-TABLE1-TBODY1-TR2
+StyleSize,noneq,0.5,2.0,False,addressbook,['wrongSize'],['cosmetic'],['assert'],StyleSize_AddressBookRemoveFromGroupTest_35_-HTML1-BODY1-DIV1-DIV4-FORM2-DIV4-SELECT1
+StyleSize,noneq,0.5,2.0,False,addressbook,['wrongSize'],['cosmetic'],['assert'],StyleSize_AddressBookRemoveFromMultipleGroupsTest_35_-HTML1-BODY1-DIV1-DIV4-FORM2-TABLE1-TBODY1-TR2-TD8
+TextInsert,noneq,2.0,2.0,False,addressbook,['unExpectedElements'],['missingInfo'],['assert'],TextInsert_AddressBookRemoveFromMultipleGroupsTest_35_-HTML1-BODY1-DIV1-DIV4-FORM2-TABLE1-TBODY1-TR1-TH6
+TextInsert,noneq,2.0,2.0,False,addressbook,['unExpectedElements'],['missingInfo'],['assert'],TextInsert_AddressBookRemoveFromMultipleGroupsTest_35_-HTML1-BODY1-DIV1-DIV4-FORM2-TABLE1-TBODY1-TR1-TH9
+StyleVisibility,noneq,2.5,2.0,False,addressbook,"['missingElements', 'brokenLink']","['missingInfo', 'wrongPage']",['execute'],StyleVisibility_AddressBookRemoveFromGroupTest_35_-HTML1-BODY1-DIV1-DIV4-FORM2-TABLE1-TBODY1-TR2-TD9
+AttributeDelete,noneq,0.5,2.0,False,addressbook,['wrongSize'],['cosmetic'],['assert'],AttributeDelete_AddressBookEditAddressBookTest_32_-HTML1-BODY1-DIV1-DIV4-FORM1-INPUT8
+StyleVisibility,noneq,2.5,2.0,False,addressbook,"['missingElements', 'brokenLink']","['missingInfo', 'wrongPage']",['execute'],StyleVisibility_AddressBookAddMultipleAddressBookTest_84_-HTML1-BODY1-DIV1-DIV4-FORM2-TABLE1-TBODY1-TR3-TD8-A1
+StylePosition,noneq,0.5,2.0,False,addressbook,['wrongPosition'],['cosmetic'],['assert'],StylePosition_AddressBookEditMultipleGroupsTest_35_-HTML1-BODY1-DIV1-DIV4-FORM1-SELECT1
+AttributeReplace,noneq,2.5,3.0,False,addressbook,['brokenLink'],['wrongPage'],['executeAssertImmediate'],AttributeReplace_AddressBookRemoveFromGroupTest_35_-HTML1-BODY1-DIV1-DIV4-FORM2-TABLE1-TBODY1-TR2-TD10-A1
+SubtreeDelete,noneq,2.5,2.0,True,addressbook,['missingElements'],"['missingInfo', 'wrongPage']",['execute'],SubtreeDelete_AddressBookRemoveMultipleAddressBookTest_36_-HTML1-BODY1-DIV1-DIV4-FORM2-TABLE1-TBODY1-TR2-TD7
+SubtreeDelete,noneq,2.5,1.0,False,addressbook,['missingElements'],"['missingInfo', 'wrongPage']",['find'],SubtreeDelete_AddressBookRemoveMultipleAddressBookTest_36_-HTML1-BODY1-DIV1-DIV4-FORM2-TABLE1-TBODY1-TR2-TD9
+StylePosition,noneq,0.5,2.0,False,addressbook,['wrongPosition'],['cosmetic'],['assert'],StylePosition_AddressBookAssignToMultipleGroupsTest_32_-HTML1-BODY1-DIV1-DIV4-FORM2-DIV4-INPUT1
+SubtreeDelete,noneq,2.5,3.0,False,addressbook,['missingElements'],"['missingInfo', 'wrongPage']","['execute', 'executeAssertImmediate']",SubtreeDelete_AddressBookAddAddressBookTest_49_-HTML1-BODY1-DIV1-DIV1
+EventHandlerAdd,noneq,2.5,3.0,False,addressbook,['brokenEventHandling'],['codeError'],['executeAssertImmediate'],EventHandlerAdd_AddressBookPrintAddressBookTest_32_-HTML1-BODY1-DIV1-DIV1-TABLE1-TBODY1-TR1-TD1-A1
+StyleColor,noneq,0.5,2.0,False,addressbook,['wrongColor'],['cosmetic'],['assert'],StyleColor_AddressBookRemoveFromMultipleGroupsTest_35_-HTML1-BODY1-DIV1-DIV4-FORM2-TABLE1-TBODY1-TR1-TH2-A1
+StyleSize,noneq,1.0,2.0,True,addressbook,"['wrongPosition', 'wrongSize']","['cosmetic', 'css']",['assert'],StyleSize_AddressBookRemoveMultipleAddressBookTest_36_-HTML1-BODY1-DIV1-DIV4-LABEL1-STRONG1-SPAN1
+EventHandlerDelete,noneq,2.5,3.0,False,addressbook,['brokenEventHandling'],['codeError'],['executeAssertImmediate'],EventHandlerDelete_AddressBookAddAddressBookTest_52_-HTML1-BODY1-DIV1-DIV4-FORM2-TABLE1-TBODY1-TR1-TH3
+TextDelete,noneq,2.0,2.0,False,addressbook,['missingElements'],['missingInfo'],['assert'],TextDelete_AddressBookAddAddressBookTest_33_-HTML1-BODY1-DIV1-DIV3-UL1-LI7-A1
+SubtreeInsert,noneq,2.0,2.0,False,addressbook,['unExpectedElements'],['missingInfo'],['assert'],SubtreeInsert_AddressBookAddGroupTest_32_-HTML1-BODY1-DIV1-DIV4
+StyleSize,noneq,1.0,2.0,True,addressbook,"['wrongPosition', 'wrongSize', 'wrongElementState']","['codeError', 'cosmetic', 'css']",['execute'],StyleSize_AddressBookAddAddressBookTest_33_-HTML1-BODY1-DIV1-DIV3-UL1-LI3
+StyleSize,noneq,1.0,2.0,False,addressbook,"['brokenEventHandling', 'missingElements', 'wrongPosition']","['missingInfo', 'css', 'wrongPage', 'cosmetic']",['execute'],StyleSize_AddressBookAddAddressBookTest_33_-HTML1-BODY1-DIV1-DIV3-UL1-LI6
+TextReplace,noneq,2.0,2.0,True,addressbook,['unExpectedElements'],['missingInfo'],['assert'],TextReplace_AddressBookAddMultipleAddressBookTest_84_-HTML1-BODY1-DIV1-DIV4-FORM2-TABLE1-TBODY1-TR3-TD5
+TextDelete,noneq,2.5,2.0,True,addressbook,"['missingElements', 'brokenLink']","['missingInfo', 'wrongPage']","['execute', 'assert']",TextDelete_AddressBookAddMultipleAddressBookTest_84_-HTML1-BODY1-DIV1-DIV4-FORM2-TABLE1-TBODY1-TR2-TD4-A1
+AttributeReplace,eq,0.5,2.0,False,addressbook,['none'],['none'],['assert'],AttributeReplace_AddressBookAddMultipleAddressBookTest_84_-HTML1-BODY1-DIV1-DIV4-FORM2-TABLE1-TBODY1-TR1-TH4-A1
+StyleColor,eq,0.5,0.0,False,addressbook,['none'],['none'],['none'],StyleColor_AddressBookAddAddressBookTest_52_-HTML1-BODY1-DIV1-DIV4-FORM2-TABLE1-TBODY1-TR1-TH3
+SubtreeInsert,noneq,2.0,2.0,False,claroline,['unExpectedElements'],['missingInfo'],['assert'],SubtreeInsert_AddCourseTest_73_-HTML1-BODY1-DIV1
+StyleSize,noneq,0.5,2.0,False,claroline,['wrongSize'],['cosmetic'],['assert'],StyleSize_AddMultipleUsersTest_74_-HTML1-BODY1-DIV1-DIV2-TABLE2-TBODY1-TR1-TD11
+AttributeReplace,noneq,2.5,3.0,False,claroline,['brokenLink'],['wrongPage'],['executeAssertImmediate'],AttributeReplace_DoCourseExerciseQuestionsTest_38_-HTML1-BODY1-DIV1-DIV2-DIV2-DIV3-DIV1-DIV1-DIV1-UL1-LI8-A1
+TextReplace,noneq,2.0,2.0,True,claroline,['wrongElements'],['missingInfo'],['assert'],TextReplace_EnrolMultipleUsersTest_58_-HTML1-BODY1-DIV1-DIV1-DIV2-DIV1-UL1-LI3-SPAN1-A1
+StyleVisibility,noneq,2.0,2.0,True,claroline,['missingElements'],['missingInfo'],['assert'],StyleVisibility_EnrolMultipleUsersTest_67_-HTML1-BODY1-DIV1-DIV2-DIV2-DIV3-DIV2-DIV1-SPAN1
+AttributeReplace,noneq,2.5,3.0,False,claroline,['brokenLink'],['wrongPage'],['executeAssertImmediate'],AttributeReplace_DoCourseExerciseQuestionsTest_37_-HTML1-BODY1-DIV1-DIV2-DIV2-DIV3-DIV1-DIV1-DIV1-UL1-LI10-A1
+StyleColor,noneq,0.5,2.0,False,claroline,['wrongColor'],['cosmetic'],['assert'],StyleColor_AddCourseExerciseQuestionsTest_67_-HTML1-BODY1-DIV1-DIV2-DIV2-DIV3-DIV2-DIV1
+StyleVisibility,noneq,2.0,2.0,False,claroline,['missingElements'],['missingInfo'],['assert'],StyleVisibility_DoCourseExerciseQuestionsMultipleUsersTest_74_-HTML1-BODY1-DIV1-DIV2-DIV2-DIV3-DIV2-DIV1-TABLE1-TBODY1-TR1-TD1-H11
+StyleVisibility,noneq,2.5,2.0,False,claroline,"['brokenLink', 'missingElements']","['missingInfo', 'wrongPage']","['execute', 'assert']",StyleVisibility_SearchAllowedCourseTest_34_-HTML1-BODY1-DIV1-DIV1-DIV3-DIV1
+StyleColor,noneq,1.0,2.0,False,claroline,['wrongColor'],"['cosmetic', 'css']",['assert'],StyleColor_AddUserTest_23_-HTML1-BODY1-DIV1-DIV2-DIV1-DIV1-H31
+StylePosition,noneq,0.5,2.0,False,claroline,['wrongPosition'],['cosmetic'],['assert'],StylePosition_AddMultipleUsersTest_74_-HTML1-BODY1-DIV1-DIV2-TABLE2-TBODY1-TR3-TD7-A1
+StyleColor,noneq,0.5,2.0,False,claroline,['wrongColor'],['cosmetic'],['assert'],StyleColor_EnrolMultipleUsersTest_67_-HTML1-BODY1-DIV1-DIV2-DIV2-DIV3-DIV1-DIV1-DIV1-UL1-LI6-A1
+EventHandlerAdd,noneq,2.5,3.0,False,claroline,['brokenEventHandling'],['codeError'],['executeAssertImmediate'],EventHandlerAdd_AddEmptyCourseTest_35_-HTML1-BODY1-DIV1-DIV2-FORM1-FIELDSET3-DIV1-DL2-DD1-SELECT1-OPTION1
+EventHandlerAdd,noneq,2.5,3.0,False,claroline,['brokenEventHandling'],['codeError'],['executeAssertImmediate'],EventHandlerAdd_DoCourseExerciseQuestionsTest_46_-HTML1-BODY1-DIV1-DIV2-DIV2-DIV3-DIV2-FORM1-TABLE1-TBODY2-TR1-TD1-BLOCKQUOTE1
+SubtreeInsert,noneq,2.0,2.0,False,claroline,['unExpectedElements'],['missingInfo'],['assert'],SubtreeInsert_AddCourseExerciseTest_34_-HTML1-BODY1-DIV1-DIV2-DIV2-DIV3-DIV2-DIV3
+SubtreeInsert,noneq,2.0,2.0,False,claroline,['unExpectedElements'],['missingInfo'],['assert'],SubtreeInsert_AddCourseExerciseTest_35_-HTML1-BODY1-DIV1-DIV2-DIV2-DIV3-DIV2
+SubtreeInsert,noneq,2.0,2.0,False,claroline,['unExpectedElements'],['missingInfo'],['assert'],SubtreeInsert_EnrolMultipleUsersTest_58_-HTML1-BODY1-DIV1-DIV1-DIV2-DIV1-UL1-LI1-SPAN1
+StyleSize,noneq,1.0,2.0,False,claroline,['wrongSize'],"['cosmetic', 'css']",['assert'],StyleSize_AddCourseExerciseQuestionsTest_43_-HTML1-BODY1-DIV1-DIV2-DIV2-DIV3-DIV2-FORM1-TABLE1-TBODY1-TR1-TD2-SPAN1-TABLE1-TBODY1-TR1-TD1-DIV1-SPAN1-TABLE1-TBODY1-TR1-TD5
+StyleSize,noneq,0.5,2.0,False,claroline,['wrongSize'],['cosmetic'],['assert'],StyleSize_DoCourseExerciseQuestionsMultipleUsersTest_42_-HTML1-BODY1-DIV1-DIV1-DIV2-DIV1
+StyleSize,noneq,0.5,2.0,False,claroline,['wrongSize'],['cosmetic'],['assert'],StyleSize_AddUserTest_34_-HTML1-BODY1-DIV1-DIV2-DIV2
+StyleVisibility,noneq,2.0,2.0,False,claroline,['missingElements'],['missingInfo'],['execute'],StyleVisibility_DoCourseExerciseQuestionsTest_37_-HTML1-BODY1-DIV1-DIV2-DIV2-DIV3-DIV1-DIV1-DIV1-UL1-LI4-A1
+StyleColor,noneq,0.5,2.0,False,claroline,['wrongColor'],['cosmetic'],['assert'],StyleColor_AddCourseTest_70_-HTML1-BODY1-DIV1
+StyleSize,noneq,0.5,2.0,False,claroline,['wrongSize'],['cosmetic'],['assert'],StyleSize_AddUserTest_34_-HTML1-BODY1-DIV1-DIV2-DIV2-DIV1
+SubtreeInsert,noneq,2.0,2.0,False,claroline,['unExpectedElements'],['missingInfo'],['assert'],SubtreeInsert_EnrolMultipleUsersTest_55_-HTML1-BODY1-DIV1-DIV1-DIV2-DIV2-UL1-LI1
+StyleVisibility,noneq,2.5,2.0,True,claroline,"['missingElements', 'brokenLink']","['missingInfo', 'wrongPage']",['execute'],StyleVisibility_AddCourseEventTest_34_-HTML1-BODY1-DIV1-DIV2-DIV2-DIV3-DIV1-DIV1-DIV1-UL1-LI11-A1
+TextDelete,noneq,2.0,2.0,False,claroline,['missingElements'],['missingInfo'],['assert'],TextDelete_AddUserTest_32_-HTML1-BODY1-DIV1-DIV1-DIV2-DIV2-UL1-LI1
+StyleSize,noneq,0.5,2.0,False,claroline,"['wrongSize', 'wrongPosition']",['cosmetic'],['assert'],StyleSize_EnrolMultipleUsersTest_59_-HTML1-BODY1-DIV1-DIV1-DIV3-DIV1-UL1-LI2-A1
+StyleSize,noneq,1.0,2.0,True,claroline,"['wrongSize', 'wrongPosition']","['cosmetic', 'css']",['assert'],StyleSize_AddCourseEventTest_34_-HTML1-BODY1-DIV1-DIV2-DIV2-DIV3-DIV1-DIV1-DIV1-UL1-LI5-A1
+SubtreeInsert,noneq,2.0,2.0,False,claroline,['unExpectedElements'],['missingInfo'],['assert'],SubtreeInsert_AddCourseExerciseTest_38_-HTML1-BODY1-DIV1-DIV2
+SubtreeDelete,noneq,2.0,2.0,False,claroline,['missingElements'],['missingInfo'],['assert'],SubtreeDelete_SearchAllowedCourseTest_34_-HTML1-BODY1-DIV1-DIV1-DIV1-DIV1-SPAN1
+StyleVisibility,noneq,2.5,2.0,True,claroline,"['missingElements', 'brokenLink']","['missingInfo', 'wrongPage']","['assert', 'execute']",StyleVisibility_EnrolMultipleUsersTest_67_-HTML1-BODY1-DIV1-DIV2-DIV2-DIV3-DIV2-TABLE1-TBODY1-TR4-TD10-A1
+EventHandlerReplace,noneq,2.5,3.0,False,claroline,['brokenEventHandling'],['codeError'],['executeAssertImmediate'],EventHandlerReplace_AddCourseExerciseQuestionsTest_43_-HTML1-BODY1-DIV1-DIV2-DIV2-DIV3-DIV2-FORM1-TABLE1-TBODY1-TR2-TD2-SPAN1-TABLE1-TBODY1-TR1-TD1-DIV1-SPAN1-TABLE1-TBODY1-TR1-TD13-A1
+AttributeReplace,noneq,2.5,3.0,False,claroline,['brokenLink'],['wrongPage'],['executeAssertImmediate'],AttributeReplace_SearchMultipleUsersTest_36_-HTML1-BODY1-DIV1-DIV2-TABLE2-THEAD1-TR1-TH2-A1
+SubtreeInsert,noneq,2.0,2.0,False,claroline,['unExpectedElements'],['missingInfo'],['assert'],SubtreeInsert_AddCourseTest_73_-HTML1-BODY1-DIV1-DIV2-DIV2-UL1-LI2
+SubtreeInsert,noneq,0.5,2.0,False,claroline,['none'],['none'],['assert'],SubtreeInsert_SearchUserTest_36_-HTML1-BODY1-DIV1-DIV2-DIV3
+SubtreeDelete,noneq,2.5,2.0,False,claroline,"['missingElements', 'brokenEventHandling']","['codeError', 'missingInfo']",['execute'],SubtreeDelete_AddEmptyCourseTest_35_-HTML1-BODY1-DIV1-DIV2-FORM1-FIELDSET1-DIV1-DL1-DD4-SELECT1
+StyleVisibility,noneq,2.0,2.0,False,claroline,['missingElements'],['missingInfo'],['assert'],StyleVisibility_EnrolPasswordCourseWrongPasswordUserTest_38_-HTML1-BODY1-DIV1-DIV1-DIV1-DIV1-SPAN1-A1
+SubtreeDelete,noneq,2.0,2.0,False,claroline,['missingElements'],['missingInfo'],['assert'],SubtreeDelete_AddCourseExerciseQuestionsTest_39_-HTML1-BODY1-DIV1-DIV2-DIV2-DIV3-DIV2-FORM1-FIELDSET1-DL1-DD2-DIV1-SPAN1-TABLE1-TBODY1-TR1-TD1-DIV1-SPAN1-TABLE2-TBODY1-TR1-TD18-DIV1
+StyleVisibility,noneq,2.5,1.0,True,claroline,"['brokenLink', 'missingElements']","['missingInfo', 'wrongPage']",['find'],StyleVisibility_AddCourseExerciseTest_32_-HTML1-BODY1-DIV1-DIV2
+StyleVisibility,noneq,2.5,2.0,False,claroline,"['brokenEventHandling', 'missingElements']","['codeError', 'missingInfo']",['execute'],StyleVisibility_AddCourseExerciseQuestionsTest_39_-HTML1-BODY1-DIV1-DIV2-DIV2-DIV3-DIV2-FORM1-FIELDSET1-DL1-DD2-DIV1-SPAN1-TABLE1-TBODY1-TR2-TD1
+SubtreeInsert,noneq,2.0,2.0,False,claroline,['unExpectedElements'],['missingInfo'],['assert'],SubtreeInsert_SearchAllowedCourseTest_34_-HTML1-BODY1-DIV1-DIV1-DIV3
+TextDelete,noneq,2.0,2.0,False,claroline,['missingElements'],['missingInfo'],['assert'],TextDelete_EnrolMultipleUsersTest_67_-HTML1-BODY1-DIV1-DIV2-DIV2-DIV3-DIV2-TABLE1-THEAD1-TR1-TH10
+StyleColor,noneq,0.5,2.0,False,claroline,"['none', 'wrongColor']","['none', 'cosmetic']","['none', 'assert']",StyleColor_AddUserTest_33_-HTML1-BODY1-DIV1-DIV2-UL1-LI4-UL1
+SubtreeInsert,noneq,2.0,2.0,False,claroline,['unExpectedElements'],['missingInfo'],['assert'],SubtreeInsert_EnrolMultipleUsersTest_55_-HTML1-BODY1-DIV1-DIV1-DIV1
+StylePosition,noneq,0.5,2.0,False,claroline,['wrongPosition'],['cosmetic'],['assert'],StylePosition_AddEmptyCourseTest_35_-HTML1-BODY1-DIV1-DIV2-FORM1-FIELDSET1-DIV1-DL1-DT1-SPAN1
+SubtreeDelete,noneq,2.0,2.0,False,claroline,['missingElements'],['missingInfo'],['assert'],SubtreeDelete_AddCourseExerciseQuestionsTest_43_-HTML1-BODY1-DIV1-DIV2-DIV2-DIV3-DIV2-FORM1-TABLE1-TBODY1-TR1-TD2-SPAN1-TABLE1-TBODY1-TR1-TD1-DIV1-SPAN1-TABLE1-TBODY1-TR1-TD10
+EventHandlerAdd,eq,0.5,0.0,False,claroline,['none'],['none'],['none'],EventHandlerAdd_AddCourseEventTest_34_-HTML1-BODY1-DIV1-DIV1-DIV3-DIV2-A1
+StyleVisibility,eq,0.5,0.0,False,claroline,['none'],['none'],['none'],StyleVisibility_AddUserTest_23_-HTML1-BODY1-DIV1-DIV1-DIV2-DIV1-UL1
+StyleColor,eq,0.5,0.0,False,claroline,['none'],['none'],['none'],StyleColor_AddCourseTest_70_-HTML1-BODY1-DIV1-DIV1-DIV3-DIV1-UL1-LI1
+AttributeAdd,eq,0.5,0.0,False,claroline,['none'],['none'],['none'],AttributeAdd_AddCourseExerciseTest_35_-HTML1-BODY1-DIV1-DIV2-DIV2-DIV3-DIV2-FORM1-FIELDSET1-DL1-DD2-DIV1-SPAN1-TABLE1-TBODY1-TR1-TD1-DIV1-SPAN1-TABLE1-TBODY1-TR1-TD2-SPAN1-TABLE1
+AttributeReplace,noneq,2.5,3.0,True,collabtive,"['wrongElementState', 'brokenEventHandling']","['wrongPage', 'codeError']",['executeAssertImmediate'],AttributeReplace_CloseTasksProjectPercentageTest_43_-HTML1-BODY1-DIV1-DIV2-DIV3-DIV1-FORM1-FIELDSET1-BUTTON1
+StyleColor,noneq,0.5,2.0,False,collabtive,['wrongColor'],['cosmetic'],['assert'],StyleColor_OpenMilestoneTest_38_-HTML1-BODY1-DIV1-DIV2-DIV3-DIV2-H21-A1
+SubtreeMove,noneq,2.5,2.0,False,collabtive,"['brokenLink', 'missingElements']","['wrongPage', 'missingInfo']",['execute'],SubtreeMove_EditRoleTest_36_-HTML1-BODY1-DIV1-DIV2-DIV2-DIV1-DIV5-DIV2-DIV1-TABLE1-TBODY1-TR5-TD1
+SubtreeInsert,noneq,2.0,2.0,False,collabtive,['unExpectedElements'],['missingInfo'],['assert'],SubtreeInsert_EditUserRoleTest_38_-HTML1-BODY1-DIV1
+AttributeAdd,noneq,2.5,3.0,False,collabtive,['brokenEventHandling'],['codeError'],"['execute', 'executeAssertImmediate']",AttributeAdd_CloseMilestoneTest_39_-HTML1-BODY1-DIV1-DIV2-DIV3-DIV3-DIV1-UL1-LI1-A1
+StyleSize,noneq,0.5,2.0,False,collabtive,"['wrongSize', 'wrongPosition']",['cosmetic'],['assert'],StyleSize_CloseTasksTest_44_-HTML1-BODY1-DIV1-DIV2-DIV3-DIV2-DIV1-FORM1-SELECT1
+StyleColor,noneq,0.5,2.0,False,collabtive,['wrongColor'],['cosmetic'],['assert'],StyleColor_OpenTasksProjectPercentageTest_51_-HTML1-BODY1-DIV1-DIV2-DIV2-DIV1-DIV3-DIV5-DIV2-TABLE1-TBODY10
+StyleSize,noneq,0.5,2.0,True,collabtive,['wrongPosition'],['cosmetic'],['assert'],StyleSize_AddProjectTest_49_-HTML1-BODY1-DIV1-DIV1-DIV1-DIV1-DIV2-UL1-LI3-A1
+TextReplace,noneq,2.0,2.0,False,collabtive,['wrongElements'],['missingInfo'],['assert'],TextReplace_EditProjectTest_36_-HTML1-BODY1-DIV1-DIV2-DIV3-DIV2-H21-A1
+SubtreeDelete,noneq,2.5,1.0,True,collabtive,"['brokenLink', 'missingElements']","['wrongPage', 'missingInfo']",['find'],SubtreeDelete_AssignUserToProjectTest_43_-HTML1-BODY1-DIV1-DIV2-DIV3
+TextReplace,noneq,2.0,2.0,False,collabtive,['wrongElements'],['missingInfo'],['assert'],TextReplace_CloseTasklistTest_37_-HTML1-BODY1-DIV1-DIV2-DIV2-DIV1-DIV3-DIV5-DIV2-TABLE1-TBODY5-TR1-TD2-DIV1-STRONG1
+SubtreeDelete,noneq,2.0,1.0,False,collabtive,['missingElements'],['missingInfo'],['find'],SubtreeDelete_AddAndRemoveMultipleTasksTest_45_-HTML1-BODY1-DIV1-DIV2-DIV3-DIV3-DIV1-UL1
+EventHandlerReplace,noneq,2.5,3.0,False,collabtive,['brokenEventHandling'],['codeError'],['executeAssertImmediate'],EventHandlerReplace_SearchClosedProjectTest_36_-HTML1-BODY1-DIV1-DIV2-DIV2-DIV1-DIV2-DIV1-DIV1-A1
+EventHandlerDelete,noneq,2.5,3.0,False,collabtive,['brokenEventHandling'],['codeError'],['executeAssertImmediate'],EventHandlerDelete_AddTaskDesktopPresentTest_37_-HTML1-BODY1-DIV1-DIV2-DIV2-DIV1-DIV3-DIV1-DIV2-DIV1-TABLE1-TBODY1-TR3-TD1-A1
+TextDelete,noneq,2.0,2.0,False,collabtive,['missingElements'],['missingInfo'],['assert'],TextDelete_OpenTasklistTest_38_-HTML1-BODY1-DIV1-DIV2-DIV2-DIV1-DIV1-DIV3-DIV1-FORM1-FIELDSET1-DIV1-LABEL1
+TextReplace,noneq,2.0,2.0,False,collabtive,['wrongElements'],['missingInfo'],['assert'],TextReplace_CloseTasksTest_38_-HTML1-BODY1-DIV1-DIV2-DIV2-DIV1-DIV1-DIV5-DIV1-DIV1-FORM1-FIELDSET1-DIV4-DIV1-TABLE1-TBODY1-TR6-TD2
+StyleVisibility,noneq,2.5,2.0,False,collabtive,"['missingElements', 'brokenEventHandling']","['missingInfo', 'codeError']","['find', 'assert', 'execute']",StyleVisibility_CloseTasklistTest_38_-HTML1-BODY1-DIV1-DIV2-DIV3-DIV2-DIV1
+SubtreeInsert,noneq,2.0,2.0,False,collabtive,['unExpectedElements'],['missingInfo'],['assert'],SubtreeInsert_EditProjectTest_42_-HTML1-BODY1-DIV1-DIV2-DIV2-DIV1-DIV1
+SubtreeInsert,noneq,2.0,2.0,False,collabtive,['missingElements'],['missingInfo'],['assert'],SubtreeInsert_EditRoleTest_36_-HTML1-BODY1-DIV1-DIV2-DIV2-DIV1-DIV2-DIV1-DIV1
+StyleSize,noneq,0.5,2.0,False,collabtive,['wrongSize'],['cosmetic'],['assert'],StyleSize_AddMilestoneTest_37_-HTML1-BODY1-DIV1-DIV2-DIV2-DIV1-DIV1-DIV3-DIV2-TABLE1-TBODY1-TR1-TD4
+TextInsert,noneq,0.5,2.0,False,collabtive,['unExpectedElements'],['cosmetic'],['assert'],TextInsert_EditMilestoneTest_39_-HTML1-BODY1-DIV2
+TextDelete,noneq,2.0,2.0,False,collabtive,['missingElements'],['missingInfo'],['assert'],TextDelete_EditUserRoleTest_38_-HTML1-BODY1-DIV1-DIV2-DIV2-DIV1-DIV1-DIV3-DIV1-DIV1-FORM1-FIELDSET1-DIV5-DIV1-TABLE1-TBODY1-TR8-TD3
+AttributeAdd,unknown,0.5,0.0,False,collabtive,['none'],['none'],['none'],AttributeAdd_AssignUserToProjectTest_39_-HTML1-BODY1-DIV1-DIV2-DIV2-DIV1-DIV1-DIV3-DIV3-DIV1-A1
+TextInsert,noneq,2.0,2.0,False,collabtive,['unExpectedElements'],['missingInfo'],['assert'],TextInsert_AddRoleTest_45_-HTML1-BODY1-DIV1-DIV2-DIV2-DIV1-DIV1-DIV6-TABLE1-TBODY1-TR1-TD2-DIV1-SPAN1
+StyleVisibility,noneq,0.5,2.0,False,collabtive,['wrongPosition'],['cosmetic'],['assert'],StyleVisibility_AddProjectTest_49_-HTML1-BODY1-DIV1-DIV1-DIV1-DIV1-DIV2-UL1-LI3-DIV1-UL1-LI3-A1
+SubtreeInsert,noneq,2.0,2.0,False,collabtive,['unExpectedElements'],['missingInfo'],['assert'],SubtreeInsert_CloseTasklistTest_38_-HTML1-BODY1-DIV1-DIV2-DIV3-DIV2
+AttributeReplace,noneq,2.5,4.0,True,collabtive,['brokenEventHandling'],['codeError'],['executeAssertPropagated'],AttributeReplace_AddTasklistTest_45_-HTML1-BODY1-DIV1-DIV2-DIV3-DIV1-FORM1-FIELDSET1-DIV1-INPUT1
+TextReplace,noneq,2.0,2.0,False,collabtive,['wrongElements'],['missingInfo'],['assert'],TextReplace_EditRoleTest_38_-HTML1-BODY1-DIV3-DIV1-DIV1-A1
+StyleColor,noneq,0.5,2.0,False,collabtive,['wrongColor'],['cosmetic'],['assert'],StyleColor_EditUserRoleTest_38_-HTML1-BODY1-DIV1-DIV2-DIV2-DIV1
+SubtreeInsert,noneq,2.0,2.0,False,collabtive,['unExpectedElements'],['missingInfo'],['assert'],SubtreeInsert_AddMilestoneTest_59_-HTML1-BODY1-DIV1-DIV2-DIV3-DIV3-DIV1-UL1
+SubtreeInsert,noneq,0.5,2.0,False,collabtive,['wrongPosition'],['cosmetic'],['assert'],SubtreeInsert_SearchClosedProjectTest_36_-HTML1-BODY1-DIV8-DIV1-DIV2-DIV1
+StyleSize,noneq,1.0,2.0,False,collabtive,"['wrongSize', 'wrongPosition', 'wrongElementState']","['cosmetic', 'codeError']",['assert'],StyleSize_AddMilestoneTest_37_-HTML1-BODY1-DIV1-DIV2-DIV2
+StyleSize,noneq,1.0,2.0,False,collabtive,['wrongSize'],"['cosmetic', 'css']",['assert'],StyleSize_LoginUserTest_36_-HTML1-BODY1-DIV1-DIV2-DIV2-DIV1-DIV1-DIV2-TABLE1-TBODY1-TR1-TD2-DIV1-DIV1-TABLE1-TBODY9
+StyleVisibility,noneq,2.0,2.0,False,collabtive,['missingElements'],['missingInfo'],['assert'],StyleVisibility_AddMilestoneTest_39_-HTML1-BODY1-DIV1-DIV2-DIV3-DIV3-DIV1-UL1-LI1-A1
+SubtreeInsert,noneq,2.0,2.0,False,collabtive,['unExpectedElements'],['missingInfo'],['assert'],SubtreeInsert_CloseTasklistTest_37_-HTML1-BODY1-DIV1-DIV1-DIV1
+StyleSize,noneq,1.0,2.0,False,collabtive,"['wrongPosition', 'wrongSize']","['cosmetic', 'css']",['assert'],StyleSize_AddProjectTest_49_-HTML1-BODY1-DIV1-DIV1-DIV1-DIV1-DIV2-UL1-LI1-A1
+StyleVisibility,noneq,0.5,2.0,False,collabtive,['wrongPosition'],['cosmetic'],['assert'],StyleVisibility_EditProjectTest_35_-HTML1-BODY1-DIV1-DIV2-DIV2-DIV1-DIV2-DIV2-DIV1-DIV1-FORM1-FIELDSET1-DIV2-DIV1-SPAN1-TABLE1-TBODY1-TR3-TD1-DIV1
+SubtreeDelete,noneq,2.5,1.0,True,collabtive,"['missingElements', 'brokenLink']","['missingInfo', 'wrongPage']",['find'],SubtreeDelete_AddMilestoneTest_39_-HTML1-BODY1-DIV1-DIV2-DIV1-UL1-LI2
+TextDelete,noneq,2.0,2.0,False,collabtive,['missingElements'],['missingInfo'],['assert'],TextDelete_EditRoleTest_36_-HTML1-BODY1-DIV1-DIV2-DIV2-DIV1-DIV5-DIV2-DIV1-TABLE1-TBODY1-TR2-TD4
+StylePosition,noneq,0.5,2.0,False,collabtive,['wrongPosition'],['cosmetic'],['assert'],StylePosition_AddMilestoneTest_36_-HTML1-BODY1-DIV1-DIV2-DIV1-UL1-LI1-A1
+SubtreeDelete,noneq,2.5,1.0,True,collabtive,"['missingElements', 'brokenLink']","['missingInfo', 'wrongPage']",['find'],SubtreeDelete_AddProjectTest_49_-HTML1-BODY1-DIV1-DIV1-DIV1-DIV1-DIV2-UL1-LI4
+StyleColor,noneq,0.5,2.0,False,collabtive,['wrongColor'],['cosmetic'],['assert'],StyleColor_EditUserRoleTest_39_-HTML1-BODY1-DIV1-DIV2-DIV2-DIV1-DIV1-DIV3-DIV2-DIV2-DIV1-DIV1
+SubtreeInsert,noneq,2.0,2.0,False,collabtive,['unExpectedElements'],['missingInfo'],['assert'],SubtreeInsert_AddRoleTest_37_-HTML1-BODY1-DIV1-DIV2-DIV2-DIV1-DIV1-DIV3-DIV2-DIV2-DIV1-DIV1-UL1-LI1-DIV1-TABLE1-TBODY1-TR2
+StyleVisibility,noneq,2.5,2.0,False,collabtive,"['missingElements', 'brokenLink']","['missingInfo', 'wrongPage']",['assert'],StyleVisibility_AddAndRemoveLateMilestoneTest_48_-HTML1-BODY1-DIV1-DIV2-DIV3-DIV3-DIV1-UL1-LI1-A2
+EventHandlerDelete,eq,0.5,0.0,False,collabtive,['none'],['none'],['none'],EventHandlerDelete_AddProjectTest_36_-HTML1-BODY1-DIV1-DIV2-DIV2-DIV1-DIV1-DIV3-DIV1-DIV1-FORM1-FIELDSET1-DIV5-DIV1-TABLE1-TBODY1-TR4-TD3
+StyleVisibility,eq,0.5,0.0,False,collabtive,['none'],['none'],['none'],StyleVisibility_AddProjectTest_35_-HTML1-BODY1-DIV1-DIV1-DIV1-DIV1-DIV1-DIV1-H11-A1
+TextReplace,eq,0.5,0.0,False,collabtive,['none'],['none'],['none'],TextReplace_OpenMilestoneTest_38_-HTML1-BODY1-DIV1-DIV2-DIV2-DIV1-DIV1-DIV3-DIV1-DIV1-FORM1-FIELDSET1-DIV2-DIV1-SPAN1-TABLE1-TBODY1-TR1-TD1-DIV1-SPAN1-TABLE1-TBODY1-TR1-TD3-A1-SPAN2
+StyleColor,eq,0.5,0.0,False,collabtive,['none'],['none'],['none'],StyleColor_AddProjectTest_26_-HTML1-BODY1-DIV1-DIV1-FORM1-FIELDSET1-DIV4
+StyleSize,eq,0.5,0.0,False,collabtive,['none'],['none'],['none'],StyleSize_EditRoleTest_36_-HTML1-BODY1-DIV1-DIV2-DIV1-UL1-LI1-A1
+AttributeAdd,eq,0.5,0.0,False,collabtive,['none'],['none'],['none'],AttributeAdd_AddTasklistTest_49_-HTML1-BODY1-DIV1-DIV2-DIV3-DIV2-H21-A1
+StylePosition,noneq,2.5,1.0,False,mrbs,"['brokenLink', 'missingElements']","['missingInfo', 'wrongPage']",['find'],StylePosition_RemoveEntryTest_37_-HTML1-BODY1-DIV3-DIV1-DIV2-SPAN14-A1
+StyleSize,noneq,1.0,2.0,False,mrbs,['wrongSize'],"['cosmetic', 'css']",['assert'],StyleSize_AddEntryTest_49_-HTML1-BODY1-DIV2-TABLE1-TBODY1-TR15-TD1-DIV1-A1
+SubtreeDelete,noneq,2.5,1.0,False,mrbs,"['missingElements', 'brokenLink']","['missingInfo', 'wrongPage']",['find'],SubtreeDelete_AddMultipleEntriesDifferentRoomsSameDayTest_60_-HTML1-BODY1-DIV2-TABLE1-TBODY1-TR20
+StyleSize,noneq,1.0,2.0,False,mrbs,"['wrongSize', 'wrongPosition']","['cosmetic', 'css']",['assert'],StyleSize_AddMultipleEntriesDifferentRoomsDifferentDaysTest_58_-HTML1-BODY1-DIV2-TABLE1-TBODY1-TR17-TD1
+SubtreeDelete,noneq,2.5,1.0,True,mrbs,"['missingElements', 'brokenLink', 'brokenEventHandling']","['missingInfo', 'wrongPage', 'search']",['find'],SubtreeDelete_AddMultipleEntriesSameRoomDifferentDaysTest_60_-HTML1-BODY1-DIV1-TABLE1-TBODY1-TR1-TD6
+StylePosition,noneq,1.0,2.0,True,mrbs,['wrongPosition'],"['cosmetic', 'css']",['assert'],StylePosition_RemoveEntryTest_37_-HTML1-BODY1-DIV3-DIV3-DIV2-SPAN1
+AttributeDelete,noneq,2.5,3.0,False,mrbs,['brokenLink'],['codeError'],['executeAssertImmediate'],AttributeDelete_AddBuildingTest_24_-HTML1-BODY1-DIV3-DIV3-DIV2-A7
+TextReplace,noneq,2.0,2.0,False,mrbs,['unExpectedElements'],['missingInfo'],['assert'],TextReplace_AddBuildingTest_35_-HTML1-BODY1-DIV2-DIV3-DIV1-DIV1-DIV6-DIV1-DIV1-TABLE1-THEAD1-TR1-TH1
+StylePosition,noneq,2.5,2.0,False,mrbs,['brokenLink'],['wrongPage'],['execute'],StylePosition_CheckBuildingRoomTest_35_-HTML1-BODY1-DIV2-TABLE1-TBODY1-TR22-TD1-DIV1-A1
+StyleVisibility,noneq,2.5,1.0,False,mrbs,"['brokenLink', 'missingElements']","['wrongPage', 'missingInfo']",['find'],StyleVisibility_AddBuildingTest_24_-HTML1-BODY1-DIV3-DIV1-DIV1-A1
+AttributeReplace,noneq,2.5,3.0,True,mrbs,"['wrongElementState', 'brokenEventHandling']","['missingInfo', 'codeError']","['execute', 'executeAssertImmediate']",AttributeReplace_AddLongNameRoomNegativeTest_54_-HTML1-BODY1-DIV1-TABLE1-TBODY1-TR1-TD7-DIV1-FORM1-DIV1-INPUT5
+StyleSize,noneq,0.5,2.0,False,mrbs,['wrongSize'],['cosmetic'],['assert'],StyleSize_AddMultipleEntriesDifferentRoomsSameDayTest_52_-HTML1-BODY1-DIV2-TABLE1-TBODY1-TR9-TD1
+StylePosition,noneq,2.5,2.0,False,mrbs,"['brokenLink', 'missingElements']","['wrongPage', 'missingInfo']",['execute'],StylePosition_AddBuildingTest_24_-HTML1-BODY1-DIV2-TABLE1-THEAD1-TR1-TH5-A1
+TextReplace,noneq,2.0,2.0,False,mrbs,['wrongElements'],['missingInfo'],['assert'],TextReplace_AddEntryTest_46_-HTML1-BODY1-DIV2-TABLE1-TBODY1-TR3-TD1-DIV1-A1
+StylePosition,noneq,2.5,3.0,False,mrbs,"['brokenLink', 'missingElements']",['wrongPage'],['executeAssertImmediate'],StylePosition_AddBuildingTest_24_-HTML1-BODY1-DIV2-TABLE1-TBODY1-TR10-TD3
+StyleColor,noneq,1.0,2.0,False,mrbs,['wrongColor'],"['cosmetic', 'css']",['assert'],StyleColor_AddMultipleEntriesSameRoomDifferentDaysTest_52_-HTML1-BODY1-DIV2-DIV1-DIV2-DIV2-TABLE1-TBODY1-TR1-TD7-A1
+AttributeDelete,noneq,2.5,3.0,False,mrbs,['brokenLink'],['wrongPage'],['executeAssertImmediate'],AttributeDelete_AddEntryTest_46_-HTML1-BODY1-DIV2-TABLE1-TBODY1-TR13-TD1-DIV1-A1
+SubtreeDelete,noneq,2.5,1.0,True,mrbs,"['missingElements', 'brokenLink']","['missingInfo', 'wrongPage']",['find'],SubtreeDelete_AddMultipleEntriesSameRoomDifferentDaysTest_52_-HTML1-BODY1-DIV2-DIV1-DIV2-DIV2-TABLE1-TBODY1-TR2-TD5
+StyleSize,noneq,1.0,2.0,False,mrbs,['wrongSize'],"['cosmetic', 'css']",['assert'],StyleSize_CheckBuildingRoomTest_35_-HTML1-BODY1-DIV2-TABLE2-TBODY1-TR1-TD2
+StyleVisibility,noneq,2.5,3.0,True,mrbs,['missingElements'],"['missingInfo', 'wrongPage']",['executeAssertImmediate'],StyleVisibility_AddMultipleEntriesSameRoomDifferentDaysTest_37_-HTML1-BODY1-DIV2-DIV1-DIV2-DIV2-TABLE1-TBODY1-TR2-TD7-A1
+StylePosition,noneq,1.0,2.0,False,mrbs,['wrongPosition'],"['css', 'cosmetic']",['assert'],StylePosition_AddMultipleEntriesSameRoomDifferentDaysTest_37_-HTML1-BODY1-DIV3-DIV1-DIV2-SPAN4-A1
+SubtreeInsert,noneq,2.0,2.0,False,mrbs,['unExpectedElements'],['missingInfo'],['assert'],SubtreeInsert_AddBuildingTest_24_-HTML1-BODY1-DIV3-DIV2-DIV2
+EventHandlerAdd,noneq,2.5,3.0,False,mrbs,['brokenEventHandling'],['codeError'],['executeAssertImmediate'],EventHandlerAdd_AddBuildingTest_29_-HTML1-BODY1-DIV1-TABLE1-TBODY1-TR1-TD6-FORM1-DIV1-INPUT1
+SubtreeMove,noneq,1.0,2.0,False,mrbs,['wrongPosition'],"['cosmetic', 'css']",['assert'],SubtreeMove_AddBuildingTest_24_-HTML1-BODY1-DIV3-DIV1-DIV2-SPAN2
+StylePosition,noneq,1.0,2.0,False,mrbs,['wrongPosition'],"['cosmetic', 'css']",['assert'],StylePosition_AddBuildingTest_24_-HTML1-BODY1-DIV2-TABLE1-THEAD1-TR1-TH1
+EventHandlerAdd,noneq,2.5,3.0,False,mrbs,['brokenEventHandling'],['codeError'],['executeAssertImmediate'],EventHandlerAdd_AddMultipleEntriesDifferentRoomsSameDayTest_60_-HTML1-BODY1-DIV2-TABLE1-TBODY1-TR23-TD1-DIV1-A1
+SubtreeDelete,noneq,2.5,1.0,False,mrbs,"['missingElements', 'brokenLink']","['missingInfo', 'wrongPage']",['find'],SubtreeDelete_RemoveEntryTest_37_-HTML1-BODY1-DIV3-DIV1
+StyleSize,noneq,1.0,2.0,False,mrbs,"['wrongSize', 'wrongPosition']","['cosmetic', 'css']",['assert'],StyleSize_AddMultipleEntriesDifferentRoomsSameDayTest_38_-HTML1-BODY1-DIV2-FORM1-FIELDSET1-DIV6-DIV1-SELECT1-OPTION3
+StylePosition,noneq,0.5,2.0,False,mrbs,['wrongPosition'],['cosmetic'],['assert'],StylePosition_AddMultipleRoomsTest_51_-HTML1-BODY1-DIV2-DIV3-DIV1-DIV1-DIV6-DIV3-DIV2-TABLE1
+SubtreeInsert,noneq,2.0,2.0,False,mrbs,['unExpectedElements'],['missingInfo'],['assert'],SubtreeInsert_AddMultipleEntriesDifferentRoomsSameDayTest_44_-HTML1-BODY1-DIV2-TABLE1-TBODY1-TR19
+SubtreeMove,noneq,0.5,2.0,True,mrbs,['wrongPosition'],['cosmetic'],['assert'],SubtreeMove_AddBuildingTest_24_-HTML1-BODY1-DIV2-DIV1-DIV2-DIV3-TABLE1-TBODY1-TR2-TD6
+EventHandlerAdd,noneq,2.5,3.0,False,mrbs,['brokenEventHandling'],['codeError'],['executeAssertImmediate'],EventHandlerAdd_AddBuildingTest_24_-HTML1-BODY1-DIV2-DIV1-DIV2-DIV2-TABLE1-THEAD1-TR2-TH7
+StyleSize,noneq,1.0,2.0,True,mrbs,"['wrongSize', 'wrongPosition']","['cosmetic', 'css']",['assert'],StyleSize_AddRoomTest_25_-HTML1-BODY1-DIV2-DIV1-DIV1-UL1-LI2-A1
+AttributeDelete,noneq,2.5,3.0,True,mrbs,['brokenLink'],['wrongPage'],['executeAssertImmediate'],AttributeDelete_RemoveEntryTest_37_-HTML1-BODY1-DIV1-TABLE1-TBODY1-TR1-TD4-A1
+StyleColor,noneq,1.0,2.0,False,mrbs,['wrongColor'],"['cosmetic', 'css']",['assert'],StyleColor_AddAndRemoveSerialEntryTest_57_-HTML1-BODY1-DIV3-DIV3-DIV2-A8
+StylePosition,noneq,1.0,2.0,False,mrbs,"['wrongPosition', 'brokenEventHandling']","['codeError', 'cosmetic', 'css']",['execute'],StylePosition_AddBuildingTest_24_-HTML1-BODY1-DIV2-TABLE1-TBODY1-TR12
+StyleVisibility,noneq,2.5,2.0,False,mrbs,"['missingElements', 'brokenLink']","['wrongPage', 'missingInfo']",['execute'],StyleVisibility_AddBuildingTest_24_-HTML1-BODY1-DIV2-DIV1-DIV2-DIV1-TABLE1-TBODY1-TR5-TD3-A1
+StyleSize,noneq,1.0,2.0,False,mrbs,['wrongSize'],"['cosmetic', 'css']",['assert'],StyleSize_AddMultipleEntriesDifferentRoomsSameDayTest_44_-HTML1-BODY1-DIV2-TABLE1-TBODY1-TR23-TD1-DIV1-A1
+SubtreeInsert,noneq,2.0,2.0,False,mrbs,['unExpectedElements'],['missingInfo'],['assert'],SubtreeInsert_RemoveEntryTest_37_-HTML1-BODY1-DIV1-TABLE1-TBODY1-TR1-TD1-DIV1-DIV2
+SubtreeMove,noneq,2.5,3.0,False,mrbs,"['wrongElements', 'brokenLink']","['wrongPage', 'missingInfo']",['executeAssertImmediate'],SubtreeMove_AddBuildingTest_24_-HTML1-BODY1-DIV2-DIV1-DIV2-DIV1-TABLE1-TBODY1-TR4-TD4
+SubtreeMove,noneq,0.5,2.0,False,mrbs,['wrongPosition'],['cosmetic'],['assert'],SubtreeMove_AddBuildingTest_35_-HTML1-BODY1-DIV2-DIV3-DIV1-DIV1-DIV6-DIV2-DIV2-TABLE1-TBODY1-TR4-TD1-DIV1
+StyleColor,noneq,0.5,2.0,False,mrbs,['wrongColor'],['cosmetic'],['assert'],StyleColor_AddMultipleEntriesDifferentRoomsSameDayTest_60_-HTML1-BODY1-DIV2-DIV3-DIV1
+StyleSize,noneq,0.5,2.0,True,mrbs,['wrongSize'],['cosmetic'],['assert'],StyleSize_AddBuildingTest_24_-HTML1-BODY1-DIV2-DIV1-DIV2-DIV3-TABLE1-TBODY1-TR3-TD3-A1
+TextDelete,noneq,2.0,2.0,False,mrbs,['missingElements'],['missingInfo'],['assert'],TextDelete_AddBuildingTest_24_-HTML1-BODY1-DIV2-DIV1-DIV2-DIV2-TABLE1-TBODY1-TR3-TD1-A1
+SubtreeInsert,noneq,2.0,2.0,False,mrbs,['unExpectedElements'],['missingInfo'],['assert'],SubtreeInsert_AddBuildingTest_24_-HTML1-BODY1-DIV2-TABLE1-TBODY1-TR7-TD2-DIV1
+TextInsert,noneq,2.0,2.0,False,mrbs,['unExpectedElements'],['missingInfo'],['assert'],TextInsert_AddEntryTest_39_-HTML1-BODY1-DIV2-FORM1-FIELDSET1-DIV2-TEXTAREA1
+StylePosition,noneq,1.0,2.0,False,mrbs,['wrongPosition'],"['cosmetic', 'css']",['assert'],StylePosition_AddMultipleEntriesSameRoomDifferentDaysTest_60_-HTML1-BODY1-DIV3-DIV3-DIV2
+EventHandlerAdd,eq,0.5,0.0,False,mrbs,['none'],['none'],['none'],EventHandlerAdd_AddMultipleEntriesSameRoomDifferentDaysTest_52_-HTML1-BODY1-DIV3-DIV2-DIV2-A4
+EventHandlerAdd,eq,0.5,0.0,False,mrbs,['none'],['none'],['none'],EventHandlerAdd_AddMultipleEntriesDifferentRoomsDifferentDaysTest_58_-HTML1-BODY1-DIV2-DIV4-DIV1-DIV2-A1
+StyleColor,eq,0.5,0.0,False,mrbs,['none'],['none'],['none'],StyleColor_AddMultipleEntriesDifferentRoomsSameDayTest_44_-HTML1-BODY1-DIV2-TABLE1-TBODY1-TR15-TD3-DIV1
+StyleVisibility,noneq,2.0,2.0,False,mantisbt,['missingElements'],['missingInfo'],['assert'],StyleVisibility_AddMultipleSubprojectsTest_47_-HTML1-BODY1-TABLE1-TBODY1-TR1-TD1-SPAN2
+SubtreeMove,noneq,1.0,2.0,True,mantisbt,['wrongPosition'],"['css', 'cosmetic']","['assert', 'execute']",SubtreeMove_LoginNegativeTest_33_-HTML1-BODY1-DIV3-FORM1-TABLE1-TBODY1-TR3
+EventHandlerAdd,noneq,2.5,3.0,False,mantisbt,['brokenEventHandling'],['codeError'],['executeAssertImmediate'],EventHandlerAdd_UpdateIssueStatusAcknowledgedTest_38_-HTML1-BODY1-A4-DIV1-TABLE1-TBODY1-TR9-TD1
+StyleVisibility,noneq,2.5,2.0,False,mantisbt,['missingElements'],"['missingInfo', 'codeError']",['execute'],StyleVisibility_AddMultipleSubprojectsTest_44_-HTML1-BODY1-DIV3-FORM1-TABLE1-TBODY1-TR5-TD2-INPUT1
+TextReplace,noneq,2.0,2.0,False,mantisbt,['wrongElements'],['missingInfo'],['assert'],TextReplace_UpdateIssueStatusAcknowledgedTest_38_-HTML1-BODY1-A4-DIV1-TABLE1-TBODY1-TR9-TD1
+StylePosition,noneq,2.0,2.0,False,mantisbt,['missingElements'],['missingInfo'],['assert'],StylePosition_UpdateIssuePriorityTest_38_-HTML1-BODY1-DIV5-FORM1-TABLE1-TBODY1-TR2-TD1-SPAN1
+StylePosition,noneq,1.0,2.0,False,mantisbt,['wrongPosition'],"['cosmetic', 'css']",['assert'],StylePosition_AddMultipleSubprojectsTest_43_-HTML1-BODY1-A3-DIV2-TABLE1-TBODY1-TR2-TD2
+StyleSize,noneq,0.5,2.0,False,mantisbt,"['wrongSize', 'wrongPosition']",['cosmetic'],['assert'],StyleSize_AddUserTest_42_-HTML1-BODY1-TABLE1-TBODY1-TR1-TD3-FORM1-SELECT1
+StyleSize,noneq,1.0,2.0,False,mantisbt,"['wrongSize', 'wrongPosition']","['cosmetic', 'css']",['assert'],StyleSize_UpdateCategoryTest_37_-HTML1-BODY1-TABLE1-TBODY1-TR1-TD1-SPAN1
+SubtreeInsert,noneq,2.0,2.0,False,mantisbt,['unExpectedElements'],['missingInfo'],['assert'],SubtreeInsert_AddUserTest_54_-HTML1-BODY1-TABLE1-TBODY1-TR1-TD2
+StyleVisibility,noneq,2.5,2.0,False,mantisbt,['wrongElements'],"['missingInfo', 'wrongPage']",['execute'],StyleVisibility_DeleteMultipleSubprojectsTest_37_-HTML1-BODY1-A3-TABLE1-TBODY1-TR1-TD2-DIV1-A1
+StyleVisibility,noneq,2.5,2.0,False,mantisbt,['missingElements'],"['missingInfo', 'wrongPage']","['assert', 'execute']",StyleVisibility_UpdateIssueStatusAssignedTest_38_-HTML1-BODY1-A4-DIV1-TABLE1-TBODY1-TR12
+TextReplace,noneq,2.0,2.0,True,mantisbt,['unExpectedElements'],['missingInfo'],['assert'],TextReplace_AddMultipleSubprojectsTest_43_-HTML1-BODY1-A3-DIV2-TABLE1-TBODY1-TR3-TD2-SELECT1-OPTION3
+AttributeDelete,noneq,2.5,2.0,False,mantisbt,['brokenLink'],['wrongPage'],['execute'],AttributeDelete_AddIssueEmptyTest_33_-HTML1-BODY1-TABLE1-TBODY1-TR1-TD3-A1
+StyleSize,noneq,1.0,2.0,False,mantisbt,"['wrongPosition', 'wrongSize']","['cosmetic', 'css']",['assert'],StyleSize_UpdateIssueStatusAcknowledgedTest_38_-HTML1-BODY1-A4-DIV1-TABLE1-TBODY1-TR5-TD3
+TextReplace,noneq,2.0,2.0,False,mantisbt,['wrongElements'],['missingInfo'],['assert'],TextReplace_DeleteUserTest_33_-HTML1-BODY1-TABLE1-TBODY1-TR1-TD3-FORM1-SELECT1-OPTION1
+StyleVisibility,noneq,2.5,2.0,False,mantisbt,"['missingElements', 'brokenLink']","['missingInfo', 'wrongPage']",['execute'],StyleVisibility_UpdateCategoryTest_37_-HTML1-BODY1-TABLE1-TBODY1-TR1-TD3
+StyleSize,noneq,1.0,2.0,False,mantisbt,"['wrongSize', 'wrongPosition']","['cosmetic', 'css']",['assert'],StyleSize_AddMultipleUsersTest_69_-HTML1-BODY1-TABLE3-TBODY1-TR6
+StylePosition,noneq,1.0,2.0,True,mantisbt,"['wrongPosition', 'brokenEventHandling']","['cosmetic', 'wrongPage']",['execute'],StylePosition_AddUserTest_35_-HTML1-BODY1-TABLE2-TBODY1-TR1-TD2
+SubtreeInsert,noneq,2.0,2.0,False,mantisbt,['unExpectedElements'],['missingInfo'],['assert'],SubtreeInsert_DeleteUserTest_33_-HTML1-BODY1-TABLE1-TBODY1-TR1-TD1-SPAN2
+SubtreeMove,noneq,2.5,2.0,False,mantisbt,"['unExpectedElements', 'wrongElements']","['missingInfo', 'wrongPage']",['assert'],SubtreeMove_UpdateIssueStatusConfirmedTest_38_-HTML1-BODY1-A4-DIV1-TABLE1-TBODY1-TR4
+TextDelete,noneq,2.0,2.0,False,mantisbt,['missingElements'],['missingInfo'],['assert'],TextDelete_AddUserTest_37_-HTML1-BODY1-DIV6-FORM1-TABLE1-TBODY1-TR16-TD2-SELECT1-OPTGROUP5-OPTION30
+StylePosition,noneq,0.5,2.0,False,mantisbt,['wrongPosition'],['cosmetic'],['assert'],StylePosition_ViewSummaryIssueTest_35_-HTML1-BODY1-TABLE3-TBODY1-TR2-TD2-TABLE1-TBODY1-TR10-TD2-A1
+StyleVisibility,noneq,2.5,2.0,True,mantisbt,"['missingElements', 'brokenLink']","['wrongPage', 'missingInfo']",['execute'],StyleVisibility_AddMultipleSubprojectsTest_47_-HTML1-BODY1-TABLE3-TBODY1-TR4-TD1-A1
+SubtreeMove,noneq,0.5,2.0,False,mantisbt,['wrongPosition'],['cosmetic'],['assert'],SubtreeMove_UpdateIssueStatusConfirmedTest_38_-HTML1-BODY1-A4-DIV1-TABLE1-TBODY1-TR8-TD2
+SubtreeMove,noneq,0.5,2.0,False,mantisbt,['wrongPosition'],['cosmetic'],['assert'],SubtreeMove_AddUserTest_54_-HTML1-BODY1-TABLE1-TBODY1-TR1-TD3
+StylePosition,noneq,2.0,2.0,False,mantisbt,['missingElements'],['missingInfo'],['assert'],StylePosition_AddProjectTest_37_-HTML1-BODY1-TABLE1-TBODY1-TR1-TD1-SPAN1
+SubtreeMove,noneq,1.0,2.0,False,mantisbt,['wrongPosition'],"['css', 'cosmetic']",['assert'],SubtreeMove_AddProjectWrongTest_37_-HTML1-BODY1-TABLE1-TBODY1-TR1-TD2-SPAN1
+EventHandlerAdd,noneq,2.5,3.0,False,mantisbt,['brokenEventHandling'],['wrongPage'],"['execute', 'executeAssertImmediate']",EventHandlerAdd_AddUserTest_37_-HTML1-BODY1-DIV6-FORM1-TABLE1-TBODY1-TR17-TD2-SELECT1-OPTION12
+TextDelete,noneq,2.0,2.0,False,mantisbt,['missingElements'],['missingInfo'],['assert'],TextDelete_UpdateIssuePriorityTest_38_-HTML1-BODY1-TABLE3-TBODY1-TR6-TD2
+EventHandlerAdd,noneq,2.5,3.0,False,mantisbt,['brokenEventHandling'],"['codeError', 'wrongPage']",['executeAssertImmediate'],EventHandlerAdd_AddCategoryTest_36_-HTML1-BODY1-A3-DIV3-TABLE1-TBODY1-TR3-TD3
+StyleColor,noneq,0.5,2.0,False,mantisbt,['wrongColor'],['cosmetic'],['assert'],StyleColor_AddUserTest_34_-HTML1-BODY1-TABLE2-TBODY1-TR1-TD1-A6
+StyleVisibility,noneq,2.5,2.0,False,mantisbt,['missingElements'],"['missingInfo', 'wrongPage']",['execute'],StyleVisibility_AddProjectWrongTest_37_-HTML1-BODY1-TABLE1-TBODY1-TR1-TD3-A1
+SubtreeMove,noneq,2.0,2.0,False,mantisbt,['unExpectedElements'],['missingInfo'],['assert'],SubtreeMove_AddIssueEmptyTest_33_-HTML1-BODY1-DIV3-TABLE1-TBODY1-TR1-TD2-TABLE1-TBODY1-TR1-TD1-SPAN1
+StyleSize,noneq,1.0,2.0,False,mantisbt,"['wrongSize', 'wrongPosition']","['css', 'cosmetic']",['assert'],StyleSize_AddUserTest_37_-HTML1-BODY1-DIV6-FORM1-TABLE1-TBODY1-TR6-TD2-SELECT1
+StyleVisibility,noneq,2.5,2.0,False,mantisbt,"['missingElements', 'brokenEventHandling']","['missingInfo', 'wrongPage']",['execute'],StyleVisibility_AddIssueTest_44_-HTML1-BODY1-DIV3-FORM1-TABLE1-TBODY1-TR3
+SubtreeDelete,noneq,2.5,2.0,True,mantisbt,['missingElements'],"['missingInfo', 'wrongPage']",['execute'],SubtreeDelete_AddProjectTest_36_-HTML1-BODY1-TABLE2
+EventHandlerReplace,noneq,2.5,3.0,False,mantisbt,['brokenEventHandling'],['codeError'],"['execute', 'executeAssertImmediate']",EventHandlerReplace_AddIssueTest_44_-HTML1-BODY1-DIV3-FORM1-TABLE1-TBODY1-TR1-TD4-A1
+SubtreeMove,noneq,1.0,2.0,False,mantisbt,['wrongPosition'],"['css', 'cosmetic']",['assert'],SubtreeMove_AddUserTest_42_-HTML1-BODY1-DIV3-FORM1-TABLE1-TBODY1-TR1
+SubtreeMove,noneq,2.0,2.0,True,mantisbt,['missingElements'],['missingInfo'],['assert'],SubtreeMove_ViewSummaryIssueTest_35_-HTML1-BODY1-TABLE3-TBODY1-TR2-TD1-TABLE1-TBODY1
+AttributeDelete,noneq,2.5,3.0,False,mantisbt,['brokenLink'],['wrongPage'],['executeAssertImmediate'],AttributeDelete_AddIssueEmptyTest_33_-HTML1-BODY1-DIV3-TABLE1-TBODY1-TR1-TD2-TABLE1-TBODY1-TR1-TD1-SPAN1-A1
+StyleVisibility,noneq,1.0,2.0,False,mantisbt,"['missingElements', 'wrongPosition']","['cosmetic', 'missingInfo', 'css']","['assert', 'execute']",StyleVisibility_UpdateIssuePriorityTest_38_-HTML1-BODY1-A4-DIV1-TABLE1-TBODY1-TR5-TD2
+SubtreeDelete,noneq,2.5,3.0,False,mantisbt,"['missingElements', 'brokenEventHandling']","['codeError', 'missingInfo']",['executeAssertImmediate'],SubtreeDelete_AddUserTest_54_-HTML1-BODY1-DIV6-TABLE1-TBODY1-TR4
+EventHandlerAdd,noneq,2.5,3.0,False,mantisbt,['brokenEventHandling'],['codeError'],['executeAssertImmediate'],EventHandlerAdd_AddMultipleUsersTest_58_-HTML1-BODY1-TABLE3-TBODY1-TR4-TD4
+StyleVisibility,noneq,1.0,2.0,False,mantisbt,['missingElements'],"['missingInfo', 'cosmetic', 'css']",['assert'],StyleVisibility_AddUserTest_37_-HTML1-BODY1-DIV6-FORM1-TABLE1-TBODY1-TR9-TD1
+StyleSize,noneq,1.0,2.0,False,mantisbt,"['wrongPosition', 'wrongSize']","['cosmetic', 'css']",['assert'],StyleSize_AssignIssueTest_39_-HTML1-BODY1-FORM1-TABLE1-TBODY1-TR2
+StyleVisibility,noneq,2.0,2.0,False,mantisbt,['missingElements'],['missingInfo'],['assert'],StyleVisibility_UpdateIssueStatusAcknowledgedTest_38_-HTML1-BODY1-A4-DIV1-TABLE1-TBODY1-TR7-TD1
+StyleColor,noneq,1.0,2.0,False,mantisbt,['wrongColor'],"['cosmetic', 'css']",['assert'],StyleColor_LoginNegativeTest_33_-HTML1-BODY1-DIV3-FORM1-TABLE1-TBODY1-TR3-TD1
+StyleColor,eq,0.5,0.0,False,mantisbt,['none'],['none'],['none'],StyleColor_UpdateIssueStatusAcknowledgedTest_38_-HTML1-BODY1-A4-DIV1-TABLE1-TBODY1-TR9-TD2
+StyleColor,eq,0.5,0.0,False,mantisbt,['none'],['none'],['none'],StyleColor_UpdateIssueStatusAssignedTest_38_-HTML1-BODY1-TABLE1-TBODY1-TR1-TD3-A1
+SubtreeInsert,noneq,2.0,2.0,False,ppma,['unExpectedElements'],['missingInfo'],['assert'],SubtreeInsert_PasswordManagerAddMultipleEntriesTest_118_-HTML1-BODY1-DIV1-NAV1-SECTION1-UL2-LI1
+StylePosition,noneq,1.0,2.0,True,ppma,['wrongPosition'],"['cosmetic', 'css']",['assert'],StylePosition_PasswordManagerAssignTagToEntryTest_64_-HTML1-BODY1-DIV1-DIV1-ASIDE1-DIV3
+SubtreeDelete,noneq,2.5,2.0,False,ppma,"['missingElements', 'brokenEventHandling']","['codeError', 'missingInfo']",['assert'],SubtreeDelete_PasswordManagerAddEntryTest_40_-HTML1-BODY1-DIV1-DIV1-DIV1-DIV2
+SubtreeInsert,noneq,2.0,2.0,False,ppma,['unExpectedElements'],['missingInfo'],['assert'],SubtreeInsert_PasswordManagerAddEntryTest_43_-HTML1-BODY1-DIV1-NAV1-SECTION1-UL1-LI4
+SubtreeMove,noneq,2.5,2.0,True,ppma,"['brokenLink', 'missingElements']","['wrongPage', 'missingInfo']",['assert'],SubtreeMove_PasswordManagerAddMultipleEntriesTest_118_-HTML1-BODY1-DIV1-DIV1-DIV1-DIV2
+StylePosition,noneq,2.5,2.0,True,ppma,"['missingElements', 'brokenLink']","['missingInfo', 'wrongPage']",['execute'],StylePosition_PasswordManagerAddEntryTest_40_-HTML1-BODY1-DIV1-NAV1-SECTION1-UL1-LI2-A1
+SubtreeDelete,noneq,2.5,1.0,False,ppma,"['brokenLink', 'missingElements']","['missingInfo', 'wrongPage']",['find'],SubtreeDelete_PasswordManagerAddEntryTest_40_-HTML1-BODY1-DIV1-NAV1-SECTION1-UL1-LI1-UL1-LI5
+SubtreeInsert,noneq,2.5,2.0,True,ppma,"['wrongPosition', 'unExpectedElements', 'brokenEventHandling']","['missingInfo', 'codeError']",['execute'],SubtreeInsert_PasswordManagerAddEntryTest_40_-HTML1-BODY1-DIV1-NAV1-SECTION1-UL1-LI1-UL1
+StyleColor,noneq,0.5,2.0,False,ppma,['wrongColor'],['cosmetic'],['assert'],StyleColor_PasswordManagerAssignTagToEntryTest_67_-HTML1-BODY1-DIV1-DIV1-DIV1-P2-A1
+TextDelete,noneq,2.0,2.0,False,ppma,['missingElements'],['missingInfo'],['assert'],TextDelete_PasswordManagerAddMultipleEntriesTest_118_-HTML1-BODY1-DIV1-DIV1-DIV1-DIV2-DIV1
+TextReplace,noneq,2.0,2.0,False,ppma,['unExpectedElements'],['missingInfo'],['assert'],TextReplace_PasswordManagerAddEntryTest_43_-HTML1-BODY1-DIV1-DIV1-DIV1-FORM1-LABEL2
+TextDelete,noneq,2.0,2.0,False,ppma,['missingElements'],['missingInfo'],['assert'],TextDelete_PasswordManagerAddEntryTest_40_-HTML1-BODY1-DIV1-DIV1-ASIDE1-DIV2-I1
+AttributeReplace,noneq,2.5,3.0,False,ppma,['brokenLink'],['wrongPage'],['executeAssertImmediate'],AttributeReplace_PasswordManagerAssignTagToEntryTest_71_-HTML1-BODY1-DIV1-DIV1-DIV1-DIV3-TABLE1-TBODY1-TR1-TD4-A5
+TextReplace,noneq,2.0,2.0,True,ppma,['wrongElements'],['missingInfo'],['assert'],TextReplace_PasswordManagerAddMultipleEntriesTest_118_-HTML1-BODY1-DIV1-DIV1-DIV1-DIV3-TABLE1-TBODY1-TR3-TD2
+TextReplace,noneq,2.0,2.0,True,ppma,['wrongElements'],['missingInfo'],['assert'],TextReplace_PasswordManagerAddEntryTest_43_-HTML1-BODY1-DIV1-NAV1-SECTION1-UL1-LI4-A1
+AttributeDelete,noneq,2.5,3.0,False,ppma,['brokenLink'],['codeError'],['executeAssertImmediate'],AttributeDelete_PasswordManagerAddEntryTest_43_-HTML1-BODY1-DIV1-NAV1-SECTION1-UL1-LI3-UL1-LI1-A1
+StyleVisibility,noneq,2.0,2.0,False,ppma,['missingElements'],['missingInfo'],['assert'],StyleVisibility_PasswordManagerAddMultipleEntriesTest_63_-HTML1-BODY1-DIV1-DIV1-ASIDE1-DIV2-UL1-LI1-A1
+StyleSize,noneq,1.0,2.0,False,ppma,"['wrongSize', 'wrongPosition']","['cosmetic', 'css']",['assert'],StyleSize_PasswordManagerSearchAndRemoveMultipleTagsTest_45_-HTML1-BODY1-DIV1-FOOTER1-DIV1-A3
+TextDelete,noneq,2.0,2.0,True,ppma,['missingElements'],['missingInfo'],['assert'],TextDelete_PasswordManagerSearchEntryByTagListTest_34_-HTML1-BODY1-DIV1-NAV1-SECTION1-UL1-LI3-A1
+TextReplace,noneq,2.0,2.0,False,ppma,['wrongElements'],['missingInfo'],['assert'],TextReplace_PasswordManagerAddMultipleEntriesTest_118_-HTML1-BODY1-DIV1-DIV1-DIV1-P1-B2
+AttributeDelete,noneq,2.5,3.0,False,ppma,['brokenLink'],['wrongPage'],['executeAssertImmediate'],AttributeDelete_PasswordManagerCheckUsedTagsTest_85_-HTML1-BODY1-DIV1-DIV1-ASIDE1-DIV2-UL1-LI1-A1
+StyleColor,noneq,0.5,2.0,False,ppma,"['none', 'wrongColor']",['cosmetic'],['assert'],StyleColor_PasswordManagerSearchEntryByTagsTest_67_-HTML1-BODY1-DIV1-NAV1-SECTION1-UL1-LI3
+StyleColor,noneq,1.0,2.0,False,ppma,['wrongColor'],"['cosmetic', 'css']",['assert'],StyleColor_PasswordManagerEditTagTest_36_-HTML1-BODY1-DIV1-DIV1
+StyleVisibility,noneq,2.5,2.0,False,ppma,"['missingElements', 'brokenLink']","['missingInfo', 'wrongPage']",['execute'],StyleVisibility_PasswordManagerAssignTagToEntryTest_83_-HTML1-BODY1-DIV1-DIV1-DIV1-DIV1
+StylePosition,noneq,2.5,2.0,True,ppma,['missingElements'],"['missingInfo', 'wrongPage']",['execute'],StylePosition_PasswordManagerSearchEntryByTagListTest_34_-HTML1-BODY1-DIV1
+AttributeReplace,noneq,2.5,4.0,True,ppma,['brokenEventHandling'],"['codeError', 'missingInfo']",['executeAssertPropagated'],AttributeReplace_PasswordManagerAddEntryTest_43_-HTML1-BODY1-DIV1-DIV1-DIV1-FORM1-INPUT5
+StylePosition,noneq,1.0,2.0,False,ppma,['wrongPosition'],"['css', 'cosmetic']",['assert'],StylePosition_PasswordManagerCheckUsedTagsTest_75_-HTML1-BODY1-DIV1-DIV1-DIV1
+AttributeDelete,noneq,2.5,3.0,False,ppma,['brokenLink'],['wrongPage'],['executeAssertImmediate'],AttributeDelete_PasswordManagerAddEntryTest_40_-HTML1-BODY1-DIV1-NAV1-SECTION1-UL1-LI3-UL1-LI1-A1
+SubtreeDelete,noneq,2.5,1.0,True,ppma,"['brokenLink', 'missingElements']","['wrongPage', 'missingInfo']",['find'],SubtreeDelete_PasswordManagerCheckEntryTagsRemovedTest_33_-HTML1-BODY1-DIV1-DIV1-DIV1-DIV3-TABLE1-TBODY1-TR1
+SubtreeDelete,noneq,2.5,3.0,True,ppma,['brokenEventHandling'],['codeError'],['executeAssertImmediate'],SubtreeDelete_PasswordManagerCheckUsedTagsTest_42_-HTML1-BODY1-DIV1-DIV1-DIV1-DIV1
+TextInsert,noneq,2.0,2.0,False,ppma,['unExpectedElements'],['missingInfo'],['assert'],TextInsert_PasswordManagerCheckUsedTagsTest_85_-HTML1-BODY1-DIV1-DIV1-ASIDE1-DIV3-DIV1-I1
+StyleColor,noneq,0.5,2.0,False,ppma,['wrongColor'],['cosmetic'],['assert'],StyleColor_PasswordManagerAddMultipleEntriesTest_118_-HTML1-BODY1-DIV1-DIV1-DIV1-DIV3-TABLE1-TBODY1-TR3-TD4-A4
+SubtreeMove,noneq,0.5,2.0,True,ppma,['wrongPosition'],['cosmetic'],['assert'],SubtreeMove_PasswordManagerAddEntryTest_43_-HTML1-BODY1-DIV1-NAV1-SECTION1-UL2
+SubtreeDelete,noneq,2.5,1.0,True,ppma,"['missingElements', 'brokenLink']","['missingInfo', 'wrongPage']",['find'],SubtreeDelete_PasswordManagerAddMultipleEntriesTest_118_-HTML1-BODY1-DIV1-NAV1-SECTION1-UL1-LI2-UL1
+StylePosition,noneq,2.0,2.0,True,ppma,"['wrongPosition', 'missingElements']","['css', 'missingInfo']","['execute', 'assert']",StylePosition_PasswordManagerAddEntryTest_43_-HTML1-BODY1-DIV1-NAV1-SECTION1-UL1-LI4-UL1-LI2-A1
+TextReplace,noneq,2.0,2.0,False,ppma,['wrongElements'],['missingInfo'],['assert'],TextReplace_PasswordManagerCheckUsedTagsTest_75_-HTML1-BODY1-DIV1-FOOTER1-DIV1-A3
+StyleColor,noneq,0.5,2.0,False,ppma,['wrongColor'],['cosmetic'],['assert'],StyleColor_PasswordManagerAddMultipleEntriesTest_118_-HTML1-BODY1-DIV1-NAV1-SECTION1-UL1-LI2-UL1-LI2-A1
+StyleColor,noneq,1.0,2.0,False,ppma,['wrongColor'],"['cosmetic', 'css']",['assert'],StyleColor_PasswordManagerAssignTagToEntryTest_71_-HTML1-BODY1-DIV1-DIV1-ASIDE1-DIV2-UL1-LI1-A1
+AttributeAdd,noneq,2.5,2.0,False,ppma,['brokenEventHandling'],['codeError'],"['assert', 'execute']",AttributeAdd_PasswordManagerAddEntryTest_43_-HTML1-BODY1-DIV1-NAV1-SECTION1-UL1-LI1-UL1-LI7-A1
+SubtreeDelete,noneq,2.5,1.0,False,ppma,"['brokenLink', 'missingElements']","['missingInfo', 'wrongPage']",['find'],SubtreeDelete_PasswordManagerAssignTagToEntryTest_67_-HTML1-BODY1-DIV1-DIV1-DIV1-P2
+SubtreeDelete,noneq,2.5,1.0,False,ppma,"['missingElements', 'brokenLink']","['missingInfo', 'wrongPage']",['find'],SubtreeDelete_PasswordManagerAddEntryTest_40_-HTML1-BODY1-DIV1-NAV1-SECTION1-UL1-LI3-UL1
+StyleVisibility,noneq,2.5,1.0,True,ppma,"['missingElements', 'brokenEventHandling']","['authentication', 'missingInfo', 'codeError']",['find'],StyleVisibility_PasswordManagerAddEntryTest_29_-HTML1-BODY1-DIV1-DIV1-DIV1-DIV1-FORM1-DIV1-DIV1-INPUT1
+TextDelete,noneq,2.0,2.0,False,ppma,['missingElements'],['missingInfo'],['assert'],TextDelete_PasswordManagerAssignTagToEntryTest_71_-HTML1-BODY1-DIV1-FOOTER1-DIV1-A2
+SubtreeMove,noneq,2.0,2.0,False,ppma,"['wrongPosition', 'unExpectedElements', 'missingElements']",['missingInfo'],['assert'],SubtreeMove_PasswordManagerSearchEntryByTagsTest_67_-HTML1-BODY1-DIV1-NAV1-SECTION1-UL1-LI1-UL1-LI1
+AttributeReplace,noneq,2.5,3.0,False,ppma,['brokenLink'],['wrongPage'],['executeAssertImmediate'],AttributeReplace_PasswordManagerSearchEntryByTagsTest_67_-HTML1-BODY1-DIV1-NAV1-UL1-LI1-H11-A1
+TextReplace,noneq,2.0,2.0,False,ppma,['wrongElements'],['missingInfo'],['assert'],TextReplace_PasswordManagerCheckEntryTagsRemovedTest_33_-HTML1-BODY1-DIV1-FOOTER1-DIV1-A3
+EventHandlerDelete,eq,0.5,0.0,False,ppma,['none'],['none'],['none'],EventHandlerDelete_PasswordManagerAddMultipleEntriesTest_118_-HTML1-BODY1-DIV1-DIV1-DIV1-DIV3-TABLE1-TBODY1-TR3-TD4-A5
+StyleColor,eq,0.5,0.0,False,ppma,['none'],['none'],['none'],StyleColor_PasswordManagerAddEntryTest_40_-HTML1-BODY1-DIV1-DIV1-DIV1-DIV2-DIV2
+AttributeAdd,eq,0.5,0.0,False,ppma,['none'],['none'],['none'],AttributeAdd_PasswordManagerAddMultipleEntriesTest_118_-HTML1-BODY1-DIV1-NAV1-SECTION1-UL1-LI1-UL1-LI4-A1
+AttributeAdd,eq,0.5,0.0,False,ppma,['none'],['none'],['none'],AttributeAdd_PasswordManagerAddMultipleEntriesTest_118_-HTML1-BODY1-DIV1-NAV1-SECTION1-UL1-LI1-UL1-LI1-A1

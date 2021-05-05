@@ -1,0 +1,6 @@
+
+
+docker cp /Applications/MAMP/htdocs/addressbook/addressbook.8.2.5.1/. addressbook:/var/www/html/addressbook8251/
+
+mysql -u root -p addressbook8251 < ./addressbook8251/addressbook/addressbook.sql
+

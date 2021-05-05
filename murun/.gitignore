@@ -1,0 +1,17 @@
+target
+.settings
+mutant
+trace
+testOut
+mutant_old
+testCrawljax
+testMutation
+testRunner
+trace_old
+PythonScripts/.idea
+PythonScripts/__pycache__
+PythonScripts/venv
+temp
+report
+mutant_mac
+trace_mac
