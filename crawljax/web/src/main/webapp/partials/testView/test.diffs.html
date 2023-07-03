@@ -1,0 +1,54 @@
+<!--
+<table class="table table-striped" id="diffs" >
+	<tr ng-repeat='diff in test.diffs'> 
+		<td> 
+			 {{diff.state}} 
+		</td>
+
+
+		<td>
+			<button ng-click="getImage(diff.state, test.id)"> FULL SCREEN</button>
+		</td>
+		
+	</tr>
+</table>
+-->
+<div>
+	Changes to Review for {{testImages.testId}}
+</div>
+<table class="table table-striped" id="diffs" >
+	
+	<tr ng-repeat='diffImage in testImages.diffImages'> 
+
+		<td> 
+			 {{diffImage.stateName}} 
+		</td>
+
+		<td>
+			<div style="width:50px; height:50px">
+				<div style = "width: 48%; float : left ">
+					<img ng-src="data:image/png;base64,{{diffImage.oldImage}}"/>
+				</div>
+				<div style = "width:48%; float : right">
+					<img ng-src="data:image/png;base64,{{diffImage.newImage}}"/>
+				</div>
+			</div>
+		</td>
+		<td>
+			<button ng-click="getImage(diffImage.stateName, test.id)"> FULL SCREEN</button>
+		</td>
+		
+	</tr>
+</table>
+<div ng-show="showImage" style="width: 100%;height: 100%;position:  absolute;left: 0;top: 0;z-index: 9999; background-color: grey;">
+	<div style = "position:absolute; width:100%; background-color: red; height: 20px;">
+		<a href ng-click="hideImage()" style = "width:100% ; height: 10%; "> Exit FullScreen </a> 
+	<div>
+	<div style = "width: 48%; float : left ; position :relative; top:30px;">
+		<img ng-src="data:image/png;base64,{{oldImage}}"/>
+	</div>
+	<div style = "width:48%; float : right; position : relative; top:30px;">
+		<img ng-src="data:image/png;base64,{{newImage}}"/>
+	</div>
+	
+</div>

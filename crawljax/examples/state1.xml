@@ -1,0 +1,7 @@
+<VIPSPage PageTitle="amesbah-macpro.ece.ubc.ca" Url="" WindowHeight="1250" WindowWidth="1200" neworder="0">
+<LayoutNode BgColor="" ContainImg="0" ContainP="2" ContainTable="false" DOMCldNum="6" DoC="1" FontSize="24" FontWeight="" FrameSourceIndex="-1" ID="1" IsImg="false" LinkTextLen="0" ObjectRectHeight="1250" ObjectRectLeft="0" ObjectRectTop="0" ObjectRectWidth="1200" SourceIndex="//DIV[@id = 'main-message']/H1[1]/SPAN[1]" TextLen="214" level="0" order="1">
+<LayoutNode BgColor="" ContainImg="0" ContainP="0" ContainTable="false" DOMCldNum="1" DoC="10" FontSize="24" FontWeight="" FrameSourceIndex="-1" ID="1-1" IsImg="false" LinkTextLen="0" ObjectRectHeight="256" ObjectRectLeft="0" ObjectRectTop="0" ObjectRectWidth="1200" SourceIndex="//DIV[@id = 'main-message']/H1[1]/SPAN[1]" TextLen="22" level="1" order="2"/>
+<LayoutNode BgColor="" ContainImg="0" ContainP="2" ContainTable="false" DOMCldNum="2" DoC="10" FontSize="15" FontWeight="" FrameSourceIndex="-1" ID="1-2" IsImg="false" LinkTextLen="0" ObjectRectHeight="69" ObjectRectLeft="0" ObjectRectTop="272" ObjectRectWidth="1200" SourceIndex="//DIV[@id = 'suggestions-list']/P[1]" TextLen="142" level="1" order="3"/>
+<LayoutNode BgColor="" ContainImg="0" ContainP="0" ContainTable="false" DOMCldNum="1" DoC="10" FontSize="12" FontWeight="" FrameSourceIndex="-1" ID="1-3" IsImg="false" LinkTextLen="0" ObjectRectHeight="894" ObjectRectLeft="0" ObjectRectTop="356" ObjectRectWidth="1200" SourceIndex="//DIV[@id = 'error-information-popup-content']/DIV[2]" TextLen="50" level="1" order="4"/>
+</LayoutNode>
+</VIPSPage>

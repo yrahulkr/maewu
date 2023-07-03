@@ -1,0 +1,13 @@
+<table class="table table-striped restricted">
+	<thead>
+		<tr><th>Test</th><th>Execution Time</th><th>Status</th></tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="test in testRecords" ng-if="testRecords.length > 0">
+			<td><a ng-click="goToTest(test.id)">Test {{test.id}}</a></td>
+			<td>{{test.startTime | date: 'EEE MMM dd yyyy HH:mm:ss'}} GMT{{test.startTime | date: 'Z'}}</td>
+			<td>{{test.testStatus}}</td>
+		</tr>
+		<tr ng-if="(testRecords).length == 0"><td colspan="5">No tests performed.</td></tr>
+	</tbody>
+</table>

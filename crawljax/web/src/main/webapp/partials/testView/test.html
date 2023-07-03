@@ -1,0 +1,30 @@
+<legend>Summary of Test {{test.id}}</legend>
+<table class="table table-striped table-condensed">
+	<tbody>
+		<tr>
+			<td>
+				Test Number	
+			</td>
+			<td>
+				{{test.id}}	
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Test Runtime
+			</td>
+			<td>
+				{{test.duration}} milliseconds
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Test Result
+			</td>
+			<td>
+				<a ui-sref=	"test.diffs">Changes to Review</a>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<ui-view></ui-view>
